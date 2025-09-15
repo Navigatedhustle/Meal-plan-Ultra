@@ -6,7 +6,7 @@ from mealplanner.web.routes import bp as web_bp
 def create_app():
     app = Flask(__name__)
     app.config.update(
-        APP_NAME=os.environ.get("APP_NAME","Home Meal Planner"),
+        APP_NAME=os.environ.get("APP_NAME","Meal plan Ultra"),
         ALLOWED_EMBED_DOMAIN=os.environ.get("ALLOWED_EMBED_DOMAIN")
     )
     app.register_blueprint(web_bp)
