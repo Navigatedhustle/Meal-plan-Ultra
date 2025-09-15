@@ -212,6 +212,80 @@ MEALS: List[Dict[str, Any]] = [
 
 MEAL_TYPES = ["breakfast","lunch","dinner","snack"]
 
+# ---- Macro levers (tiny "adjustment" snacks) ----
+MACRO_LEVERS = {
+    "P": {"name":"Adj: Whey in Water","meal_type":"snack","K":110,"P":24,"C":3,"F":1,
+          "tags":["adjustment","high_protein","quick"],
+          "ingredients":["1 scoop whey","water"],
+          "instructions":["Shake with water and drink."]},
+    "C": {"name":"Adj: Rice Cakes (2)","meal_type":"snack","K":140,"P":2,"C":32,"F":0,
+          "tags":["adjustment","quick","low_fat"],
+          "ingredients":["2 plain rice cakes"],
+          "instructions":["Eat as a quick carb add-on."]},
+    "F": {"name":"Adj: Olive Oil (1 tbsp)","meal_type":"snack","K":120,"P":0,"C":0,"F":14,
+          "tags":["adjustment","quick","fat_boost","gluten_free","dairy_free","vegan"],
+          "ingredients":["1 tbsp extra-virgin olive oil"],
+          "instructions":["Drizzle over salad or veggies."]},
+}
+
+def _totals(picks):
+    k = sum(m["K"] for m in picks)
+    p = sum(m["P"] for m in picks)
+    c = sum(m["C"] for m in picks)
+    f = sum(m["F"] for m in picks)
+    return k, p, c, f
+
+def macro_rebalance_day(picks, kcal_target, macro_targets, max_adjustments=4):
+    """
+    Append small 'lever' items and/or drop a conflicting snack so the day
+    lands near 40/30/30 ± ~3% while staying ~ within ±3% calories.
+    """
+    p_t, c_t, f_t = macro_targets
+    lower = int(kcal_target * 0.97)
+    upper = int(kcal_target * 1.03)
+
+    picks = picks[:]  # work on a copy
+    for _ in range(max_adjustments):
+        k, p, c, f = _totals(picks)
+        dp, dc, df = p_t - p, c_t - c, f_t - f
+
+        # close enough? (grams tolerance scales with target)
+        if (abs(dp) <= max(8, p_t * 0.05) and
+            abs(dc) <= max(10, c_t * 0.06) and
+            abs(df) <= max(5, f_t * 0.06) and
+            lower <= k <= upper):
+            break
+
+        # fix the biggest miss (by kcal effect)
+        errs = [("P", abs(dp*4)), ("C", abs(dc*4)), ("F", abs(df*9))]
+        errs.sort(key=lambda x: x[1], reverse=True)
+        key = errs[0][0]
+
+        # add a lever toward the worst macro
+        lever = dict(MACRO_LEVERS[key])  # copy
+        lever["tags"] = lever.get("tags", []) + ["adjustment"]
+        picks.append(lever)
+
+        # if kcal now too high, try dropping a conflicting snack
+        k, p, c, f = _totals(picks)
+        if k > upper:
+            over_key = "C" if c > c_t else ("F" if f > f_t else "K")
+            snack_ix, best_score = None, -1
+            for i, m in enumerate(picks):
+                if m["meal_type"] != "snack" or "adjustment" in m.get("tags", []):
+                    continue
+                score = m["C"] if over_key == "C" else (m["F"]*9 if over_key == "F" else m["K"])
+                if score > best_score:
+                    best_score, snack_ix = score, i
+            if snack_ix is not None:
+                picks.pop(snack_ix)
+            else:
+                # nothing to drop? back out the lever we just added
+                picks.pop()
+
+    return picks
+
+
 # -----------------------------
 # Utility functions
 # -----------------------------
@@ -660,11 +734,14 @@ def generate():
 
     # Build plan
     plan: List[List[Dict[str,Any]]] = []
-    day_totals: List[int] = []
-    for _ in range(days):
-        picks, total = pick_day_plan(target_kcal, pool, meals_per_day, macro_targets=(p_g, c_g, f_g))
-        plan.append(picks)
-        day_totals.append(total)
+day_totals: List[int] = []
+for _ in range(days):
+    picks, _ = pick_day_plan(target_kcal, pool, meals_per_day, macro_targets=(p_g, c_g, f_g))
+    # NEW: tighten to 40/30/30 with tiny adjustment items
+    picks = macro_rebalance_day(picks, target_kcal, (p_g, c_g, f_g))
+    plan.append(picks)
+    day_totals.append(sum(m["K"] for m in picks))
+
 
     grocery = aggregate_grocery_list(plan)
 
