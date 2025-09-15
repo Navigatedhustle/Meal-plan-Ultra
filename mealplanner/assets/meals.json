@@ -1,0 +1,9213 @@
+[
+  {
+    "name": "Sirloin Steak Rice Cakes Bowl",
+    "meal_type": "lunch",
+    "K": 689,
+    "P": 41,
+    "C": 75,
+    "F": 25,
+    "tags": [
+      "gluten_free",
+      "lunch",
+      "quick"
+    ],
+    "ingredients": [
+      "6 oz sirloin steak",
+      "3/4 cup rice cakes",
+      "mixed veg: broccoli, spinach",
+      "1 tbsp olive oil"
+    ],
+    "instructions": [
+      "Warm the carb base.",
+      "Sear or warm sirloin steak until hot.",
+      "Combine in a bowl with veggies.",
+      "Finish with olive oil or your favorite sauce."
+    ]
+  },
+  {
+    "name": "Lean Ground Turkey with Corn Tortillas & Carrots, Zucchini",
+    "meal_type": "dinner",
+    "K": 518,
+    "P": 38,
+    "C": 51,
+    "F": 18,
+    "tags": [
+      "dinner",
+      "gluten_free",
+      "high_protein"
+    ],
+    "ingredients": [
+      "6\u20137 oz lean ground turkey",
+      "1 cup corn tortillas",
+      "carrots, zucchini",
+      "1 tsp tahini"
+    ],
+    "instructions": [
+      "Cook lean ground turkey (grill, bake, or saut\u00e9) 6\u201310 minutes until done.",
+      "Prepare corn tortillas as directed.",
+      "Plate with vegetables and drizzle oil."
+    ]
+  },
+  {
+    "name": "Trail Mix (controlled)",
+    "meal_type": "snack",
+    "K": 295,
+    "P": 10,
+    "C": 28,
+    "F": 16,
+    "tags": [
+      "snack",
+      "vegetarian"
+    ],
+    "ingredients": [
+      "1/4 cup mixed nuts",
+      "2 tbsp raisins"
+    ],
+    "instructions": [
+      "Portion and eat mindfully."
+    ]
+  },
+  {
+    "name": "Seitan with Rice Cakes & Broccoli, Cabbage",
+    "meal_type": "dinner",
+    "K": 508,
+    "P": 32,
+    "C": 50,
+    "F": 20,
+    "tags": [
+      "dinner",
+      "vegan",
+      "vegetarian"
+    ],
+    "ingredients": [
+      "6\u20137 oz seitan",
+      "1 cup rice cakes",
+      "broccoli, cabbage",
+      "1 tsp olive oil"
+    ],
+    "instructions": [
+      "Cook seitan (grill, bake, or saut\u00e9) 6\u201310 minutes until done.",
+      "Prepare rice cakes as directed.",
+      "Plate with vegetables and drizzle oil."
+    ]
+  },
+  {
+    "name": "Lentils with Whole-Wheat Pasta & Cabbage, Tomato",
+    "meal_type": "dinner",
+    "K": 698,
+    "P": 45,
+    "C": 71,
+    "F": 26,
+    "tags": [
+      "dairy_free",
+      "dinner",
+      "gluten_free",
+      "vegan",
+      "vegetarian"
+    ],
+    "ingredients": [
+      "6\u20137 oz lentils",
+      "1 cup whole-wheat pasta",
+      "cabbage, tomato",
+      "1 tsp light cheese"
+    ],
+    "instructions": [
+      "Cook lentils (grill, bake, or saut\u00e9) 6\u201310 minutes until done.",
+      "Prepare whole-wheat pasta as directed.",
+      "Plate with vegetables and drizzle oil."
+    ]
+  },
+  {
+    "name": "Egg Whites Brown Rice Bowl",
+    "meal_type": "lunch",
+    "K": 473,
+    "P": 28,
+    "C": 52,
+    "F": 17,
+    "tags": [
+      "low_carb",
+      "lunch",
+      "quick"
+    ],
+    "ingredients": [
+      "6 oz egg whites",
+      "3/4 cup brown rice",
+      "mixed veg: spinach, mushrooms",
+      "1 tbsp olive oil"
+    ],
+    "instructions": [
+      "Warm the carb base.",
+      "Sear or warm egg whites until hot.",
+      "Combine in a bowl with veggies.",
+      "Finish with olive oil or your favorite sauce."
+    ]
+  },
+  {
+    "name": "Cottage Cheese with Farro & Kale, Mushrooms",
+    "meal_type": "dinner",
+    "K": 478,
+    "P": 34,
+    "C": 45,
+    "F": 18,
+    "tags": [
+      "dinner",
+      "high_protein"
+    ],
+    "ingredients": [
+      "6\u20137 oz cottage cheese",
+      "1 cup farro",
+      "kale, mushrooms",
+      "1 tsp almonds"
+    ],
+    "instructions": [
+      "Cook cottage cheese (grill, bake, or saut\u00e9) 6\u201310 minutes until done.",
+      "Prepare farro as directed.",
+      "Plate with vegetables and drizzle oil."
+    ]
+  },
+  {
+    "name": "Rice Cake + Turkey",
+    "meal_type": "snack",
+    "K": 150,
+    "P": 13,
+    "C": 16,
+    "F": 4,
+    "tags": [
+      "high_protein",
+      "low_carb",
+      "snack"
+    ],
+    "ingredients": [
+      "1 rice cake",
+      "3 oz turkey",
+      "mustard"
+    ],
+    "instructions": [
+      "Layer turkey on rice cake; add mustard."
+    ]
+  },
+  {
+    "name": "Protein Oats with Berries",
+    "meal_type": "breakfast",
+    "K": 383,
+    "P": 29,
+    "C": 53,
+    "F": 6,
+    "tags": [
+      "breakfast",
+      "high_protein",
+      "quick"
+    ],
+    "ingredients": [
+      "1/2 cup oats",
+      "berries",
+      "greek yogurt 0%",
+      "cinnamon"
+    ],
+    "instructions": [
+      "Microwave oats with water or milk 2 minutes.",
+      "Stir in greek yogurt 0%.",
+      "Top with berries and cinnamon."
+    ]
+  },
+  {
+    "name": "Seitan with Sweet Potato & Asparagus, Tomato",
+    "meal_type": "dinner",
+    "K": 541,
+    "P": 34,
+    "C": 54,
+    "F": 21,
+    "tags": [
+      "dinner",
+      "vegan",
+      "vegetarian"
+    ],
+    "ingredients": [
+      "6\u20137 oz seitan",
+      "1 cup sweet potato",
+      "asparagus, tomato",
+      "1 tsp almonds"
+    ],
+    "instructions": [
+      "Cook seitan (grill, bake, or saut\u00e9) 6\u201310 minutes until done.",
+      "Prepare sweet potato as directed.",
+      "Plate with vegetables and drizzle oil."
+    ]
+  },
+  {
+    "name": "Veggie Egg Scramble",
+    "meal_type": "breakfast",
+    "K": 290,
+    "P": 26,
+    "C": 20,
+    "F": 12,
+    "tags": [
+      "breakfast",
+      "low_carb",
+      "quick"
+    ],
+    "ingredients": [
+      "3 eggs",
+      "spinach",
+      "mushrooms",
+      "olive oil spray"
+    ],
+    "instructions": [
+      "Saut\u00e9 veggies 2\u20133 min.",
+      "Add beaten eggs; scramble until set."
+    ]
+  },
+  {
+    "name": "Hummus + Carrots",
+    "meal_type": "snack",
+    "K": 186,
+    "P": 6,
+    "C": 20,
+    "F": 9,
+    "tags": [
+      "budget",
+      "dairy_free",
+      "snack",
+      "vegan"
+    ],
+    "ingredients": [
+      "1/4 cup hummus",
+      "1 cup carrots"
+    ],
+    "instructions": [
+      "Dip and enjoy."
+    ]
+  },
+  {
+    "name": "Tempeh Brown Rice Bowl",
+    "meal_type": "lunch",
+    "K": 419,
+    "P": 25,
+    "C": 46,
+    "F": 15,
+    "tags": [
+      "dairy_free",
+      "gluten_free",
+      "lunch",
+      "quick",
+      "vegan",
+      "vegetarian"
+    ],
+    "ingredients": [
+      "6 oz tempeh",
+      "3/4 cup brown rice",
+      "mixed veg: tomato, spinach",
+      "1 tbsp avocado"
+    ],
+    "instructions": [
+      "Warm the carb base.",
+      "Sear or warm tempeh until hot.",
+      "Combine in a bowl with veggies.",
+      "Finish with avocado or your favorite sauce."
+    ]
+  },
+  {
+    "name": "Black Beans Quinoa Bowl",
+    "meal_type": "lunch",
+    "K": 701,
+    "P": 42,
+    "C": 77,
+    "F": 25,
+    "tags": [
+      "dairy_free",
+      "gluten_free",
+      "lunch",
+      "quick",
+      "vegan",
+      "vegetarian"
+    ],
+    "ingredients": [
+      "6 oz black beans",
+      "3/4 cup quinoa",
+      "mixed veg: broccoli, asparagus",
+      "1 tbsp tahini"
+    ],
+    "instructions": [
+      "Warm the carb base.",
+      "Sear or warm black beans until hot.",
+      "Combine in a bowl with veggies.",
+      "Finish with tahini or your favorite sauce."
+    ]
+  },
+  {
+    "name": "Cottage Cheese Brown Rice Bowl",
+    "meal_type": "lunch",
+    "K": 522,
+    "P": 35,
+    "C": 55,
+    "F": 18,
+    "tags": [
+      "high_protein",
+      "lunch",
+      "quick"
+    ],
+    "ingredients": [
+      "6 oz cottage cheese",
+      "3/4 cup brown rice",
+      "mixed veg: spinach, cabbage",
+      "1 tbsp almonds"
+    ],
+    "instructions": [
+      "Warm the carb base.",
+      "Sear or warm cottage cheese until hot.",
+      "Combine in a bowl with veggies.",
+      "Finish with almonds or your favorite sauce."
+    ]
+  },
+  {
+    "name": "Cottage Cheese with Sweet Potato & Spinach, Broccoli",
+    "meal_type": "dinner",
+    "K": 723,
+    "P": 52,
+    "C": 68,
+    "F": 27,
+    "tags": [
+      "dinner",
+      "high_protein"
+    ],
+    "ingredients": [
+      "6\u20137 oz cottage cheese",
+      "1 cup sweet potato",
+      "spinach, broccoli",
+      "1 tsp avocado"
+    ],
+    "instructions": [
+      "Cook cottage cheese (grill, bake, or saut\u00e9) 6\u201310 minutes until done.",
+      "Prepare sweet potato as directed.",
+      "Plate with vegetables and drizzle oil."
+    ]
+  },
+  {
+    "name": "Sirloin Steak Corn Tortillas Bowl",
+    "meal_type": "lunch",
+    "K": 577,
+    "P": 34,
+    "C": 63,
+    "F": 21,
+    "tags": [
+      "gluten_free",
+      "lunch",
+      "quick"
+    ],
+    "ingredients": [
+      "6 oz sirloin steak",
+      "3/4 cup corn tortillas",
+      "mixed veg: mushrooms, kale",
+      "1 tbsp tahini"
+    ],
+    "instructions": [
+      "Warm the carb base.",
+      "Sear or warm sirloin steak until hot.",
+      "Combine in a bowl with veggies.",
+      "Finish with tahini or your favorite sauce."
+    ]
+  },
+  {
+    "name": "Apple + Peanut Butter",
+    "meal_type": "snack",
+    "K": 273,
+    "P": 8,
+    "C": 31,
+    "F": 13,
+    "tags": [
+      "budget",
+      "quick",
+      "snack"
+    ],
+    "ingredients": [
+      "1 apple",
+      "1.5 tbsp peanut butter"
+    ],
+    "instructions": [
+      "Slice apple and dip in PB."
+    ]
+  },
+  {
+    "name": "Eggs with Oats & Asparagus, Bell Peppers",
+    "meal_type": "dinner",
+    "K": 444,
+    "P": 29,
+    "C": 46,
+    "F": 16,
+    "tags": [
+      "dinner"
+    ],
+    "ingredients": [
+      "6\u20137 oz eggs",
+      "1 cup oats",
+      "asparagus, bell peppers",
+      "1 tsp peanut butter"
+    ],
+    "instructions": [
+      "Cook eggs (grill, bake, or saut\u00e9) 6\u201310 minutes until done.",
+      "Prepare oats as directed.",
+      "Plate with vegetables and drizzle oil."
+    ]
+  },
+  {
+    "name": "Shrimp Corn Tortillas Bowl",
+    "meal_type": "lunch",
+    "K": 469,
+    "P": 28,
+    "C": 51,
+    "F": 17,
+    "tags": [
+      "gluten_free",
+      "low_carb",
+      "lunch",
+      "quick"
+    ],
+    "ingredients": [
+      "6 oz shrimp",
+      "3/4 cup corn tortillas",
+      "mixed veg: broccoli, asparagus",
+      "1 tbsp avocado"
+    ],
+    "instructions": [
+      "Warm the carb base.",
+      "Sear or warm shrimp until hot.",
+      "Combine in a bowl with veggies.",
+      "Finish with avocado or your favorite sauce."
+    ]
+  },
+  {
+    "name": "Veggie Egg Scramble",
+    "meal_type": "breakfast",
+    "K": 358,
+    "P": 32,
+    "C": 25,
+    "F": 14,
+    "tags": [
+      "breakfast",
+      "low_carb",
+      "quick"
+    ],
+    "ingredients": [
+      "3 eggs",
+      "spinach",
+      "mushrooms",
+      "olive oil spray"
+    ],
+    "instructions": [
+      "Saut\u00e9 veggies 2\u20133 min.",
+      "Add beaten eggs; scramble until set."
+    ]
+  },
+  {
+    "name": "Cottage Cheese + Pineapple",
+    "meal_type": "snack",
+    "K": 244,
+    "P": 26,
+    "C": 23,
+    "F": 5,
+    "tags": [
+      "high_protein",
+      "snack"
+    ],
+    "ingredients": [
+      "1 cup cottage cheese",
+      "1/2 cup pineapple"
+    ],
+    "instructions": [
+      "Combine and serve."
+    ]
+  },
+  {
+    "name": "Tempeh Brown Rice Bowl",
+    "meal_type": "lunch",
+    "K": 469,
+    "P": 28,
+    "C": 51,
+    "F": 17,
+    "tags": [
+      "dairy_free",
+      "gluten_free",
+      "lunch",
+      "quick",
+      "vegan",
+      "vegetarian"
+    ],
+    "ingredients": [
+      "6 oz tempeh",
+      "3/4 cup brown rice",
+      "mixed veg: onion, green beans",
+      "1 tbsp peanut butter"
+    ],
+    "instructions": [
+      "Warm the carb base.",
+      "Sear or warm tempeh until hot.",
+      "Combine in a bowl with veggies.",
+      "Finish with peanut butter or your favorite sauce."
+    ]
+  },
+  {
+    "name": "Cod with Soba Noodles & Kale, Cabbage",
+    "meal_type": "dinner",
+    "K": 637,
+    "P": 40,
+    "C": 63,
+    "F": 25,
+    "tags": [
+      "dinner",
+      "gluten_free",
+      "low_carb"
+    ],
+    "ingredients": [
+      "6\u20137 oz cod",
+      "1 cup soba noodles",
+      "kale, cabbage",
+      "1 tsp almonds"
+    ],
+    "instructions": [
+      "Cook cod (grill, bake, or saut\u00e9) 6\u201310 minutes until done.",
+      "Prepare soba noodles as directed.",
+      "Plate with vegetables and drizzle oil."
+    ]
+  },
+  {
+    "name": "Greek Yogurt 0% with Oats & Spinach, Asparagus",
+    "meal_type": "dinner",
+    "K": 539,
+    "P": 40,
+    "C": 52,
+    "F": 19,
+    "tags": [
+      "dinner",
+      "high_protein"
+    ],
+    "ingredients": [
+      "6\u20137 oz greek yogurt 0%",
+      "1 cup oats",
+      "spinach, asparagus",
+      "1 tsp light cheese"
+    ],
+    "instructions": [
+      "Cook greek yogurt 0% (grill, bake, or saut\u00e9) 6\u201310 minutes until done.",
+      "Prepare oats as directed.",
+      "Plate with vegetables and drizzle oil."
+    ]
+  },
+  {
+    "name": "Seitan with Quinoa & Asparagus, Zucchini",
+    "meal_type": "dinner",
+    "K": 537,
+    "P": 34,
+    "C": 53,
+    "F": 21,
+    "tags": [
+      "dinner",
+      "vegan",
+      "vegetarian"
+    ],
+    "ingredients": [
+      "6\u20137 oz seitan",
+      "1 cup quinoa",
+      "asparagus, zucchini",
+      "1 tsp almonds"
+    ],
+    "instructions": [
+      "Cook seitan (grill, bake, or saut\u00e9) 6\u201310 minutes until done.",
+      "Prepare quinoa as directed.",
+      "Plate with vegetables and drizzle oil."
+    ]
+  },
+  {
+    "name": "Lean Ground Turkey with Sweet Potato & Tomato, Cabbage",
+    "meal_type": "dinner",
+    "K": 725,
+    "P": 54,
+    "C": 71,
+    "F": 25,
+    "tags": [
+      "dinner",
+      "gluten_free",
+      "high_protein"
+    ],
+    "ingredients": [
+      "6\u20137 oz lean ground turkey",
+      "1 cup sweet potato",
+      "tomato, cabbage",
+      "1 tsp peanut butter"
+    ],
+    "instructions": [
+      "Cook lean ground turkey (grill, bake, or saut\u00e9) 6\u201310 minutes until done.",
+      "Prepare sweet potato as directed.",
+      "Plate with vegetables and drizzle oil."
+    ]
+  },
+  {
+    "name": "Protein Oats with Banana",
+    "meal_type": "breakfast",
+    "K": 370,
+    "P": 23,
+    "C": 58,
+    "F": 5,
+    "tags": [
+      "breakfast",
+      "high_protein",
+      "quick"
+    ],
+    "ingredients": [
+      "1/2 cup oats",
+      "banana",
+      "egg whites",
+      "cinnamon"
+    ],
+    "instructions": [
+      "Microwave oats with water or milk 2 minutes.",
+      "Stir in egg whites.",
+      "Top with banana and cinnamon."
+    ]
+  },
+  {
+    "name": "Big Protein Smoothie",
+    "meal_type": "breakfast",
+    "K": 471,
+    "P": 42,
+    "C": 54,
+    "F": 10,
+    "tags": [
+      "breakfast",
+      "high_protein",
+      "quick"
+    ],
+    "ingredients": [
+      "2 scoops whey",
+      "1 banana",
+      "peanut butter (1 tbsp)",
+      "milk"
+    ],
+    "instructions": [
+      "Blend all 45\u201360 seconds."
+    ]
+  },
+  {
+    "name": "Big Protein Smoothie",
+    "meal_type": "breakfast",
+    "K": 496,
+    "P": 44,
+    "C": 57,
+    "F": 10,
+    "tags": [
+      "breakfast",
+      "high_protein",
+      "quick"
+    ],
+    "ingredients": [
+      "2 scoops whey",
+      "1 banana",
+      "peanut butter (1 tbsp)",
+      "milk"
+    ],
+    "instructions": [
+      "Blend all 45\u201360 seconds."
+    ]
+  },
+  {
+    "name": "Egg Whites Soba Noodles Bowl",
+    "meal_type": "lunch",
+    "K": 552,
+    "P": 33,
+    "C": 60,
+    "F": 20,
+    "tags": [
+      "low_carb",
+      "lunch",
+      "quick"
+    ],
+    "ingredients": [
+      "6 oz egg whites",
+      "3/4 cup soba noodles",
+      "mixed veg: mushrooms, cabbage",
+      "1 tbsp peanut butter"
+    ],
+    "instructions": [
+      "Warm the carb base.",
+      "Sear or warm egg whites until hot.",
+      "Combine in a bowl with veggies.",
+      "Finish with peanut butter or your favorite sauce."
+    ]
+  },
+  {
+    "name": "Protein Oats with Banana",
+    "meal_type": "breakfast",
+    "K": 376,
+    "P": 23,
+    "C": 59,
+    "F": 5,
+    "tags": [
+      "breakfast",
+      "high_protein",
+      "quick"
+    ],
+    "ingredients": [
+      "1/2 cup oats",
+      "banana",
+      "egg whites",
+      "cinnamon"
+    ],
+    "instructions": [
+      "Microwave oats with water or milk 2 minutes.",
+      "Stir in egg whites.",
+      "Top with banana and cinnamon."
+    ]
+  },
+  {
+    "name": "Cottage Cheese with Farro & Cabbage, Green Beans",
+    "meal_type": "dinner",
+    "K": 460,
+    "P": 34,
+    "C": 45,
+    "F": 16,
+    "tags": [
+      "dinner",
+      "high_protein"
+    ],
+    "ingredients": [
+      "6\u20137 oz cottage cheese",
+      "1 cup farro",
+      "cabbage, green beans",
+      "1 tsp light cheese"
+    ],
+    "instructions": [
+      "Cook cottage cheese (grill, bake, or saut\u00e9) 6\u201310 minutes until done.",
+      "Prepare farro as directed.",
+      "Plate with vegetables and drizzle oil."
+    ]
+  },
+  {
+    "name": "Greek Yogurt 0% with Oats & Mushrooms, Broccoli",
+    "meal_type": "dinner",
+    "K": 798,
+    "P": 57,
+    "C": 75,
+    "F": 30,
+    "tags": [
+      "dinner",
+      "high_protein"
+    ],
+    "ingredients": [
+      "6\u20137 oz greek yogurt 0%",
+      "1 cup oats",
+      "mushrooms, broccoli",
+      "1 tsp olive oil"
+    ],
+    "instructions": [
+      "Cook greek yogurt 0% (grill, bake, or saut\u00e9) 6\u201310 minutes until done.",
+      "Prepare oats as directed.",
+      "Plate with vegetables and drizzle oil."
+    ]
+  },
+  {
+    "name": "Big Protein Smoothie",
+    "meal_type": "breakfast",
+    "K": 356,
+    "P": 32,
+    "C": 41,
+    "F": 7,
+    "tags": [
+      "breakfast",
+      "high_protein",
+      "quick"
+    ],
+    "ingredients": [
+      "2 scoops whey",
+      "1 banana",
+      "peanut butter (1 tbsp)",
+      "milk"
+    ],
+    "instructions": [
+      "Blend all 45\u201360 seconds."
+    ]
+  },
+  {
+    "name": "Rice Cake + Turkey",
+    "meal_type": "snack",
+    "K": 160,
+    "P": 14,
+    "C": 18,
+    "F": 4,
+    "tags": [
+      "high_protein",
+      "low_carb",
+      "snack"
+    ],
+    "ingredients": [
+      "1 rice cake",
+      "3 oz turkey",
+      "mustard"
+    ],
+    "instructions": [
+      "Layer turkey on rice cake; add mustard."
+    ]
+  },
+  {
+    "name": "Protein Shake",
+    "meal_type": "snack",
+    "K": 150,
+    "P": 22,
+    "C": 5,
+    "F": 5,
+    "tags": [
+      "high_protein",
+      "quick",
+      "snack"
+    ],
+    "ingredients": [
+      "1 scoop whey",
+      "water or milk"
+    ],
+    "instructions": [
+      "Shake or blend."
+    ]
+  },
+  {
+    "name": "Tofu with Soba Noodles & Asparagus, Carrots",
+    "meal_type": "dinner",
+    "K": 437,
+    "P": 28,
+    "C": 43,
+    "F": 17,
+    "tags": [
+      "dairy_free",
+      "dinner",
+      "gluten_free",
+      "vegan",
+      "vegetarian"
+    ],
+    "ingredients": [
+      "6\u20137 oz tofu",
+      "1 cup soba noodles",
+      "asparagus, carrots",
+      "1 tsp olive oil"
+    ],
+    "instructions": [
+      "Cook tofu (grill, bake, or saut\u00e9) 6\u201310 minutes until done.",
+      "Prepare soba noodles as directed.",
+      "Plate with vegetables and drizzle oil."
+    ]
+  },
+  {
+    "name": "Chicken Breast Whole-Wheat Pasta Bowl",
+    "meal_type": "lunch",
+    "K": 464,
+    "P": 31,
+    "C": 49,
+    "F": 16,
+    "tags": [
+      "gluten_free",
+      "high_protein",
+      "lunch",
+      "quick"
+    ],
+    "ingredients": [
+      "6 oz chicken breast",
+      "3/4 cup whole-wheat pasta",
+      "mixed veg: bell peppers, broccoli",
+      "1 tbsp tahini"
+    ],
+    "instructions": [
+      "Warm the carb base.",
+      "Sear or warm chicken breast until hot.",
+      "Combine in a bowl with veggies.",
+      "Finish with tahini or your favorite sauce."
+    ]
+  },
+  {
+    "name": "Big Protein Smoothie",
+    "meal_type": "breakfast",
+    "K": 367,
+    "P": 33,
+    "C": 42,
+    "F": 7,
+    "tags": [
+      "breakfast",
+      "high_protein",
+      "quick"
+    ],
+    "ingredients": [
+      "2 scoops whey",
+      "1 banana",
+      "peanut butter (1 tbsp)",
+      "milk"
+    ],
+    "instructions": [
+      "Blend all 45\u201360 seconds."
+    ]
+  },
+  {
+    "name": "Cottage Cheese with Mixed Fruit & Broccoli, Kale",
+    "meal_type": "dinner",
+    "K": 632,
+    "P": 45,
+    "C": 59,
+    "F": 24,
+    "tags": [
+      "dinner",
+      "high_protein"
+    ],
+    "ingredients": [
+      "6\u20137 oz cottage cheese",
+      "1 cup mixed fruit",
+      "broccoli, kale",
+      "1 tsp almonds"
+    ],
+    "instructions": [
+      "Cook cottage cheese (grill, bake, or saut\u00e9) 6\u201310 minutes until done.",
+      "Prepare mixed fruit as directed.",
+      "Plate with vegetables and drizzle oil."
+    ]
+  },
+  {
+    "name": "Protein Shake",
+    "meal_type": "snack",
+    "K": 177,
+    "P": 26,
+    "C": 6,
+    "F": 5,
+    "tags": [
+      "high_protein",
+      "quick",
+      "snack"
+    ],
+    "ingredients": [
+      "1 scoop whey",
+      "water or milk"
+    ],
+    "instructions": [
+      "Shake or blend."
+    ]
+  },
+  {
+    "name": "Greek Yogurt 0% Quinoa Bowl",
+    "meal_type": "lunch",
+    "K": 696,
+    "P": 47,
+    "C": 73,
+    "F": 24,
+    "tags": [
+      "high_protein",
+      "lunch",
+      "quick"
+    ],
+    "ingredients": [
+      "6 oz greek yogurt 0%",
+      "3/4 cup quinoa",
+      "mixed veg: kale, onion",
+      "1 tbsp olive oil"
+    ],
+    "instructions": [
+      "Warm the carb base.",
+      "Sear or warm greek yogurt 0% until hot.",
+      "Combine in a bowl with veggies.",
+      "Finish with olive oil or your favorite sauce."
+    ]
+  },
+  {
+    "name": "Tofu with Sweet Potato & Cabbage, Broccoli",
+    "meal_type": "dinner",
+    "K": 440,
+    "P": 29,
+    "C": 45,
+    "F": 16,
+    "tags": [
+      "dairy_free",
+      "dinner",
+      "gluten_free",
+      "vegan",
+      "vegetarian"
+    ],
+    "ingredients": [
+      "6\u20137 oz tofu",
+      "1 cup sweet potato",
+      "cabbage, broccoli",
+      "1 tsp light cheese"
+    ],
+    "instructions": [
+      "Cook tofu (grill, bake, or saut\u00e9) 6\u201310 minutes until done.",
+      "Prepare sweet potato as directed.",
+      "Plate with vegetables and drizzle oil."
+    ]
+  },
+  {
+    "name": "Cod with Cauliflower Rice & Green Beans, Asparagus",
+    "meal_type": "dinner",
+    "K": 504,
+    "P": 36,
+    "C": 45,
+    "F": 20,
+    "tags": [
+      "dinner",
+      "gluten_free",
+      "low_carb"
+    ],
+    "ingredients": [
+      "6\u20137 oz cod",
+      "1 cup cauliflower rice",
+      "green beans, asparagus",
+      "1 tsp tahini"
+    ],
+    "instructions": [
+      "Cook cod (grill, bake, or saut\u00e9) 6\u201310 minutes until done.",
+      "Prepare cauliflower rice as directed.",
+      "Plate with vegetables and drizzle oil."
+    ]
+  },
+  {
+    "name": "Protein Oats with Berries",
+    "meal_type": "breakfast",
+    "K": 468,
+    "P": 40,
+    "C": 62,
+    "F": 7,
+    "tags": [
+      "breakfast",
+      "high_protein",
+      "quick"
+    ],
+    "ingredients": [
+      "1/2 cup oats",
+      "berries",
+      "whey",
+      "cinnamon"
+    ],
+    "instructions": [
+      "Microwave oats with water or milk 2 minutes.",
+      "Stir in whey.",
+      "Top with berries and cinnamon."
+    ]
+  },
+  {
+    "name": "Salmon Whole-Wheat Pasta Bowl",
+    "meal_type": "lunch",
+    "K": 473,
+    "P": 28,
+    "C": 52,
+    "F": 17,
+    "tags": [
+      "gluten_free",
+      "lunch",
+      "quick"
+    ],
+    "ingredients": [
+      "6 oz salmon",
+      "3/4 cup whole-wheat pasta",
+      "mixed veg: green beans, spinach",
+      "1 tbsp tahini"
+    ],
+    "instructions": [
+      "Warm the carb base.",
+      "Sear or warm salmon until hot.",
+      "Combine in a bowl with veggies.",
+      "Finish with tahini or your favorite sauce."
+    ]
+  },
+  {
+    "name": "Trail Mix (controlled)",
+    "meal_type": "snack",
+    "K": 291,
+    "P": 10,
+    "C": 28,
+    "F": 15,
+    "tags": [
+      "snack",
+      "vegetarian"
+    ],
+    "ingredients": [
+      "1/4 cup mixed nuts",
+      "2 tbsp raisins"
+    ],
+    "instructions": [
+      "Portion and eat mindfully."
+    ]
+  },
+  {
+    "name": "Chicken Breast with Soba Noodles & Carrots, Onion",
+    "meal_type": "dinner",
+    "K": 630,
+    "P": 47,
+    "C": 61,
+    "F": 22,
+    "tags": [
+      "dinner",
+      "gluten_free",
+      "high_protein"
+    ],
+    "ingredients": [
+      "6\u20137 oz chicken breast",
+      "1 cup soba noodles",
+      "carrots, onion",
+      "1 tsp tahini"
+    ],
+    "instructions": [
+      "Cook chicken breast (grill, bake, or saut\u00e9) 6\u201310 minutes until done.",
+      "Prepare soba noodles as directed.",
+      "Plate with vegetables and drizzle oil."
+    ]
+  },
+  {
+    "name": "Protein Oats with Banana",
+    "meal_type": "breakfast",
+    "K": 429,
+    "P": 33,
+    "C": 61,
+    "F": 6,
+    "tags": [
+      "breakfast",
+      "high_protein",
+      "quick"
+    ],
+    "ingredients": [
+      "1/2 cup oats",
+      "banana",
+      "whey",
+      "cinnamon"
+    ],
+    "instructions": [
+      "Microwave oats with water or milk 2 minutes.",
+      "Stir in whey.",
+      "Top with banana and cinnamon."
+    ]
+  },
+  {
+    "name": "Cottage Cheese with Oats & Onion, Bell Peppers",
+    "meal_type": "dinner",
+    "K": 744,
+    "P": 53,
+    "C": 70,
+    "F": 28,
+    "tags": [
+      "dinner",
+      "high_protein"
+    ],
+    "ingredients": [
+      "6\u20137 oz cottage cheese",
+      "1 cup oats",
+      "onion, bell peppers",
+      "1 tsp almonds"
+    ],
+    "instructions": [
+      "Cook cottage cheese (grill, bake, or saut\u00e9) 6\u201310 minutes until done.",
+      "Prepare oats as directed.",
+      "Plate with vegetables and drizzle oil."
+    ]
+  },
+  {
+    "name": "Eggs Quinoa Bowl",
+    "meal_type": "lunch",
+    "K": 436,
+    "P": 26,
+    "C": 47,
+    "F": 16,
+    "tags": [
+      "lunch",
+      "quick"
+    ],
+    "ingredients": [
+      "6 oz eggs",
+      "3/4 cup quinoa",
+      "mixed veg: cabbage, mushrooms",
+      "1 tbsp avocado"
+    ],
+    "instructions": [
+      "Warm the carb base.",
+      "Sear or warm eggs until hot.",
+      "Combine in a bowl with veggies.",
+      "Finish with avocado or your favorite sauce."
+    ]
+  },
+  {
+    "name": "Shrimp with Oats & Kale, Onion",
+    "meal_type": "dinner",
+    "K": 450,
+    "P": 28,
+    "C": 44,
+    "F": 18,
+    "tags": [
+      "dinner",
+      "gluten_free",
+      "low_carb"
+    ],
+    "ingredients": [
+      "6\u20137 oz shrimp",
+      "1 cup oats",
+      "kale, onion",
+      "1 tsp olive oil"
+    ],
+    "instructions": [
+      "Cook shrimp (grill, bake, or saut\u00e9) 6\u201310 minutes until done.",
+      "Prepare oats as directed.",
+      "Plate with vegetables and drizzle oil."
+    ]
+  },
+  {
+    "name": "Tofu with Brown Rice & Broccoli, Onion",
+    "meal_type": "dinner",
+    "K": 475,
+    "P": 30,
+    "C": 46,
+    "F": 19,
+    "tags": [
+      "dairy_free",
+      "dinner",
+      "gluten_free",
+      "vegan",
+      "vegetarian"
+    ],
+    "ingredients": [
+      "6\u20137 oz tofu",
+      "1 cup brown rice",
+      "broccoli, onion",
+      "1 tsp almonds"
+    ],
+    "instructions": [
+      "Cook tofu (grill, bake, or saut\u00e9) 6\u201310 minutes until done.",
+      "Prepare brown rice as directed.",
+      "Plate with vegetables and drizzle oil."
+    ]
+  },
+  {
+    "name": "Veggie Egg Scramble",
+    "meal_type": "breakfast",
+    "K": 411,
+    "P": 37,
+    "C": 28,
+    "F": 17,
+    "tags": [
+      "breakfast",
+      "low_carb",
+      "quick"
+    ],
+    "ingredients": [
+      "3 eggs",
+      "spinach",
+      "mushrooms",
+      "olive oil spray"
+    ],
+    "instructions": [
+      "Saut\u00e9 veggies 2\u20133 min.",
+      "Add beaten eggs; scramble until set."
+    ]
+  },
+  {
+    "name": "Sirloin Steak Farro Bowl",
+    "meal_type": "lunch",
+    "K": 475,
+    "P": 30,
+    "C": 55,
+    "F": 15,
+    "tags": [
+      "gluten_free",
+      "lunch",
+      "quick"
+    ],
+    "ingredients": [
+      "6 oz sirloin steak",
+      "3/4 cup farro",
+      "mixed veg: spinach, tomato",
+      "1 tbsp light cheese"
+    ],
+    "instructions": [
+      "Warm the carb base.",
+      "Sear or warm sirloin steak until hot.",
+      "Combine in a bowl with veggies.",
+      "Finish with light cheese or your favorite sauce."
+    ]
+  },
+  {
+    "name": "Apple + Peanut Butter",
+    "meal_type": "snack",
+    "K": 245,
+    "P": 7,
+    "C": 28,
+    "F": 12,
+    "tags": [
+      "budget",
+      "quick",
+      "snack"
+    ],
+    "ingredients": [
+      "1 apple",
+      "1.5 tbsp peanut butter"
+    ],
+    "instructions": [
+      "Slice apple and dip in PB."
+    ]
+  },
+  {
+    "name": "Shrimp with Oats & Zucchini, Mushrooms",
+    "meal_type": "dinner",
+    "K": 627,
+    "P": 41,
+    "C": 64,
+    "F": 23,
+    "tags": [
+      "dinner",
+      "gluten_free",
+      "low_carb"
+    ],
+    "ingredients": [
+      "6\u20137 oz shrimp",
+      "1 cup oats",
+      "zucchini, mushrooms",
+      "1 tsp light cheese"
+    ],
+    "instructions": [
+      "Cook shrimp (grill, bake, or saut\u00e9) 6\u201310 minutes until done.",
+      "Prepare oats as directed.",
+      "Plate with vegetables and drizzle oil."
+    ]
+  },
+  {
+    "name": "Black Beans Corn Tortillas Bowl",
+    "meal_type": "lunch",
+    "K": 523,
+    "P": 31,
+    "C": 57,
+    "F": 19,
+    "tags": [
+      "dairy_free",
+      "gluten_free",
+      "lunch",
+      "quick",
+      "vegan",
+      "vegetarian"
+    ],
+    "ingredients": [
+      "6 oz black beans",
+      "3/4 cup corn tortillas",
+      "mixed veg: cabbage, tomato",
+      "1 tbsp olive oil"
+    ],
+    "instructions": [
+      "Warm the carb base.",
+      "Sear or warm black beans until hot.",
+      "Combine in a bowl with veggies.",
+      "Finish with olive oil or your favorite sauce."
+    ]
+  },
+  {
+    "name": "Rice Cake + Turkey",
+    "meal_type": "snack",
+    "K": 178,
+    "P": 15,
+    "C": 20,
+    "F": 4,
+    "tags": [
+      "high_protein",
+      "low_carb",
+      "snack"
+    ],
+    "ingredients": [
+      "1 rice cake",
+      "3 oz turkey",
+      "mustard"
+    ],
+    "instructions": [
+      "Layer turkey on rice cake; add mustard."
+    ]
+  },
+  {
+    "name": "Big Protein Smoothie",
+    "meal_type": "breakfast",
+    "K": 355,
+    "P": 32,
+    "C": 41,
+    "F": 7,
+    "tags": [
+      "breakfast",
+      "high_protein",
+      "quick"
+    ],
+    "ingredients": [
+      "2 scoops whey",
+      "1 banana",
+      "peanut butter (1 tbsp)",
+      "milk"
+    ],
+    "instructions": [
+      "Blend all 45\u201360 seconds."
+    ]
+  },
+  {
+    "name": "Chicken Breast Mixed Fruit Bowl",
+    "meal_type": "lunch",
+    "K": 717,
+    "P": 48,
+    "C": 75,
+    "F": 25,
+    "tags": [
+      "gluten_free",
+      "high_protein",
+      "lunch",
+      "quick"
+    ],
+    "ingredients": [
+      "6 oz chicken breast",
+      "3/4 cup mixed fruit",
+      "mixed veg: green beans, asparagus",
+      "1 tbsp olive oil"
+    ],
+    "instructions": [
+      "Warm the carb base.",
+      "Sear or warm chicken breast until hot.",
+      "Combine in a bowl with veggies.",
+      "Finish with olive oil or your favorite sauce."
+    ]
+  },
+  {
+    "name": "Apple + Peanut Butter",
+    "meal_type": "snack",
+    "K": 271,
+    "P": 8,
+    "C": 31,
+    "F": 13,
+    "tags": [
+      "budget",
+      "quick",
+      "snack"
+    ],
+    "ingredients": [
+      "1 apple",
+      "1.5 tbsp peanut butter"
+    ],
+    "instructions": [
+      "Slice apple and dip in PB."
+    ]
+  },
+  {
+    "name": "Egg Whites with Sweet Potato & Onion, Tomato",
+    "meal_type": "dinner",
+    "K": 612,
+    "P": 39,
+    "C": 60,
+    "F": 24,
+    "tags": [
+      "dinner",
+      "low_carb"
+    ],
+    "ingredients": [
+      "6\u20137 oz egg whites",
+      "1 cup sweet potato",
+      "onion, tomato",
+      "1 tsp olive oil"
+    ],
+    "instructions": [
+      "Cook egg whites (grill, bake, or saut\u00e9) 6\u201310 minutes until done.",
+      "Prepare sweet potato as directed.",
+      "Plate with vegetables and drizzle oil."
+    ]
+  },
+  {
+    "name": "Chickpeas Oats Bowl",
+    "meal_type": "lunch",
+    "K": 473,
+    "P": 28,
+    "C": 52,
+    "F": 17,
+    "tags": [
+      "dairy_free",
+      "gluten_free",
+      "lunch",
+      "quick",
+      "vegan",
+      "vegetarian"
+    ],
+    "ingredients": [
+      "6 oz chickpeas",
+      "3/4 cup oats",
+      "mixed veg: tomato, asparagus",
+      "1 tbsp olive oil"
+    ],
+    "instructions": [
+      "Warm the carb base.",
+      "Sear or warm chickpeas until hot.",
+      "Combine in a bowl with veggies.",
+      "Finish with olive oil or your favorite sauce."
+    ]
+  },
+  {
+    "name": "Hummus + Carrots",
+    "meal_type": "snack",
+    "K": 192,
+    "P": 6,
+    "C": 21,
+    "F": 9,
+    "tags": [
+      "budget",
+      "dairy_free",
+      "snack",
+      "vegan"
+    ],
+    "ingredients": [
+      "1/4 cup hummus",
+      "1 cup carrots"
+    ],
+    "instructions": [
+      "Dip and enjoy."
+    ]
+  },
+  {
+    "name": "Shrimp with Whole-Wheat Pasta & Mushrooms, Bell Peppers",
+    "meal_type": "dinner",
+    "K": 627,
+    "P": 41,
+    "C": 64,
+    "F": 23,
+    "tags": [
+      "dinner",
+      "gluten_free",
+      "low_carb"
+    ],
+    "ingredients": [
+      "6\u20137 oz shrimp",
+      "1 cup whole-wheat pasta",
+      "mushrooms, bell peppers",
+      "1 tsp peanut butter"
+    ],
+    "instructions": [
+      "Cook shrimp (grill, bake, or saut\u00e9) 6\u201310 minutes until done.",
+      "Prepare whole-wheat pasta as directed.",
+      "Plate with vegetables and drizzle oil."
+    ]
+  },
+  {
+    "name": "Veggie Egg Scramble",
+    "meal_type": "breakfast",
+    "K": 303,
+    "P": 27,
+    "C": 21,
+    "F": 12,
+    "tags": [
+      "breakfast",
+      "low_carb",
+      "quick"
+    ],
+    "ingredients": [
+      "3 eggs",
+      "spinach",
+      "mushrooms",
+      "olive oil spray"
+    ],
+    "instructions": [
+      "Saut\u00e9 veggies 2\u20133 min.",
+      "Add beaten eggs; scramble until set."
+    ]
+  },
+  {
+    "name": "Seitan with Mixed Fruit & Green Beans, Onion",
+    "meal_type": "dinner",
+    "K": 662,
+    "P": 42,
+    "C": 65,
+    "F": 26,
+    "tags": [
+      "dinner",
+      "vegan",
+      "vegetarian"
+    ],
+    "ingredients": [
+      "6\u20137 oz seitan",
+      "1 cup mixed fruit",
+      "green beans, onion",
+      "1 tsp olive oil"
+    ],
+    "instructions": [
+      "Cook seitan (grill, bake, or saut\u00e9) 6\u201310 minutes until done.",
+      "Prepare mixed fruit as directed.",
+      "Plate with vegetables and drizzle oil."
+    ]
+  },
+  {
+    "name": "Hummus + Carrots",
+    "meal_type": "snack",
+    "K": 226,
+    "P": 7,
+    "C": 25,
+    "F": 11,
+    "tags": [
+      "budget",
+      "dairy_free",
+      "snack",
+      "vegan"
+    ],
+    "ingredients": [
+      "1/4 cup hummus",
+      "1 cup carrots"
+    ],
+    "instructions": [
+      "Dip and enjoy."
+    ]
+  },
+  {
+    "name": "Greek Yogurt 0% Mixed Fruit Bowl",
+    "meal_type": "lunch",
+    "K": 630,
+    "P": 42,
+    "C": 66,
+    "F": 22,
+    "tags": [
+      "high_protein",
+      "lunch",
+      "quick"
+    ],
+    "ingredients": [
+      "6 oz greek yogurt 0%",
+      "3/4 cup mixed fruit",
+      "mixed veg: mushrooms, tomato",
+      "1 tbsp olive oil"
+    ],
+    "instructions": [
+      "Warm the carb base.",
+      "Sear or warm greek yogurt 0% until hot.",
+      "Combine in a bowl with veggies.",
+      "Finish with olive oil or your favorite sauce."
+    ]
+  },
+  {
+    "name": "Hummus + Carrots",
+    "meal_type": "snack",
+    "K": 199,
+    "P": 6,
+    "C": 22,
+    "F": 10,
+    "tags": [
+      "budget",
+      "dairy_free",
+      "snack",
+      "vegan"
+    ],
+    "ingredients": [
+      "1/4 cup hummus",
+      "1 cup carrots"
+    ],
+    "instructions": [
+      "Dip and enjoy."
+    ]
+  },
+  {
+    "name": "Greek Yogurt Power Bowl",
+    "meal_type": "breakfast",
+    "K": 384,
+    "P": 33,
+    "C": 46,
+    "F": 8,
+    "tags": [
+      "breakfast",
+      "high_protein",
+      "quick"
+    ],
+    "ingredients": [
+      "2 cups 0% Greek yogurt",
+      "berries",
+      "granola (light)",
+      "honey"
+    ],
+    "instructions": [
+      "Add yogurt to bowl.",
+      "Top with berries and granola.",
+      "Drizzle a little honey."
+    ]
+  },
+  {
+    "name": "Lentils with Corn Tortillas & Mushrooms, Carrots",
+    "meal_type": "dinner",
+    "K": 595,
+    "P": 38,
+    "C": 59,
+    "F": 23,
+    "tags": [
+      "dairy_free",
+      "dinner",
+      "gluten_free",
+      "vegan",
+      "vegetarian"
+    ],
+    "ingredients": [
+      "6\u20137 oz lentils",
+      "1 cup corn tortillas",
+      "mushrooms, carrots",
+      "1 tsp avocado"
+    ],
+    "instructions": [
+      "Cook lentils (grill, bake, or saut\u00e9) 6\u201310 minutes until done.",
+      "Prepare corn tortillas as directed.",
+      "Plate with vegetables and drizzle oil."
+    ]
+  },
+  {
+    "name": "Apple + Peanut Butter",
+    "meal_type": "snack",
+    "K": 278,
+    "P": 8,
+    "C": 31,
+    "F": 14,
+    "tags": [
+      "budget",
+      "quick",
+      "snack"
+    ],
+    "ingredients": [
+      "1 apple",
+      "1.5 tbsp peanut butter"
+    ],
+    "instructions": [
+      "Slice apple and dip in PB."
+    ]
+  },
+  {
+    "name": "Black Beans Rice Cakes Bowl",
+    "meal_type": "lunch",
+    "K": 473,
+    "P": 28,
+    "C": 52,
+    "F": 17,
+    "tags": [
+      "dairy_free",
+      "gluten_free",
+      "lunch",
+      "quick",
+      "vegan",
+      "vegetarian"
+    ],
+    "ingredients": [
+      "6 oz black beans",
+      "3/4 cup rice cakes",
+      "mixed veg: spinach, kale",
+      "1 tbsp avocado"
+    ],
+    "instructions": [
+      "Warm the carb base.",
+      "Sear or warm black beans until hot.",
+      "Combine in a bowl with veggies.",
+      "Finish with avocado or your favorite sauce."
+    ]
+  },
+  {
+    "name": "Lean Ground Turkey Farro Bowl",
+    "meal_type": "lunch",
+    "K": 501,
+    "P": 34,
+    "C": 53,
+    "F": 17,
+    "tags": [
+      "gluten_free",
+      "high_protein",
+      "lunch",
+      "quick"
+    ],
+    "ingredients": [
+      "6 oz lean ground turkey",
+      "3/4 cup farro",
+      "mixed veg: spinach, tomato",
+      "1 tbsp avocado"
+    ],
+    "instructions": [
+      "Warm the carb base.",
+      "Sear or warm lean ground turkey until hot.",
+      "Combine in a bowl with veggies.",
+      "Finish with avocado or your favorite sauce."
+    ]
+  },
+  {
+    "name": "Protein Oats with Berries",
+    "meal_type": "breakfast",
+    "K": 476,
+    "P": 32,
+    "C": 70,
+    "F": 8,
+    "tags": [
+      "breakfast",
+      "high_protein",
+      "quick"
+    ],
+    "ingredients": [
+      "1/2 cup oats",
+      "berries",
+      "egg whites",
+      "cinnamon"
+    ],
+    "instructions": [
+      "Microwave oats with water or milk 2 minutes.",
+      "Stir in egg whites.",
+      "Top with berries and cinnamon."
+    ]
+  },
+  {
+    "name": "Tofu with Whole-Wheat Pasta & Asparagus, Mushrooms",
+    "meal_type": "dinner",
+    "K": 565,
+    "P": 37,
+    "C": 57,
+    "F": 21,
+    "tags": [
+      "dairy_free",
+      "dinner",
+      "gluten_free",
+      "vegan",
+      "vegetarian"
+    ],
+    "ingredients": [
+      "6\u20137 oz tofu",
+      "1 cup whole-wheat pasta",
+      "asparagus, mushrooms",
+      "1 tsp peanut butter"
+    ],
+    "instructions": [
+      "Cook tofu (grill, bake, or saut\u00e9) 6\u201310 minutes until done.",
+      "Prepare whole-wheat pasta as directed.",
+      "Plate with vegetables and drizzle oil."
+    ]
+  },
+  {
+    "name": "Seitan Whole-Wheat Pasta Bowl",
+    "meal_type": "lunch",
+    "K": 644,
+    "P": 41,
+    "C": 75,
+    "F": 20,
+    "tags": [
+      "lunch",
+      "quick",
+      "vegan",
+      "vegetarian"
+    ],
+    "ingredients": [
+      "6 oz seitan",
+      "3/4 cup whole-wheat pasta",
+      "mixed veg: tomato, kale",
+      "1 tbsp light cheese"
+    ],
+    "instructions": [
+      "Warm the carb base.",
+      "Sear or warm seitan until hot.",
+      "Combine in a bowl with veggies.",
+      "Finish with light cheese or your favorite sauce."
+    ]
+  },
+  {
+    "name": "Lentils with Quinoa & Kale, Mushrooms",
+    "meal_type": "dinner",
+    "K": 458,
+    "P": 29,
+    "C": 45,
+    "F": 18,
+    "tags": [
+      "dairy_free",
+      "dinner",
+      "gluten_free",
+      "vegan",
+      "vegetarian"
+    ],
+    "ingredients": [
+      "6\u20137 oz lentils",
+      "1 cup quinoa",
+      "kale, mushrooms",
+      "1 tsp olive oil"
+    ],
+    "instructions": [
+      "Cook lentils (grill, bake, or saut\u00e9) 6\u201310 minutes until done.",
+      "Prepare quinoa as directed.",
+      "Plate with vegetables and drizzle oil."
+    ]
+  },
+  {
+    "name": "Protein Oats with Banana",
+    "meal_type": "breakfast",
+    "K": 370,
+    "P": 23,
+    "C": 58,
+    "F": 5,
+    "tags": [
+      "breakfast",
+      "high_protein",
+      "quick"
+    ],
+    "ingredients": [
+      "1/2 cup oats",
+      "banana",
+      "egg whites",
+      "cinnamon"
+    ],
+    "instructions": [
+      "Microwave oats with water or milk 2 minutes.",
+      "Stir in egg whites.",
+      "Top with banana and cinnamon."
+    ]
+  },
+  {
+    "name": "Eggs with Sweet Potato & Mushrooms, Asparagus",
+    "meal_type": "dinner",
+    "K": 712,
+    "P": 45,
+    "C": 70,
+    "F": 28,
+    "tags": [
+      "dinner"
+    ],
+    "ingredients": [
+      "6\u20137 oz eggs",
+      "1 cup sweet potato",
+      "mushrooms, asparagus",
+      "1 tsp avocado"
+    ],
+    "instructions": [
+      "Cook eggs (grill, bake, or saut\u00e9) 6\u201310 minutes until done.",
+      "Prepare sweet potato as directed.",
+      "Plate with vegetables and drizzle oil."
+    ]
+  },
+  {
+    "name": "Big Protein Smoothie",
+    "meal_type": "breakfast",
+    "K": 506,
+    "P": 45,
+    "C": 58,
+    "F": 10,
+    "tags": [
+      "breakfast",
+      "high_protein",
+      "quick"
+    ],
+    "ingredients": [
+      "2 scoops whey",
+      "1 banana",
+      "peanut butter (1 tbsp)",
+      "milk"
+    ],
+    "instructions": [
+      "Blend all 45\u201360 seconds."
+    ]
+  },
+  {
+    "name": "Chicken Breast with Mixed Fruit & Mushrooms, Onion",
+    "meal_type": "dinner",
+    "K": 511,
+    "P": 37,
+    "C": 48,
+    "F": 19,
+    "tags": [
+      "dinner",
+      "gluten_free",
+      "high_protein"
+    ],
+    "ingredients": [
+      "6\u20137 oz chicken breast",
+      "1 cup mixed fruit",
+      "mushrooms, onion",
+      "1 tsp olive oil"
+    ],
+    "instructions": [
+      "Cook chicken breast (grill, bake, or saut\u00e9) 6\u201310 minutes until done.",
+      "Prepare mixed fruit as directed.",
+      "Plate with vegetables and drizzle oil."
+    ]
+  },
+  {
+    "name": "Greek Yogurt Power Bowl",
+    "meal_type": "breakfast",
+    "K": 256,
+    "P": 22,
+    "C": 30,
+    "F": 5,
+    "tags": [
+      "breakfast",
+      "high_protein",
+      "quick"
+    ],
+    "ingredients": [
+      "2 cups 0% Greek yogurt",
+      "berries",
+      "granola (light)",
+      "honey"
+    ],
+    "instructions": [
+      "Add yogurt to bowl.",
+      "Top with berries and granola.",
+      "Drizzle a little honey."
+    ]
+  },
+  {
+    "name": "Chicken Breast with Brown Rice & Zucchini, Bell Peppers",
+    "meal_type": "dinner",
+    "K": 723,
+    "P": 52,
+    "C": 68,
+    "F": 27,
+    "tags": [
+      "dinner",
+      "gluten_free",
+      "high_protein"
+    ],
+    "ingredients": [
+      "6\u20137 oz chicken breast",
+      "1 cup brown rice",
+      "zucchini, bell peppers",
+      "1 tsp avocado"
+    ],
+    "instructions": [
+      "Cook chicken breast (grill, bake, or saut\u00e9) 6\u201310 minutes until done.",
+      "Prepare brown rice as directed.",
+      "Plate with vegetables and drizzle oil."
+    ]
+  },
+  {
+    "name": "Greek Yogurt 0% with Oats & Asparagus, Carrots",
+    "meal_type": "dinner",
+    "K": 493,
+    "P": 37,
+    "C": 48,
+    "F": 17,
+    "tags": [
+      "dinner",
+      "high_protein"
+    ],
+    "ingredients": [
+      "6\u20137 oz greek yogurt 0%",
+      "1 cup oats",
+      "asparagus, carrots",
+      "1 tsp peanut butter"
+    ],
+    "instructions": [
+      "Cook greek yogurt 0% (grill, bake, or saut\u00e9) 6\u201310 minutes until done.",
+      "Prepare oats as directed.",
+      "Plate with vegetables and drizzle oil."
+    ]
+  },
+  {
+    "name": "Black Beans Soba Noodles Bowl",
+    "meal_type": "lunch",
+    "K": 471,
+    "P": 30,
+    "C": 54,
+    "F": 15,
+    "tags": [
+      "dairy_free",
+      "gluten_free",
+      "lunch",
+      "quick",
+      "vegan",
+      "vegetarian"
+    ],
+    "ingredients": [
+      "6 oz black beans",
+      "3/4 cup soba noodles",
+      "mixed veg: bell peppers, mushrooms",
+      "1 tbsp light cheese"
+    ],
+    "instructions": [
+      "Warm the carb base.",
+      "Sear or warm black beans until hot.",
+      "Combine in a bowl with veggies.",
+      "Finish with light cheese or your favorite sauce."
+    ]
+  },
+  {
+    "name": "Greek Yogurt 0% with Brown Rice & Mushrooms, Green Beans",
+    "meal_type": "dinner",
+    "K": 439,
+    "P": 33,
+    "C": 43,
+    "F": 15,
+    "tags": [
+      "dinner",
+      "high_protein"
+    ],
+    "ingredients": [
+      "6\u20137 oz greek yogurt 0%",
+      "1 cup brown rice",
+      "mushrooms, green beans",
+      "1 tsp peanut butter"
+    ],
+    "instructions": [
+      "Cook greek yogurt 0% (grill, bake, or saut\u00e9) 6\u201310 minutes until done.",
+      "Prepare brown rice as directed.",
+      "Plate with vegetables and drizzle oil."
+    ]
+  },
+  {
+    "name": "Salmon Oats Bowl",
+    "meal_type": "lunch",
+    "K": 597,
+    "P": 36,
+    "C": 66,
+    "F": 21,
+    "tags": [
+      "gluten_free",
+      "lunch",
+      "quick"
+    ],
+    "ingredients": [
+      "6 oz salmon",
+      "3/4 cup oats",
+      "mixed veg: tomato, spinach",
+      "1 tbsp olive oil"
+    ],
+    "instructions": [
+      "Warm the carb base.",
+      "Sear or warm salmon until hot.",
+      "Combine in a bowl with veggies.",
+      "Finish with olive oil or your favorite sauce."
+    ]
+  },
+  {
+    "name": "Tofu with Rice Cakes & Broccoli, Cabbage",
+    "meal_type": "dinner",
+    "K": 598,
+    "P": 39,
+    "C": 61,
+    "F": 22,
+    "tags": [
+      "dairy_free",
+      "dinner",
+      "gluten_free",
+      "vegan",
+      "vegetarian"
+    ],
+    "ingredients": [
+      "6\u20137 oz tofu",
+      "1 cup rice cakes",
+      "broccoli, cabbage",
+      "1 tsp tahini"
+    ],
+    "instructions": [
+      "Cook tofu (grill, bake, or saut\u00e9) 6\u201310 minutes until done.",
+      "Prepare rice cakes as directed.",
+      "Plate with vegetables and drizzle oil."
+    ]
+  },
+  {
+    "name": "Cottage Cheese + Pineapple",
+    "meal_type": "snack",
+    "K": 250,
+    "P": 26,
+    "C": 24,
+    "F": 6,
+    "tags": [
+      "high_protein",
+      "snack"
+    ],
+    "ingredients": [
+      "1 cup cottage cheese",
+      "1/2 cup pineapple"
+    ],
+    "instructions": [
+      "Combine and serve."
+    ]
+  },
+  {
+    "name": "Salmon with Soba Noodles & Green Beans, Zucchini",
+    "meal_type": "dinner",
+    "K": 498,
+    "P": 33,
+    "C": 51,
+    "F": 18,
+    "tags": [
+      "dinner",
+      "gluten_free"
+    ],
+    "ingredients": [
+      "6\u20137 oz salmon",
+      "1 cup soba noodles",
+      "green beans, zucchini",
+      "1 tsp tahini"
+    ],
+    "instructions": [
+      "Cook salmon (grill, bake, or saut\u00e9) 6\u201310 minutes until done.",
+      "Prepare soba noodles as directed.",
+      "Plate with vegetables and drizzle oil."
+    ]
+  },
+  {
+    "name": "Shrimp Quinoa Bowl",
+    "meal_type": "lunch",
+    "K": 481,
+    "P": 29,
+    "C": 53,
+    "F": 17,
+    "tags": [
+      "gluten_free",
+      "low_carb",
+      "lunch",
+      "quick"
+    ],
+    "ingredients": [
+      "6 oz shrimp",
+      "3/4 cup quinoa",
+      "mixed veg: tomato, bell peppers",
+      "1 tbsp tahini"
+    ],
+    "instructions": [
+      "Warm the carb base.",
+      "Sear or warm shrimp until hot.",
+      "Combine in a bowl with veggies.",
+      "Finish with tahini or your favorite sauce."
+    ]
+  },
+  {
+    "name": "Cottage Cheese + Pineapple",
+    "meal_type": "snack",
+    "K": 200,
+    "P": 21,
+    "C": 19,
+    "F": 4,
+    "tags": [
+      "high_protein",
+      "snack"
+    ],
+    "ingredients": [
+      "1 cup cottage cheese",
+      "1/2 cup pineapple"
+    ],
+    "instructions": [
+      "Combine and serve."
+    ]
+  },
+  {
+    "name": "Big Protein Smoothie",
+    "meal_type": "breakfast",
+    "K": 477,
+    "P": 43,
+    "C": 55,
+    "F": 9,
+    "tags": [
+      "breakfast",
+      "high_protein",
+      "quick"
+    ],
+    "ingredients": [
+      "2 scoops whey",
+      "1 banana",
+      "peanut butter (1 tbsp)",
+      "milk"
+    ],
+    "instructions": [
+      "Blend all 45\u201360 seconds."
+    ]
+  },
+  {
+    "name": "Veggie Egg Scramble",
+    "meal_type": "breakfast",
+    "K": 291,
+    "P": 26,
+    "C": 20,
+    "F": 12,
+    "tags": [
+      "breakfast",
+      "low_carb",
+      "quick"
+    ],
+    "ingredients": [
+      "3 eggs",
+      "spinach",
+      "mushrooms",
+      "olive oil spray"
+    ],
+    "instructions": [
+      "Saut\u00e9 veggies 2\u20133 min.",
+      "Add beaten eggs; scramble until set."
+    ]
+  },
+  {
+    "name": "Cottage Cheese + Pineapple",
+    "meal_type": "snack",
+    "K": 226,
+    "P": 24,
+    "C": 22,
+    "F": 5,
+    "tags": [
+      "high_protein",
+      "snack"
+    ],
+    "ingredients": [
+      "1 cup cottage cheese",
+      "1/2 cup pineapple"
+    ],
+    "instructions": [
+      "Combine and serve."
+    ]
+  },
+  {
+    "name": "Seitan Sweet Potato Bowl",
+    "meal_type": "lunch",
+    "K": 556,
+    "P": 33,
+    "C": 61,
+    "F": 20,
+    "tags": [
+      "lunch",
+      "quick",
+      "vegan",
+      "vegetarian"
+    ],
+    "ingredients": [
+      "6 oz seitan",
+      "3/4 cup sweet potato",
+      "mixed veg: mushrooms, spinach",
+      "1 tbsp peanut butter"
+    ],
+    "instructions": [
+      "Warm the carb base.",
+      "Sear or warm seitan until hot.",
+      "Combine in a bowl with veggies.",
+      "Finish with peanut butter or your favorite sauce."
+    ]
+  },
+  {
+    "name": "Rice Cake + Turkey",
+    "meal_type": "snack",
+    "K": 150,
+    "P": 13,
+    "C": 16,
+    "F": 4,
+    "tags": [
+      "high_protein",
+      "low_carb",
+      "snack"
+    ],
+    "ingredients": [
+      "1 rice cake",
+      "3 oz turkey",
+      "mustard"
+    ],
+    "instructions": [
+      "Layer turkey on rice cake; add mustard."
+    ]
+  },
+  {
+    "name": "Greek Yogurt Power Bowl",
+    "meal_type": "breakfast",
+    "K": 277,
+    "P": 24,
+    "C": 33,
+    "F": 5,
+    "tags": [
+      "breakfast",
+      "high_protein",
+      "quick"
+    ],
+    "ingredients": [
+      "2 cups 0% Greek yogurt",
+      "berries",
+      "granola (light)",
+      "honey"
+    ],
+    "instructions": [
+      "Add yogurt to bowl.",
+      "Top with berries and granola.",
+      "Drizzle a little honey."
+    ]
+  },
+  {
+    "name": "Apple + Peanut Butter",
+    "meal_type": "snack",
+    "K": 218,
+    "P": 6,
+    "C": 25,
+    "F": 10,
+    "tags": [
+      "budget",
+      "quick",
+      "snack"
+    ],
+    "ingredients": [
+      "1 apple",
+      "1.5 tbsp peanut butter"
+    ],
+    "instructions": [
+      "Slice apple and dip in PB."
+    ]
+  },
+  {
+    "name": "Tofu with Sweet Potato & Tomato, Onion",
+    "meal_type": "dinner",
+    "K": 462,
+    "P": 29,
+    "C": 46,
+    "F": 18,
+    "tags": [
+      "dairy_free",
+      "dinner",
+      "gluten_free",
+      "vegan",
+      "vegetarian"
+    ],
+    "ingredients": [
+      "6\u20137 oz tofu",
+      "1 cup sweet potato",
+      "tomato, onion",
+      "1 tsp avocado"
+    ],
+    "instructions": [
+      "Cook tofu (grill, bake, or saut\u00e9) 6\u201310 minutes until done.",
+      "Prepare sweet potato as directed.",
+      "Plate with vegetables and drizzle oil."
+    ]
+  },
+  {
+    "name": "Greek Yogurt Power Bowl",
+    "meal_type": "breakfast",
+    "K": 327,
+    "P": 28,
+    "C": 39,
+    "F": 7,
+    "tags": [
+      "breakfast",
+      "high_protein",
+      "quick"
+    ],
+    "ingredients": [
+      "2 cups 0% Greek yogurt",
+      "berries",
+      "granola (light)",
+      "honey"
+    ],
+    "instructions": [
+      "Add yogurt to bowl.",
+      "Top with berries and granola.",
+      "Drizzle a little honey."
+    ]
+  },
+  {
+    "name": "Protein Shake",
+    "meal_type": "snack",
+    "K": 160,
+    "P": 23,
+    "C": 6,
+    "F": 5,
+    "tags": [
+      "high_protein",
+      "quick",
+      "snack"
+    ],
+    "ingredients": [
+      "1 scoop whey",
+      "water or milk"
+    ],
+    "instructions": [
+      "Shake or blend."
+    ]
+  },
+  {
+    "name": "Protein Oats with Banana",
+    "meal_type": "breakfast",
+    "K": 460,
+    "P": 36,
+    "C": 65,
+    "F": 6,
+    "tags": [
+      "breakfast",
+      "high_protein",
+      "quick"
+    ],
+    "ingredients": [
+      "1/2 cup oats",
+      "banana",
+      "whey",
+      "cinnamon"
+    ],
+    "instructions": [
+      "Microwave oats with water or milk 2 minutes.",
+      "Stir in whey.",
+      "Top with banana and cinnamon."
+    ]
+  },
+  {
+    "name": "Veggie Egg Scramble",
+    "meal_type": "breakfast",
+    "K": 368,
+    "P": 33,
+    "C": 25,
+    "F": 15,
+    "tags": [
+      "breakfast",
+      "low_carb",
+      "quick"
+    ],
+    "ingredients": [
+      "3 eggs",
+      "spinach",
+      "mushrooms",
+      "olive oil spray"
+    ],
+    "instructions": [
+      "Saut\u00e9 veggies 2\u20133 min.",
+      "Add beaten eggs; scramble until set."
+    ]
+  },
+  {
+    "name": "Black Beans Oats Bowl",
+    "meal_type": "lunch",
+    "K": 442,
+    "P": 28,
+    "C": 51,
+    "F": 14,
+    "tags": [
+      "dairy_free",
+      "gluten_free",
+      "lunch",
+      "quick",
+      "vegan",
+      "vegetarian"
+    ],
+    "ingredients": [
+      "6 oz black beans",
+      "3/4 cup oats",
+      "mixed veg: asparagus, carrots",
+      "1 tbsp light cheese"
+    ],
+    "instructions": [
+      "Warm the carb base.",
+      "Sear or warm black beans until hot.",
+      "Combine in a bowl with veggies.",
+      "Finish with light cheese or your favorite sauce."
+    ]
+  },
+  {
+    "name": "Veggie Egg Scramble",
+    "meal_type": "breakfast",
+    "K": 303,
+    "P": 27,
+    "C": 21,
+    "F": 12,
+    "tags": [
+      "breakfast",
+      "low_carb",
+      "quick"
+    ],
+    "ingredients": [
+      "3 eggs",
+      "spinach",
+      "mushrooms",
+      "olive oil spray"
+    ],
+    "instructions": [
+      "Saut\u00e9 veggies 2\u20133 min.",
+      "Add beaten eggs; scramble until set."
+    ]
+  },
+  {
+    "name": "Chicken Breast Quinoa Bowl",
+    "meal_type": "lunch",
+    "K": 659,
+    "P": 44,
+    "C": 69,
+    "F": 23,
+    "tags": [
+      "gluten_free",
+      "high_protein",
+      "lunch",
+      "quick"
+    ],
+    "ingredients": [
+      "6 oz chicken breast",
+      "3/4 cup quinoa",
+      "mixed veg: mushrooms, tomato",
+      "1 tbsp peanut butter"
+    ],
+    "instructions": [
+      "Warm the carb base.",
+      "Sear or warm chicken breast until hot.",
+      "Combine in a bowl with veggies.",
+      "Finish with peanut butter or your favorite sauce."
+    ]
+  },
+  {
+    "name": "Veggie Egg Scramble",
+    "meal_type": "breakfast",
+    "K": 250,
+    "P": 22,
+    "C": 17,
+    "F": 10,
+    "tags": [
+      "breakfast",
+      "low_carb",
+      "quick"
+    ],
+    "ingredients": [
+      "3 eggs",
+      "spinach",
+      "mushrooms",
+      "olive oil spray"
+    ],
+    "instructions": [
+      "Saut\u00e9 veggies 2\u20133 min.",
+      "Add beaten eggs; scramble until set."
+    ]
+  },
+  {
+    "name": "Lean Ground Turkey Farro Bowl",
+    "meal_type": "lunch",
+    "K": 630,
+    "P": 42,
+    "C": 66,
+    "F": 22,
+    "tags": [
+      "gluten_free",
+      "high_protein",
+      "lunch",
+      "quick"
+    ],
+    "ingredients": [
+      "6 oz lean ground turkey",
+      "3/4 cup farro",
+      "mixed veg: bell peppers, mushrooms",
+      "1 tbsp avocado"
+    ],
+    "instructions": [
+      "Warm the carb base.",
+      "Sear or warm lean ground turkey until hot.",
+      "Combine in a bowl with veggies.",
+      "Finish with avocado or your favorite sauce."
+    ]
+  },
+  {
+    "name": "Eggs Corn Tortillas Bowl",
+    "meal_type": "lunch",
+    "K": 693,
+    "P": 41,
+    "C": 76,
+    "F": 25,
+    "tags": [
+      "lunch",
+      "quick"
+    ],
+    "ingredients": [
+      "6 oz eggs",
+      "3/4 cup corn tortillas",
+      "mixed veg: zucchini, onion",
+      "1 tbsp olive oil"
+    ],
+    "instructions": [
+      "Warm the carb base.",
+      "Sear or warm eggs until hot.",
+      "Combine in a bowl with veggies.",
+      "Finish with olive oil or your favorite sauce."
+    ]
+  },
+  {
+    "name": "Protein Oats with Berries",
+    "meal_type": "breakfast",
+    "K": 389,
+    "P": 33,
+    "C": 52,
+    "F": 5,
+    "tags": [
+      "breakfast",
+      "high_protein",
+      "quick"
+    ],
+    "ingredients": [
+      "1/2 cup oats",
+      "berries",
+      "whey",
+      "cinnamon"
+    ],
+    "instructions": [
+      "Microwave oats with water or milk 2 minutes.",
+      "Stir in whey.",
+      "Top with berries and cinnamon."
+    ]
+  },
+  {
+    "name": "Veggie Egg Scramble",
+    "meal_type": "breakfast",
+    "K": 289,
+    "P": 26,
+    "C": 20,
+    "F": 12,
+    "tags": [
+      "breakfast",
+      "low_carb",
+      "quick"
+    ],
+    "ingredients": [
+      "3 eggs",
+      "spinach",
+      "mushrooms",
+      "olive oil spray"
+    ],
+    "instructions": [
+      "Saut\u00e9 veggies 2\u20133 min.",
+      "Add beaten eggs; scramble until set."
+    ]
+  },
+  {
+    "name": "Protein Oats with Berries",
+    "meal_type": "breakfast",
+    "K": 521,
+    "P": 44,
+    "C": 69,
+    "F": 8,
+    "tags": [
+      "breakfast",
+      "high_protein",
+      "quick"
+    ],
+    "ingredients": [
+      "1/2 cup oats",
+      "berries",
+      "whey",
+      "cinnamon"
+    ],
+    "instructions": [
+      "Microwave oats with water or milk 2 minutes.",
+      "Stir in whey.",
+      "Top with berries and cinnamon."
+    ]
+  },
+  {
+    "name": "Chicken Breast with Sweet Potato & Broccoli, Zucchini",
+    "meal_type": "dinner",
+    "K": 661,
+    "P": 47,
+    "C": 62,
+    "F": 25,
+    "tags": [
+      "dinner",
+      "gluten_free",
+      "high_protein"
+    ],
+    "ingredients": [
+      "6\u20137 oz chicken breast",
+      "1 cup sweet potato",
+      "broccoli, zucchini",
+      "1 tsp avocado"
+    ],
+    "instructions": [
+      "Cook chicken breast (grill, bake, or saut\u00e9) 6\u201310 minutes until done.",
+      "Prepare sweet potato as directed.",
+      "Plate with vegetables and drizzle oil."
+    ]
+  },
+  {
+    "name": "Big Protein Smoothie",
+    "meal_type": "breakfast",
+    "K": 340,
+    "P": 30,
+    "C": 39,
+    "F": 7,
+    "tags": [
+      "breakfast",
+      "high_protein",
+      "quick"
+    ],
+    "ingredients": [
+      "2 scoops whey",
+      "1 banana",
+      "peanut butter (1 tbsp)",
+      "milk"
+    ],
+    "instructions": [
+      "Blend all 45\u201360 seconds."
+    ]
+  },
+  {
+    "name": "Greek Yogurt 0% Corn Tortillas Bowl",
+    "meal_type": "lunch",
+    "K": 615,
+    "P": 43,
+    "C": 68,
+    "F": 19,
+    "tags": [
+      "high_protein",
+      "lunch",
+      "quick"
+    ],
+    "ingredients": [
+      "6 oz greek yogurt 0%",
+      "3/4 cup corn tortillas",
+      "mixed veg: green beans, tomato",
+      "1 tbsp light cheese"
+    ],
+    "instructions": [
+      "Warm the carb base.",
+      "Sear or warm greek yogurt 0% until hot.",
+      "Combine in a bowl with veggies.",
+      "Finish with light cheese or your favorite sauce."
+    ]
+  },
+  {
+    "name": "Eggs Soba Noodles Bowl",
+    "meal_type": "lunch",
+    "K": 672,
+    "P": 40,
+    "C": 74,
+    "F": 24,
+    "tags": [
+      "lunch",
+      "quick"
+    ],
+    "ingredients": [
+      "6 oz eggs",
+      "3/4 cup soba noodles",
+      "mixed veg: tomato, asparagus",
+      "1 tbsp peanut butter"
+    ],
+    "instructions": [
+      "Warm the carb base.",
+      "Sear or warm eggs until hot.",
+      "Combine in a bowl with veggies.",
+      "Finish with peanut butter or your favorite sauce."
+    ]
+  },
+  {
+    "name": "Veggie Egg Scramble",
+    "meal_type": "breakfast",
+    "K": 411,
+    "P": 37,
+    "C": 28,
+    "F": 17,
+    "tags": [
+      "breakfast",
+      "low_carb",
+      "quick"
+    ],
+    "ingredients": [
+      "3 eggs",
+      "spinach",
+      "mushrooms",
+      "olive oil spray"
+    ],
+    "instructions": [
+      "Saut\u00e9 veggies 2\u20133 min.",
+      "Add beaten eggs; scramble until set."
+    ]
+  },
+  {
+    "name": "Protein Oats with Banana",
+    "meal_type": "breakfast",
+    "K": 413,
+    "P": 32,
+    "C": 59,
+    "F": 5,
+    "tags": [
+      "breakfast",
+      "high_protein",
+      "quick"
+    ],
+    "ingredients": [
+      "1/2 cup oats",
+      "banana",
+      "whey",
+      "cinnamon"
+    ],
+    "instructions": [
+      "Microwave oats with water or milk 2 minutes.",
+      "Stir in whey.",
+      "Top with banana and cinnamon."
+    ]
+  },
+  {
+    "name": "Protein Shake",
+    "meal_type": "snack",
+    "K": 154,
+    "P": 22,
+    "C": 6,
+    "F": 5,
+    "tags": [
+      "high_protein",
+      "quick",
+      "snack"
+    ],
+    "ingredients": [
+      "1 scoop whey",
+      "water or milk"
+    ],
+    "instructions": [
+      "Shake or blend."
+    ]
+  },
+  {
+    "name": "Greek Yogurt 0% with Quinoa & Bell Peppers, Spinach",
+    "meal_type": "dinner",
+    "K": 688,
+    "P": 51,
+    "C": 67,
+    "F": 24,
+    "tags": [
+      "dinner",
+      "high_protein"
+    ],
+    "ingredients": [
+      "6\u20137 oz greek yogurt 0%",
+      "1 cup quinoa",
+      "bell peppers, spinach",
+      "1 tsp tahini"
+    ],
+    "instructions": [
+      "Cook greek yogurt 0% (grill, bake, or saut\u00e9) 6\u201310 minutes until done.",
+      "Prepare quinoa as directed.",
+      "Plate with vegetables and drizzle oil."
+    ]
+  },
+  {
+    "name": "Cod Quinoa Bowl",
+    "meal_type": "lunch",
+    "K": 481,
+    "P": 29,
+    "C": 53,
+    "F": 17,
+    "tags": [
+      "gluten_free",
+      "low_carb",
+      "lunch",
+      "quick"
+    ],
+    "ingredients": [
+      "6 oz cod",
+      "3/4 cup quinoa",
+      "mixed veg: carrots, onion",
+      "1 tbsp avocado"
+    ],
+    "instructions": [
+      "Warm the carb base.",
+      "Sear or warm cod until hot.",
+      "Combine in a bowl with veggies.",
+      "Finish with avocado or your favorite sauce."
+    ]
+  },
+  {
+    "name": "Eggs Sweet Potato Bowl",
+    "meal_type": "lunch",
+    "K": 697,
+    "P": 42,
+    "C": 76,
+    "F": 25,
+    "tags": [
+      "lunch",
+      "quick"
+    ],
+    "ingredients": [
+      "6 oz eggs",
+      "3/4 cup sweet potato",
+      "mixed veg: broccoli, carrots",
+      "1 tbsp avocado"
+    ],
+    "instructions": [
+      "Warm the carb base.",
+      "Sear or warm eggs until hot.",
+      "Combine in a bowl with veggies.",
+      "Finish with avocado or your favorite sauce."
+    ]
+  },
+  {
+    "name": "Egg Whites with Soba Noodles & Carrots, Onion",
+    "meal_type": "dinner",
+    "K": 685,
+    "P": 45,
+    "C": 70,
+    "F": 25,
+    "tags": [
+      "dinner",
+      "low_carb"
+    ],
+    "ingredients": [
+      "6\u20137 oz egg whites",
+      "1 cup soba noodles",
+      "carrots, onion",
+      "1 tsp light cheese"
+    ],
+    "instructions": [
+      "Cook egg whites (grill, bake, or saut\u00e9) 6\u201310 minutes until done.",
+      "Prepare soba noodles as directed.",
+      "Plate with vegetables and drizzle oil."
+    ]
+  },
+  {
+    "name": "Egg Whites with Rice Cakes & Green Beans, Asparagus",
+    "meal_type": "dinner",
+    "K": 529,
+    "P": 33,
+    "C": 52,
+    "F": 21,
+    "tags": [
+      "dinner",
+      "low_carb"
+    ],
+    "ingredients": [
+      "6\u20137 oz egg whites",
+      "1 cup rice cakes",
+      "green beans, asparagus",
+      "1 tsp almonds"
+    ],
+    "instructions": [
+      "Cook egg whites (grill, bake, or saut\u00e9) 6\u201310 minutes until done.",
+      "Prepare rice cakes as directed.",
+      "Plate with vegetables and drizzle oil."
+    ]
+  },
+  {
+    "name": "Protein Oats with Banana",
+    "meal_type": "breakfast",
+    "K": 420,
+    "P": 29,
+    "C": 63,
+    "F": 6,
+    "tags": [
+      "breakfast",
+      "high_protein",
+      "quick"
+    ],
+    "ingredients": [
+      "1/2 cup oats",
+      "banana",
+      "greek yogurt 0%",
+      "cinnamon"
+    ],
+    "instructions": [
+      "Microwave oats with water or milk 2 minutes.",
+      "Stir in greek yogurt 0%.",
+      "Top with banana and cinnamon."
+    ]
+  },
+  {
+    "name": "Protein Shake",
+    "meal_type": "snack",
+    "K": 150,
+    "P": 22,
+    "C": 5,
+    "F": 5,
+    "tags": [
+      "high_protein",
+      "quick",
+      "snack"
+    ],
+    "ingredients": [
+      "1 scoop whey",
+      "water or milk"
+    ],
+    "instructions": [
+      "Shake or blend."
+    ]
+  },
+  {
+    "name": "Apple + Peanut Butter",
+    "meal_type": "snack",
+    "K": 237,
+    "P": 7,
+    "C": 27,
+    "F": 11,
+    "tags": [
+      "budget",
+      "quick",
+      "snack"
+    ],
+    "ingredients": [
+      "1 apple",
+      "1.5 tbsp peanut butter"
+    ],
+    "instructions": [
+      "Slice apple and dip in PB."
+    ]
+  },
+  {
+    "name": "Cottage Cheese + Pineapple",
+    "meal_type": "snack",
+    "K": 213,
+    "P": 22,
+    "C": 20,
+    "F": 5,
+    "tags": [
+      "high_protein",
+      "snack"
+    ],
+    "ingredients": [
+      "1 cup cottage cheese",
+      "1/2 cup pineapple"
+    ],
+    "instructions": [
+      "Combine and serve."
+    ]
+  },
+  {
+    "name": "Sirloin Steak Farro Bowl",
+    "meal_type": "lunch",
+    "K": 440,
+    "P": 26,
+    "C": 48,
+    "F": 16,
+    "tags": [
+      "gluten_free",
+      "lunch",
+      "quick"
+    ],
+    "ingredients": [
+      "6 oz sirloin steak",
+      "3/4 cup farro",
+      "mixed veg: green beans, onion",
+      "1 tbsp tahini"
+    ],
+    "instructions": [
+      "Warm the carb base.",
+      "Sear or warm sirloin steak until hot.",
+      "Combine in a bowl with veggies.",
+      "Finish with tahini or your favorite sauce."
+    ]
+  },
+  {
+    "name": "Rice Cake + Turkey",
+    "meal_type": "snack",
+    "K": 166,
+    "P": 14,
+    "C": 18,
+    "F": 4,
+    "tags": [
+      "high_protein",
+      "low_carb",
+      "snack"
+    ],
+    "ingredients": [
+      "1 rice cake",
+      "3 oz turkey",
+      "mustard"
+    ],
+    "instructions": [
+      "Layer turkey on rice cake; add mustard."
+    ]
+  },
+  {
+    "name": "Shrimp Whole-Wheat Pasta Bowl",
+    "meal_type": "lunch",
+    "K": 535,
+    "P": 32,
+    "C": 59,
+    "F": 19,
+    "tags": [
+      "gluten_free",
+      "low_carb",
+      "lunch",
+      "quick"
+    ],
+    "ingredients": [
+      "6 oz shrimp",
+      "3/4 cup whole-wheat pasta",
+      "mixed veg: bell peppers, carrots",
+      "1 tbsp tahini"
+    ],
+    "instructions": [
+      "Warm the carb base.",
+      "Sear or warm shrimp until hot.",
+      "Combine in a bowl with veggies.",
+      "Finish with tahini or your favorite sauce."
+    ]
+  },
+  {
+    "name": "Rice Cake + Turkey",
+    "meal_type": "snack",
+    "K": 170,
+    "P": 15,
+    "C": 19,
+    "F": 4,
+    "tags": [
+      "high_protein",
+      "low_carb",
+      "snack"
+    ],
+    "ingredients": [
+      "1 rice cake",
+      "3 oz turkey",
+      "mustard"
+    ],
+    "instructions": [
+      "Layer turkey on rice cake; add mustard."
+    ]
+  },
+  {
+    "name": "Trail Mix (controlled)",
+    "meal_type": "snack",
+    "K": 284,
+    "P": 10,
+    "C": 27,
+    "F": 15,
+    "tags": [
+      "snack",
+      "vegetarian"
+    ],
+    "ingredients": [
+      "1/4 cup mixed nuts",
+      "2 tbsp raisins"
+    ],
+    "instructions": [
+      "Portion and eat mindfully."
+    ]
+  },
+  {
+    "name": "Big Protein Smoothie",
+    "meal_type": "breakfast",
+    "K": 394,
+    "P": 35,
+    "C": 45,
+    "F": 8,
+    "tags": [
+      "breakfast",
+      "high_protein",
+      "quick"
+    ],
+    "ingredients": [
+      "2 scoops whey",
+      "1 banana",
+      "peanut butter (1 tbsp)",
+      "milk"
+    ],
+    "instructions": [
+      "Blend all 45\u201360 seconds."
+    ]
+  },
+  {
+    "name": "Salmon with Cauliflower Rice & Asparagus, Onion",
+    "meal_type": "dinner",
+    "K": 504,
+    "P": 36,
+    "C": 45,
+    "F": 20,
+    "tags": [
+      "dinner",
+      "gluten_free",
+      "low_carb"
+    ],
+    "ingredients": [
+      "6\u20137 oz salmon",
+      "1 cup cauliflower rice",
+      "asparagus, onion",
+      "1 tsp light cheese"
+    ],
+    "instructions": [
+      "Cook salmon (grill, bake, or saut\u00e9) 6\u201310 minutes until done.",
+      "Prepare cauliflower rice as directed.",
+      "Plate with vegetables and drizzle oil."
+    ]
+  },
+  {
+    "name": "Protein Oats with Banana",
+    "meal_type": "breakfast",
+    "K": 509,
+    "P": 36,
+    "C": 76,
+    "F": 7,
+    "tags": [
+      "breakfast",
+      "high_protein",
+      "quick"
+    ],
+    "ingredients": [
+      "1/2 cup oats",
+      "banana",
+      "greek yogurt 0%",
+      "cinnamon"
+    ],
+    "instructions": [
+      "Microwave oats with water or milk 2 minutes.",
+      "Stir in greek yogurt 0%.",
+      "Top with banana and cinnamon."
+    ]
+  },
+  {
+    "name": "Cod Brown Rice Bowl",
+    "meal_type": "lunch",
+    "K": 535,
+    "P": 32,
+    "C": 59,
+    "F": 19,
+    "tags": [
+      "gluten_free",
+      "low_carb",
+      "lunch",
+      "quick"
+    ],
+    "ingredients": [
+      "6 oz cod",
+      "3/4 cup brown rice",
+      "mixed veg: tomato, bell peppers",
+      "1 tbsp olive oil"
+    ],
+    "instructions": [
+      "Warm the carb base.",
+      "Sear or warm cod until hot.",
+      "Combine in a bowl with veggies.",
+      "Finish with olive oil or your favorite sauce."
+    ]
+  },
+  {
+    "name": "Greek Yogurt Power Bowl",
+    "meal_type": "breakfast",
+    "K": 296,
+    "P": 25,
+    "C": 35,
+    "F": 6,
+    "tags": [
+      "breakfast",
+      "high_protein",
+      "quick"
+    ],
+    "ingredients": [
+      "2 cups 0% Greek yogurt",
+      "berries",
+      "granola (light)",
+      "honey"
+    ],
+    "instructions": [
+      "Add yogurt to bowl.",
+      "Top with berries and granola.",
+      "Drizzle a little honey."
+    ]
+  },
+  {
+    "name": "Eggs with Corn Tortillas & Asparagus, Bell Peppers",
+    "meal_type": "dinner",
+    "K": 541,
+    "P": 34,
+    "C": 54,
+    "F": 21,
+    "tags": [
+      "dinner"
+    ],
+    "ingredients": [
+      "6\u20137 oz eggs",
+      "1 cup corn tortillas",
+      "asparagus, bell peppers",
+      "1 tsp almonds"
+    ],
+    "instructions": [
+      "Cook eggs (grill, bake, or saut\u00e9) 6\u201310 minutes until done.",
+      "Prepare corn tortillas as directed.",
+      "Plate with vegetables and drizzle oil."
+    ]
+  },
+  {
+    "name": "Shrimp Whole-Wheat Pasta Bowl",
+    "meal_type": "lunch",
+    "K": 452,
+    "P": 27,
+    "C": 50,
+    "F": 16,
+    "tags": [
+      "gluten_free",
+      "low_carb",
+      "lunch",
+      "quick"
+    ],
+    "ingredients": [
+      "6 oz shrimp",
+      "3/4 cup whole-wheat pasta",
+      "mixed veg: onion, bell peppers",
+      "1 tbsp peanut butter"
+    ],
+    "instructions": [
+      "Warm the carb base.",
+      "Sear or warm shrimp until hot.",
+      "Combine in a bowl with veggies.",
+      "Finish with peanut butter or your favorite sauce."
+    ]
+  },
+  {
+    "name": "Lentils Rice Cakes Bowl",
+    "meal_type": "lunch",
+    "K": 469,
+    "P": 28,
+    "C": 51,
+    "F": 17,
+    "tags": [
+      "dairy_free",
+      "gluten_free",
+      "lunch",
+      "quick",
+      "vegan",
+      "vegetarian"
+    ],
+    "ingredients": [
+      "6 oz lentils",
+      "3/4 cup rice cakes",
+      "mixed veg: broccoli, onion",
+      "1 tbsp peanut butter"
+    ],
+    "instructions": [
+      "Warm the carb base.",
+      "Sear or warm lentils until hot.",
+      "Combine in a bowl with veggies.",
+      "Finish with peanut butter or your favorite sauce."
+    ]
+  },
+  {
+    "name": "Lean Ground Turkey with Soba Noodles & Asparagus, Spinach",
+    "meal_type": "dinner",
+    "K": 590,
+    "P": 42,
+    "C": 56,
+    "F": 22,
+    "tags": [
+      "dinner",
+      "gluten_free",
+      "high_protein"
+    ],
+    "ingredients": [
+      "6\u20137 oz lean ground turkey",
+      "1 cup soba noodles",
+      "asparagus, spinach",
+      "1 tsp olive oil"
+    ],
+    "instructions": [
+      "Cook lean ground turkey (grill, bake, or saut\u00e9) 6\u201310 minutes until done.",
+      "Prepare soba noodles as directed.",
+      "Plate with vegetables and drizzle oil."
+    ]
+  },
+  {
+    "name": "Greek Yogurt Power Bowl",
+    "meal_type": "breakfast",
+    "K": 269,
+    "P": 23,
+    "C": 32,
+    "F": 5,
+    "tags": [
+      "breakfast",
+      "high_protein",
+      "quick"
+    ],
+    "ingredients": [
+      "2 cups 0% Greek yogurt",
+      "berries",
+      "granola (light)",
+      "honey"
+    ],
+    "instructions": [
+      "Add yogurt to bowl.",
+      "Top with berries and granola.",
+      "Drizzle a little honey."
+    ]
+  },
+  {
+    "name": "Sirloin Steak with Cauliflower Rice & Kale, Spinach",
+    "meal_type": "dinner",
+    "K": 631,
+    "P": 43,
+    "C": 54,
+    "F": 27,
+    "tags": [
+      "dinner",
+      "gluten_free",
+      "low_carb"
+    ],
+    "ingredients": [
+      "6\u20137 oz sirloin steak",
+      "1 cup cauliflower rice",
+      "kale, spinach",
+      "1 tsp almonds"
+    ],
+    "instructions": [
+      "Cook sirloin steak (grill, bake, or saut\u00e9) 6\u201310 minutes until done.",
+      "Prepare cauliflower rice as directed.",
+      "Plate with vegetables and drizzle oil."
+    ]
+  },
+  {
+    "name": "Cottage Cheese Farro Bowl",
+    "meal_type": "lunch",
+    "K": 696,
+    "P": 47,
+    "C": 73,
+    "F": 24,
+    "tags": [
+      "high_protein",
+      "lunch",
+      "quick"
+    ],
+    "ingredients": [
+      "6 oz cottage cheese",
+      "3/4 cup farro",
+      "mixed veg: bell peppers, spinach",
+      "1 tbsp peanut butter"
+    ],
+    "instructions": [
+      "Warm the carb base.",
+      "Sear or warm cottage cheese until hot.",
+      "Combine in a bowl with veggies.",
+      "Finish with peanut butter or your favorite sauce."
+    ]
+  },
+  {
+    "name": "Apple + Peanut Butter",
+    "meal_type": "snack",
+    "K": 254,
+    "P": 7,
+    "C": 29,
+    "F": 12,
+    "tags": [
+      "budget",
+      "quick",
+      "snack"
+    ],
+    "ingredients": [
+      "1 apple",
+      "1.5 tbsp peanut butter"
+    ],
+    "instructions": [
+      "Slice apple and dip in PB."
+    ]
+  },
+  {
+    "name": "Greek Yogurt Power Bowl",
+    "meal_type": "breakfast",
+    "K": 394,
+    "P": 34,
+    "C": 47,
+    "F": 8,
+    "tags": [
+      "breakfast",
+      "high_protein",
+      "quick"
+    ],
+    "ingredients": [
+      "2 cups 0% Greek yogurt",
+      "berries",
+      "granola (light)",
+      "honey"
+    ],
+    "instructions": [
+      "Add yogurt to bowl.",
+      "Top with berries and granola.",
+      "Drizzle a little honey."
+    ]
+  },
+  {
+    "name": "Lentils with Mixed Fruit & Mushrooms, Bell Peppers",
+    "meal_type": "dinner",
+    "K": 733,
+    "P": 46,
+    "C": 72,
+    "F": 29,
+    "tags": [
+      "dairy_free",
+      "dinner",
+      "gluten_free",
+      "vegan",
+      "vegetarian"
+    ],
+    "ingredients": [
+      "6\u20137 oz lentils",
+      "1 cup mixed fruit",
+      "mushrooms, bell peppers",
+      "1 tsp almonds"
+    ],
+    "instructions": [
+      "Cook lentils (grill, bake, or saut\u00e9) 6\u201310 minutes until done.",
+      "Prepare mixed fruit as directed.",
+      "Plate with vegetables and drizzle oil."
+    ]
+  },
+  {
+    "name": "Trail Mix (controlled)",
+    "meal_type": "snack",
+    "K": 293,
+    "P": 10,
+    "C": 28,
+    "F": 16,
+    "tags": [
+      "snack",
+      "vegetarian"
+    ],
+    "ingredients": [
+      "1/4 cup mixed nuts",
+      "2 tbsp raisins"
+    ],
+    "instructions": [
+      "Portion and eat mindfully."
+    ]
+  },
+  {
+    "name": "Big Protein Smoothie",
+    "meal_type": "breakfast",
+    "K": 440,
+    "P": 39,
+    "C": 51,
+    "F": 9,
+    "tags": [
+      "breakfast",
+      "high_protein",
+      "quick"
+    ],
+    "ingredients": [
+      "2 scoops whey",
+      "1 banana",
+      "peanut butter (1 tbsp)",
+      "milk"
+    ],
+    "instructions": [
+      "Blend all 45\u201360 seconds."
+    ]
+  },
+  {
+    "name": "Greek Yogurt Power Bowl",
+    "meal_type": "breakfast",
+    "K": 303,
+    "P": 26,
+    "C": 36,
+    "F": 6,
+    "tags": [
+      "breakfast",
+      "high_protein",
+      "quick"
+    ],
+    "ingredients": [
+      "2 cups 0% Greek yogurt",
+      "berries",
+      "granola (light)",
+      "honey"
+    ],
+    "instructions": [
+      "Add yogurt to bowl.",
+      "Top with berries and granola.",
+      "Drizzle a little honey."
+    ]
+  },
+  {
+    "name": "Cod Sweet Potato Bowl",
+    "meal_type": "lunch",
+    "K": 481,
+    "P": 29,
+    "C": 53,
+    "F": 17,
+    "tags": [
+      "gluten_free",
+      "low_carb",
+      "lunch",
+      "quick"
+    ],
+    "ingredients": [
+      "6 oz cod",
+      "3/4 cup sweet potato",
+      "mixed veg: carrots, asparagus",
+      "1 tbsp almonds"
+    ],
+    "instructions": [
+      "Warm the carb base.",
+      "Sear or warm cod until hot.",
+      "Combine in a bowl with veggies.",
+      "Finish with almonds or your favorite sauce."
+    ]
+  },
+  {
+    "name": "Trail Mix (controlled)",
+    "meal_type": "snack",
+    "K": 301,
+    "P": 10,
+    "C": 28,
+    "F": 17,
+    "tags": [
+      "snack",
+      "vegetarian"
+    ],
+    "ingredients": [
+      "1/4 cup mixed nuts",
+      "2 tbsp raisins"
+    ],
+    "instructions": [
+      "Portion and eat mindfully."
+    ]
+  },
+  {
+    "name": "Egg Whites with Mixed Fruit & Zucchini, Bell Peppers",
+    "meal_type": "dinner",
+    "K": 482,
+    "P": 31,
+    "C": 49,
+    "F": 18,
+    "tags": [
+      "dinner",
+      "low_carb"
+    ],
+    "ingredients": [
+      "6\u20137 oz egg whites",
+      "1 cup mixed fruit",
+      "zucchini, bell peppers",
+      "1 tsp light cheese"
+    ],
+    "instructions": [
+      "Cook egg whites (grill, bake, or saut\u00e9) 6\u201310 minutes until done.",
+      "Prepare mixed fruit as directed.",
+      "Plate with vegetables and drizzle oil."
+    ]
+  },
+  {
+    "name": "Chicken Breast with Oats & Onion, Mushrooms",
+    "meal_type": "dinner",
+    "K": 489,
+    "P": 36,
+    "C": 48,
+    "F": 17,
+    "tags": [
+      "dinner",
+      "gluten_free",
+      "high_protein"
+    ],
+    "ingredients": [
+      "6\u20137 oz chicken breast",
+      "1 cup oats",
+      "onion, mushrooms",
+      "1 tsp tahini"
+    ],
+    "instructions": [
+      "Cook chicken breast (grill, bake, or saut\u00e9) 6\u201310 minutes until done.",
+      "Prepare oats as directed.",
+      "Plate with vegetables and drizzle oil."
+    ]
+  },
+  {
+    "name": "Greek Yogurt 0% Mixed Fruit Bowl",
+    "meal_type": "lunch",
+    "K": 522,
+    "P": 35,
+    "C": 55,
+    "F": 18,
+    "tags": [
+      "high_protein",
+      "lunch",
+      "quick"
+    ],
+    "ingredients": [
+      "6 oz greek yogurt 0%",
+      "3/4 cup mixed fruit",
+      "mixed veg: spinach, cabbage",
+      "1 tbsp olive oil"
+    ],
+    "instructions": [
+      "Warm the carb base.",
+      "Sear or warm greek yogurt 0% until hot.",
+      "Combine in a bowl with veggies.",
+      "Finish with olive oil or your favorite sauce."
+    ]
+  },
+  {
+    "name": "Cod Brown Rice Bowl",
+    "meal_type": "lunch",
+    "K": 523,
+    "P": 31,
+    "C": 57,
+    "F": 19,
+    "tags": [
+      "gluten_free",
+      "low_carb",
+      "lunch",
+      "quick"
+    ],
+    "ingredients": [
+      "6 oz cod",
+      "3/4 cup brown rice",
+      "mixed veg: spinach, onion",
+      "1 tbsp avocado"
+    ],
+    "instructions": [
+      "Warm the carb base.",
+      "Sear or warm cod until hot.",
+      "Combine in a bowl with veggies.",
+      "Finish with avocado or your favorite sauce."
+    ]
+  },
+  {
+    "name": "Rice Cake + Turkey",
+    "meal_type": "snack",
+    "K": 150,
+    "P": 13,
+    "C": 16,
+    "F": 4,
+    "tags": [
+      "high_protein",
+      "low_carb",
+      "snack"
+    ],
+    "ingredients": [
+      "1 rice cake",
+      "3 oz turkey",
+      "mustard"
+    ],
+    "instructions": [
+      "Layer turkey on rice cake; add mustard."
+    ]
+  },
+  {
+    "name": "Seitan with Soba Noodles & Carrots, Zucchini",
+    "meal_type": "dinner",
+    "K": 587,
+    "P": 37,
+    "C": 58,
+    "F": 23,
+    "tags": [
+      "dinner",
+      "vegan",
+      "vegetarian"
+    ],
+    "ingredients": [
+      "6\u20137 oz seitan",
+      "1 cup soba noodles",
+      "carrots, zucchini",
+      "1 tsp olive oil"
+    ],
+    "instructions": [
+      "Cook seitan (grill, bake, or saut\u00e9) 6\u201310 minutes until done.",
+      "Prepare soba noodles as directed.",
+      "Plate with vegetables and drizzle oil."
+    ]
+  },
+  {
+    "name": "Sirloin Steak Farro Bowl",
+    "meal_type": "lunch",
+    "K": 668,
+    "P": 40,
+    "C": 73,
+    "F": 24,
+    "tags": [
+      "gluten_free",
+      "lunch",
+      "quick"
+    ],
+    "ingredients": [
+      "6 oz sirloin steak",
+      "3/4 cup farro",
+      "mixed veg: green beans, carrots",
+      "1 tbsp almonds"
+    ],
+    "instructions": [
+      "Warm the carb base.",
+      "Sear or warm sirloin steak until hot.",
+      "Combine in a bowl with veggies.",
+      "Finish with almonds or your favorite sauce."
+    ]
+  },
+  {
+    "name": "Veggie Egg Scramble",
+    "meal_type": "breakfast",
+    "K": 383,
+    "P": 34,
+    "C": 26,
+    "F": 16,
+    "tags": [
+      "breakfast",
+      "low_carb",
+      "quick"
+    ],
+    "ingredients": [
+      "3 eggs",
+      "spinach",
+      "mushrooms",
+      "olive oil spray"
+    ],
+    "instructions": [
+      "Saut\u00e9 veggies 2\u20133 min.",
+      "Add beaten eggs; scramble until set."
+    ]
+  },
+  {
+    "name": "Greek Yogurt Power Bowl",
+    "meal_type": "breakfast",
+    "K": 332,
+    "P": 28,
+    "C": 40,
+    "F": 7,
+    "tags": [
+      "breakfast",
+      "high_protein",
+      "quick"
+    ],
+    "ingredients": [
+      "2 cups 0% Greek yogurt",
+      "berries",
+      "granola (light)",
+      "honey"
+    ],
+    "instructions": [
+      "Add yogurt to bowl.",
+      "Top with berries and granola.",
+      "Drizzle a little honey."
+    ]
+  },
+  {
+    "name": "Salmon with Mixed Fruit & Mushrooms, Carrots",
+    "meal_type": "dinner",
+    "K": 479,
+    "P": 30,
+    "C": 47,
+    "F": 19,
+    "tags": [
+      "dinner",
+      "gluten_free"
+    ],
+    "ingredients": [
+      "6\u20137 oz salmon",
+      "1 cup mixed fruit",
+      "mushrooms, carrots",
+      "1 tsp olive oil"
+    ],
+    "instructions": [
+      "Cook salmon (grill, bake, or saut\u00e9) 6\u201310 minutes until done.",
+      "Prepare mixed fruit as directed.",
+      "Plate with vegetables and drizzle oil."
+    ]
+  },
+  {
+    "name": "Protein Oats with Banana",
+    "meal_type": "breakfast",
+    "K": 447,
+    "P": 27,
+    "C": 70,
+    "F": 7,
+    "tags": [
+      "breakfast",
+      "high_protein",
+      "quick"
+    ],
+    "ingredients": [
+      "1/2 cup oats",
+      "banana",
+      "egg whites",
+      "cinnamon"
+    ],
+    "instructions": [
+      "Microwave oats with water or milk 2 minutes.",
+      "Stir in egg whites.",
+      "Top with banana and cinnamon."
+    ]
+  },
+  {
+    "name": "Big Protein Smoothie",
+    "meal_type": "breakfast",
+    "K": 371,
+    "P": 33,
+    "C": 43,
+    "F": 7,
+    "tags": [
+      "breakfast",
+      "high_protein",
+      "quick"
+    ],
+    "ingredients": [
+      "2 scoops whey",
+      "1 banana",
+      "peanut butter (1 tbsp)",
+      "milk"
+    ],
+    "instructions": [
+      "Blend all 45\u201360 seconds."
+    ]
+  },
+  {
+    "name": "Chicken Breast Quinoa Bowl",
+    "meal_type": "lunch",
+    "K": 572,
+    "P": 38,
+    "C": 60,
+    "F": 20,
+    "tags": [
+      "gluten_free",
+      "high_protein",
+      "lunch",
+      "quick"
+    ],
+    "ingredients": [
+      "6 oz chicken breast",
+      "3/4 cup quinoa",
+      "mixed veg: bell peppers, kale",
+      "1 tbsp almonds"
+    ],
+    "instructions": [
+      "Warm the carb base.",
+      "Sear or warm chicken breast until hot.",
+      "Combine in a bowl with veggies.",
+      "Finish with almonds or your favorite sauce."
+    ]
+  },
+  {
+    "name": "Apple + Peanut Butter",
+    "meal_type": "snack",
+    "K": 225,
+    "P": 6,
+    "C": 25,
+    "F": 11,
+    "tags": [
+      "budget",
+      "quick",
+      "snack"
+    ],
+    "ingredients": [
+      "1 apple",
+      "1.5 tbsp peanut butter"
+    ],
+    "instructions": [
+      "Slice apple and dip in PB."
+    ]
+  },
+  {
+    "name": "Trail Mix (controlled)",
+    "meal_type": "snack",
+    "K": 317,
+    "P": 11,
+    "C": 30,
+    "F": 17,
+    "tags": [
+      "snack",
+      "vegetarian"
+    ],
+    "ingredients": [
+      "1/4 cup mixed nuts",
+      "2 tbsp raisins"
+    ],
+    "instructions": [
+      "Portion and eat mindfully."
+    ]
+  },
+  {
+    "name": "Protein Shake",
+    "meal_type": "snack",
+    "K": 150,
+    "P": 22,
+    "C": 5,
+    "F": 5,
+    "tags": [
+      "high_protein",
+      "quick",
+      "snack"
+    ],
+    "ingredients": [
+      "1 scoop whey",
+      "water or milk"
+    ],
+    "instructions": [
+      "Shake or blend."
+    ]
+  },
+  {
+    "name": "Greek Yogurt Power Bowl",
+    "meal_type": "breakfast",
+    "K": 361,
+    "P": 31,
+    "C": 43,
+    "F": 7,
+    "tags": [
+      "breakfast",
+      "high_protein",
+      "quick"
+    ],
+    "ingredients": [
+      "2 cups 0% Greek yogurt",
+      "berries",
+      "granola (light)",
+      "honey"
+    ],
+    "instructions": [
+      "Add yogurt to bowl.",
+      "Top with berries and granola.",
+      "Drizzle a little honey."
+    ]
+  },
+  {
+    "name": "Salmon with Quinoa & Green Beans, Spinach",
+    "meal_type": "dinner",
+    "K": 656,
+    "P": 43,
+    "C": 67,
+    "F": 24,
+    "tags": [
+      "dinner",
+      "gluten_free"
+    ],
+    "ingredients": [
+      "6\u20137 oz salmon",
+      "1 cup quinoa",
+      "green beans, spinach",
+      "1 tsp light cheese"
+    ],
+    "instructions": [
+      "Cook salmon (grill, bake, or saut\u00e9) 6\u201310 minutes until done.",
+      "Prepare quinoa as directed.",
+      "Plate with vegetables and drizzle oil."
+    ]
+  },
+  {
+    "name": "Cottage Cheese + Pineapple",
+    "meal_type": "snack",
+    "K": 218,
+    "P": 23,
+    "C": 21,
+    "F": 5,
+    "tags": [
+      "high_protein",
+      "snack"
+    ],
+    "ingredients": [
+      "1 cup cottage cheese",
+      "1/2 cup pineapple"
+    ],
+    "instructions": [
+      "Combine and serve."
+    ]
+  },
+  {
+    "name": "Chickpeas Corn Tortillas Bowl",
+    "meal_type": "lunch",
+    "K": 506,
+    "P": 30,
+    "C": 56,
+    "F": 18,
+    "tags": [
+      "dairy_free",
+      "gluten_free",
+      "lunch",
+      "quick",
+      "vegan",
+      "vegetarian"
+    ],
+    "ingredients": [
+      "6 oz chickpeas",
+      "3/4 cup corn tortillas",
+      "mixed veg: carrots, tomato",
+      "1 tbsp peanut butter"
+    ],
+    "instructions": [
+      "Warm the carb base.",
+      "Sear or warm chickpeas until hot.",
+      "Combine in a bowl with veggies.",
+      "Finish with peanut butter or your favorite sauce."
+    ]
+  },
+  {
+    "name": "Hummus + Carrots",
+    "meal_type": "snack",
+    "K": 197,
+    "P": 6,
+    "C": 21,
+    "F": 10,
+    "tags": [
+      "budget",
+      "dairy_free",
+      "snack",
+      "vegan"
+    ],
+    "ingredients": [
+      "1/4 cup hummus",
+      "1 cup carrots"
+    ],
+    "instructions": [
+      "Dip and enjoy."
+    ]
+  },
+  {
+    "name": "Sirloin Steak Sweet Potato Bowl",
+    "meal_type": "lunch",
+    "K": 672,
+    "P": 40,
+    "C": 74,
+    "F": 24,
+    "tags": [
+      "gluten_free",
+      "lunch",
+      "quick"
+    ],
+    "ingredients": [
+      "6 oz sirloin steak",
+      "3/4 cup sweet potato",
+      "mixed veg: broccoli, onion",
+      "1 tbsp peanut butter"
+    ],
+    "instructions": [
+      "Warm the carb base.",
+      "Sear or warm sirloin steak until hot.",
+      "Combine in a bowl with veggies.",
+      "Finish with peanut butter or your favorite sauce."
+    ]
+  },
+  {
+    "name": "Cottage Cheese + Pineapple",
+    "meal_type": "snack",
+    "K": 254,
+    "P": 27,
+    "C": 24,
+    "F": 6,
+    "tags": [
+      "high_protein",
+      "snack"
+    ],
+    "ingredients": [
+      "1 cup cottage cheese",
+      "1/2 cup pineapple"
+    ],
+    "instructions": [
+      "Combine and serve."
+    ]
+  },
+  {
+    "name": "Black Beans Brown Rice Bowl",
+    "meal_type": "lunch",
+    "K": 577,
+    "P": 34,
+    "C": 63,
+    "F": 21,
+    "tags": [
+      "dairy_free",
+      "gluten_free",
+      "lunch",
+      "quick",
+      "vegan",
+      "vegetarian"
+    ],
+    "ingredients": [
+      "6 oz black beans",
+      "3/4 cup brown rice",
+      "mixed veg: spinach, onion",
+      "1 tbsp avocado"
+    ],
+    "instructions": [
+      "Warm the carb base.",
+      "Sear or warm black beans until hot.",
+      "Combine in a bowl with veggies.",
+      "Finish with avocado or your favorite sauce."
+    ]
+  },
+  {
+    "name": "Tempeh Rice Cakes Bowl",
+    "meal_type": "lunch",
+    "K": 502,
+    "P": 30,
+    "C": 55,
+    "F": 18,
+    "tags": [
+      "dairy_free",
+      "gluten_free",
+      "lunch",
+      "quick",
+      "vegan",
+      "vegetarian"
+    ],
+    "ingredients": [
+      "6 oz tempeh",
+      "3/4 cup rice cakes",
+      "mixed veg: tomato, broccoli",
+      "1 tbsp tahini"
+    ],
+    "instructions": [
+      "Warm the carb base.",
+      "Sear or warm tempeh until hot.",
+      "Combine in a bowl with veggies.",
+      "Finish with tahini or your favorite sauce."
+    ]
+  },
+  {
+    "name": "Chickpeas Quinoa Bowl",
+    "meal_type": "lunch",
+    "K": 448,
+    "P": 27,
+    "C": 49,
+    "F": 16,
+    "tags": [
+      "dairy_free",
+      "gluten_free",
+      "lunch",
+      "quick",
+      "vegan",
+      "vegetarian"
+    ],
+    "ingredients": [
+      "6 oz chickpeas",
+      "3/4 cup quinoa",
+      "mixed veg: bell peppers, zucchini",
+      "1 tbsp peanut butter"
+    ],
+    "instructions": [
+      "Warm the carb base.",
+      "Sear or warm chickpeas until hot.",
+      "Combine in a bowl with veggies.",
+      "Finish with peanut butter or your favorite sauce."
+    ]
+  },
+  {
+    "name": "Apple + Peanut Butter",
+    "meal_type": "snack",
+    "K": 276,
+    "P": 8,
+    "C": 31,
+    "F": 13,
+    "tags": [
+      "budget",
+      "quick",
+      "snack"
+    ],
+    "ingredients": [
+      "1 apple",
+      "1.5 tbsp peanut butter"
+    ],
+    "instructions": [
+      "Slice apple and dip in PB."
+    ]
+  },
+  {
+    "name": "Greek Yogurt Power Bowl",
+    "meal_type": "breakfast",
+    "K": 400,
+    "P": 34,
+    "C": 48,
+    "F": 8,
+    "tags": [
+      "breakfast",
+      "high_protein",
+      "quick"
+    ],
+    "ingredients": [
+      "2 cups 0% Greek yogurt",
+      "berries",
+      "granola (light)",
+      "honey"
+    ],
+    "instructions": [
+      "Add yogurt to bowl.",
+      "Top with berries and granola.",
+      "Drizzle a little honey."
+    ]
+  },
+  {
+    "name": "Protein Oats with Berries",
+    "meal_type": "breakfast",
+    "K": 382,
+    "P": 26,
+    "C": 56,
+    "F": 6,
+    "tags": [
+      "breakfast",
+      "high_protein",
+      "quick"
+    ],
+    "ingredients": [
+      "1/2 cup oats",
+      "berries",
+      "egg whites",
+      "cinnamon"
+    ],
+    "instructions": [
+      "Microwave oats with water or milk 2 minutes.",
+      "Stir in egg whites.",
+      "Top with berries and cinnamon."
+    ]
+  },
+  {
+    "name": "Big Protein Smoothie",
+    "meal_type": "breakfast",
+    "K": 492,
+    "P": 44,
+    "C": 56,
+    "F": 10,
+    "tags": [
+      "breakfast",
+      "high_protein",
+      "quick"
+    ],
+    "ingredients": [
+      "2 scoops whey",
+      "1 banana",
+      "peanut butter (1 tbsp)",
+      "milk"
+    ],
+    "instructions": [
+      "Blend all 45\u201360 seconds."
+    ]
+  },
+  {
+    "name": "Salmon Oats Bowl",
+    "meal_type": "lunch",
+    "K": 452,
+    "P": 27,
+    "C": 50,
+    "F": 16,
+    "tags": [
+      "gluten_free",
+      "lunch",
+      "quick"
+    ],
+    "ingredients": [
+      "6 oz salmon",
+      "3/4 cup oats",
+      "mixed veg: green beans, mushrooms",
+      "1 tbsp tahini"
+    ],
+    "instructions": [
+      "Warm the carb base.",
+      "Sear or warm salmon until hot.",
+      "Combine in a bowl with veggies.",
+      "Finish with tahini or your favorite sauce."
+    ]
+  },
+  {
+    "name": "Big Protein Smoothie",
+    "meal_type": "breakfast",
+    "K": 506,
+    "P": 45,
+    "C": 58,
+    "F": 10,
+    "tags": [
+      "breakfast",
+      "high_protein",
+      "quick"
+    ],
+    "ingredients": [
+      "2 scoops whey",
+      "1 banana",
+      "peanut butter (1 tbsp)",
+      "milk"
+    ],
+    "instructions": [
+      "Blend all 45\u201360 seconds."
+    ]
+  },
+  {
+    "name": "Rice Cake + Turkey",
+    "meal_type": "snack",
+    "K": 150,
+    "P": 13,
+    "C": 16,
+    "F": 4,
+    "tags": [
+      "high_protein",
+      "low_carb",
+      "snack"
+    ],
+    "ingredients": [
+      "1 rice cake",
+      "3 oz turkey",
+      "mustard"
+    ],
+    "instructions": [
+      "Layer turkey on rice cake; add mustard."
+    ]
+  },
+  {
+    "name": "Lean Ground Turkey Quinoa Bowl",
+    "meal_type": "lunch",
+    "K": 495,
+    "P": 35,
+    "C": 55,
+    "F": 15,
+    "tags": [
+      "gluten_free",
+      "high_protein",
+      "lunch",
+      "quick"
+    ],
+    "ingredients": [
+      "6 oz lean ground turkey",
+      "3/4 cup quinoa",
+      "mixed veg: broccoli, green beans",
+      "1 tbsp light cheese"
+    ],
+    "instructions": [
+      "Warm the carb base.",
+      "Sear or warm lean ground turkey until hot.",
+      "Combine in a bowl with veggies.",
+      "Finish with light cheese or your favorite sauce."
+    ]
+  },
+  {
+    "name": "Egg Whites Sweet Potato Bowl",
+    "meal_type": "lunch",
+    "K": 452,
+    "P": 27,
+    "C": 50,
+    "F": 16,
+    "tags": [
+      "low_carb",
+      "lunch",
+      "quick"
+    ],
+    "ingredients": [
+      "6 oz egg whites",
+      "3/4 cup sweet potato",
+      "mixed veg: kale, green beans",
+      "1 tbsp olive oil"
+    ],
+    "instructions": [
+      "Warm the carb base.",
+      "Sear or warm egg whites until hot.",
+      "Combine in a bowl with veggies.",
+      "Finish with olive oil or your favorite sauce."
+    ]
+  },
+  {
+    "name": "Lean Ground Turkey Quinoa Bowl",
+    "meal_type": "lunch",
+    "K": 431,
+    "P": 29,
+    "C": 45,
+    "F": 15,
+    "tags": [
+      "gluten_free",
+      "high_protein",
+      "lunch",
+      "quick"
+    ],
+    "ingredients": [
+      "6 oz lean ground turkey",
+      "3/4 cup quinoa",
+      "mixed veg: mushrooms, green beans",
+      "1 tbsp peanut butter"
+    ],
+    "instructions": [
+      "Warm the carb base.",
+      "Sear or warm lean ground turkey until hot.",
+      "Combine in a bowl with veggies.",
+      "Finish with peanut butter or your favorite sauce."
+    ]
+  },
+  {
+    "name": "Salmon Quinoa Bowl",
+    "meal_type": "lunch",
+    "K": 697,
+    "P": 42,
+    "C": 76,
+    "F": 25,
+    "tags": [
+      "gluten_free",
+      "lunch",
+      "quick"
+    ],
+    "ingredients": [
+      "6 oz salmon",
+      "3/4 cup quinoa",
+      "mixed veg: carrots, asparagus",
+      "1 tbsp olive oil"
+    ],
+    "instructions": [
+      "Warm the carb base.",
+      "Sear or warm salmon until hot.",
+      "Combine in a bowl with veggies.",
+      "Finish with olive oil or your favorite sauce."
+    ]
+  },
+  {
+    "name": "Greek Yogurt 0% with Whole-Wheat Pasta & Carrots, Spinach",
+    "meal_type": "dinner",
+    "K": 790,
+    "P": 56,
+    "C": 74,
+    "F": 30,
+    "tags": [
+      "dinner",
+      "high_protein"
+    ],
+    "ingredients": [
+      "6\u20137 oz greek yogurt 0%",
+      "1 cup whole-wheat pasta",
+      "carrots, spinach",
+      "1 tsp almonds"
+    ],
+    "instructions": [
+      "Cook greek yogurt 0% (grill, bake, or saut\u00e9) 6\u201310 minutes until done.",
+      "Prepare whole-wheat pasta as directed.",
+      "Plate with vegetables and drizzle oil."
+    ]
+  },
+  {
+    "name": "Protein Shake",
+    "meal_type": "snack",
+    "K": 160,
+    "P": 23,
+    "C": 6,
+    "F": 5,
+    "tags": [
+      "high_protein",
+      "quick",
+      "snack"
+    ],
+    "ingredients": [
+      "1 scoop whey",
+      "water or milk"
+    ],
+    "instructions": [
+      "Shake or blend."
+    ]
+  },
+  {
+    "name": "Lean Ground Turkey Mixed Fruit Bowl",
+    "meal_type": "lunch",
+    "K": 565,
+    "P": 40,
+    "C": 63,
+    "F": 17,
+    "tags": [
+      "gluten_free",
+      "high_protein",
+      "lunch",
+      "quick"
+    ],
+    "ingredients": [
+      "6 oz lean ground turkey",
+      "3/4 cup mixed fruit",
+      "mixed veg: spinach, green beans",
+      "1 tbsp light cheese"
+    ],
+    "instructions": [
+      "Warm the carb base.",
+      "Sear or warm lean ground turkey until hot.",
+      "Combine in a bowl with veggies.",
+      "Finish with light cheese or your favorite sauce."
+    ]
+  },
+  {
+    "name": "Shrimp with Sweet Potato & Zucchini, Green Beans",
+    "meal_type": "dinner",
+    "K": 577,
+    "P": 38,
+    "C": 59,
+    "F": 21,
+    "tags": [
+      "dinner",
+      "gluten_free",
+      "low_carb"
+    ],
+    "ingredients": [
+      "6\u20137 oz shrimp",
+      "1 cup sweet potato",
+      "zucchini, green beans",
+      "1 tsp light cheese"
+    ],
+    "instructions": [
+      "Cook shrimp (grill, bake, or saut\u00e9) 6\u201310 minutes until done.",
+      "Prepare sweet potato as directed.",
+      "Plate with vegetables and drizzle oil."
+    ]
+  },
+  {
+    "name": "Apple + Peanut Butter",
+    "meal_type": "snack",
+    "K": 218,
+    "P": 6,
+    "C": 25,
+    "F": 10,
+    "tags": [
+      "budget",
+      "quick",
+      "snack"
+    ],
+    "ingredients": [
+      "1 apple",
+      "1.5 tbsp peanut butter"
+    ],
+    "instructions": [
+      "Slice apple and dip in PB."
+    ]
+  },
+  {
+    "name": "Salmon with Whole-Wheat Pasta & Mushrooms, Cabbage",
+    "meal_type": "dinner",
+    "K": 714,
+    "P": 47,
+    "C": 73,
+    "F": 26,
+    "tags": [
+      "dinner",
+      "gluten_free"
+    ],
+    "ingredients": [
+      "6\u20137 oz salmon",
+      "1 cup whole-wheat pasta",
+      "mushrooms, cabbage",
+      "1 tsp tahini"
+    ],
+    "instructions": [
+      "Cook salmon (grill, bake, or saut\u00e9) 6\u201310 minutes until done.",
+      "Prepare whole-wheat pasta as directed.",
+      "Plate with vegetables and drizzle oil."
+    ]
+  },
+  {
+    "name": "Greek Yogurt 0% Rice Cakes Bowl",
+    "meal_type": "lunch",
+    "K": 530,
+    "P": 36,
+    "C": 56,
+    "F": 18,
+    "tags": [
+      "high_protein",
+      "lunch",
+      "quick"
+    ],
+    "ingredients": [
+      "6 oz greek yogurt 0%",
+      "3/4 cup rice cakes",
+      "mixed veg: cabbage, bell peppers",
+      "1 tbsp avocado"
+    ],
+    "instructions": [
+      "Warm the carb base.",
+      "Sear or warm greek yogurt 0% until hot.",
+      "Combine in a bowl with veggies.",
+      "Finish with avocado or your favorite sauce."
+    ]
+  },
+  {
+    "name": "Greek Yogurt Power Bowl",
+    "meal_type": "breakfast",
+    "K": 302,
+    "P": 26,
+    "C": 36,
+    "F": 6,
+    "tags": [
+      "breakfast",
+      "high_protein",
+      "quick"
+    ],
+    "ingredients": [
+      "2 cups 0% Greek yogurt",
+      "berries",
+      "granola (light)",
+      "honey"
+    ],
+    "instructions": [
+      "Add yogurt to bowl.",
+      "Top with berries and granola.",
+      "Drizzle a little honey."
+    ]
+  },
+  {
+    "name": "Trail Mix (controlled)",
+    "meal_type": "snack",
+    "K": 324,
+    "P": 11,
+    "C": 31,
+    "F": 17,
+    "tags": [
+      "snack",
+      "vegetarian"
+    ],
+    "ingredients": [
+      "1/4 cup mixed nuts",
+      "2 tbsp raisins"
+    ],
+    "instructions": [
+      "Portion and eat mindfully."
+    ]
+  },
+  {
+    "name": "Sirloin Steak with Oats & Carrots, Cabbage",
+    "meal_type": "dinner",
+    "K": 529,
+    "P": 33,
+    "C": 52,
+    "F": 21,
+    "tags": [
+      "dinner",
+      "gluten_free"
+    ],
+    "ingredients": [
+      "6\u20137 oz sirloin steak",
+      "1 cup oats",
+      "carrots, cabbage",
+      "1 tsp almonds"
+    ],
+    "instructions": [
+      "Cook sirloin steak (grill, bake, or saut\u00e9) 6\u201310 minutes until done.",
+      "Prepare oats as directed.",
+      "Plate with vegetables and drizzle oil."
+    ]
+  },
+  {
+    "name": "Big Protein Smoothie",
+    "meal_type": "breakfast",
+    "K": 434,
+    "P": 39,
+    "C": 50,
+    "F": 9,
+    "tags": [
+      "breakfast",
+      "high_protein",
+      "quick"
+    ],
+    "ingredients": [
+      "2 scoops whey",
+      "1 banana",
+      "peanut butter (1 tbsp)",
+      "milk"
+    ],
+    "instructions": [
+      "Blend all 45\u201360 seconds."
+    ]
+  },
+  {
+    "name": "Greek Yogurt Power Bowl",
+    "meal_type": "breakfast",
+    "K": 250,
+    "P": 21,
+    "C": 30,
+    "F": 5,
+    "tags": [
+      "breakfast",
+      "high_protein",
+      "quick"
+    ],
+    "ingredients": [
+      "2 cups 0% Greek yogurt",
+      "berries",
+      "granola (light)",
+      "honey"
+    ],
+    "instructions": [
+      "Add yogurt to bowl.",
+      "Top with berries and granola.",
+      "Drizzle a little honey."
+    ]
+  },
+  {
+    "name": "Black Beans Corn Tortillas Bowl",
+    "meal_type": "lunch",
+    "K": 448,
+    "P": 27,
+    "C": 49,
+    "F": 16,
+    "tags": [
+      "dairy_free",
+      "gluten_free",
+      "lunch",
+      "quick",
+      "vegan",
+      "vegetarian"
+    ],
+    "ingredients": [
+      "6 oz black beans",
+      "3/4 cup corn tortillas",
+      "mixed veg: mushrooms, bell peppers",
+      "1 tbsp peanut butter"
+    ],
+    "instructions": [
+      "Warm the carb base.",
+      "Sear or warm black beans until hot.",
+      "Combine in a bowl with veggies.",
+      "Finish with peanut butter or your favorite sauce."
+    ]
+  },
+  {
+    "name": "Big Protein Smoothie",
+    "meal_type": "breakfast",
+    "K": 508,
+    "P": 45,
+    "C": 58,
+    "F": 11,
+    "tags": [
+      "breakfast",
+      "high_protein",
+      "quick"
+    ],
+    "ingredients": [
+      "2 scoops whey",
+      "1 banana",
+      "peanut butter (1 tbsp)",
+      "milk"
+    ],
+    "instructions": [
+      "Blend all 45\u201360 seconds."
+    ]
+  },
+  {
+    "name": "Seitan Sweet Potato Bowl",
+    "meal_type": "lunch",
+    "K": 693,
+    "P": 41,
+    "C": 76,
+    "F": 25,
+    "tags": [
+      "lunch",
+      "quick",
+      "vegan",
+      "vegetarian"
+    ],
+    "ingredients": [
+      "6 oz seitan",
+      "3/4 cup sweet potato",
+      "mixed veg: bell peppers, onion",
+      "1 tbsp avocado"
+    ],
+    "instructions": [
+      "Warm the carb base.",
+      "Sear or warm seitan until hot.",
+      "Combine in a bowl with veggies.",
+      "Finish with avocado or your favorite sauce."
+    ]
+  },
+  {
+    "name": "Chickpeas with Rice Cakes & Mushrooms, Zucchini",
+    "meal_type": "dinner",
+    "K": 558,
+    "P": 35,
+    "C": 55,
+    "F": 22,
+    "tags": [
+      "dairy_free",
+      "dinner",
+      "gluten_free",
+      "vegan",
+      "vegetarian"
+    ],
+    "ingredients": [
+      "6\u20137 oz chickpeas",
+      "1 cup rice cakes",
+      "mushrooms, zucchini",
+      "1 tsp olive oil"
+    ],
+    "instructions": [
+      "Cook chickpeas (grill, bake, or saut\u00e9) 6\u201310 minutes until done.",
+      "Prepare rice cakes as directed.",
+      "Plate with vegetables and drizzle oil."
+    ]
+  },
+  {
+    "name": "Chicken Breast Rice Cakes Bowl",
+    "meal_type": "lunch",
+    "K": 642,
+    "P": 43,
+    "C": 68,
+    "F": 22,
+    "tags": [
+      "gluten_free",
+      "high_protein",
+      "lunch",
+      "quick"
+    ],
+    "ingredients": [
+      "6 oz chicken breast",
+      "3/4 cup rice cakes",
+      "mixed veg: bell peppers, spinach",
+      "1 tbsp avocado"
+    ],
+    "instructions": [
+      "Warm the carb base.",
+      "Sear or warm chicken breast until hot.",
+      "Combine in a bowl with veggies.",
+      "Finish with avocado or your favorite sauce."
+    ]
+  },
+  {
+    "name": "Rice Cake + Turkey",
+    "meal_type": "snack",
+    "K": 150,
+    "P": 13,
+    "C": 16,
+    "F": 4,
+    "tags": [
+      "high_protein",
+      "low_carb",
+      "snack"
+    ],
+    "ingredients": [
+      "1 rice cake",
+      "3 oz turkey",
+      "mustard"
+    ],
+    "instructions": [
+      "Layer turkey on rice cake; add mustard."
+    ]
+  },
+  {
+    "name": "Eggs with Quinoa & Tomato, Bell Peppers",
+    "meal_type": "dinner",
+    "K": 490,
+    "P": 32,
+    "C": 50,
+    "F": 18,
+    "tags": [
+      "dinner"
+    ],
+    "ingredients": [
+      "6\u20137 oz eggs",
+      "1 cup quinoa",
+      "tomato, bell peppers",
+      "1 tsp tahini"
+    ],
+    "instructions": [
+      "Cook eggs (grill, bake, or saut\u00e9) 6\u201310 minutes until done.",
+      "Prepare quinoa as directed.",
+      "Plate with vegetables and drizzle oil."
+    ]
+  },
+  {
+    "name": "Chicken Breast Quinoa Bowl",
+    "meal_type": "lunch",
+    "K": 671,
+    "P": 45,
+    "C": 71,
+    "F": 23,
+    "tags": [
+      "gluten_free",
+      "high_protein",
+      "lunch",
+      "quick"
+    ],
+    "ingredients": [
+      "6 oz chicken breast",
+      "3/4 cup quinoa",
+      "mixed veg: green beans, bell peppers",
+      "1 tbsp avocado"
+    ],
+    "instructions": [
+      "Warm the carb base.",
+      "Sear or warm chicken breast until hot.",
+      "Combine in a bowl with veggies.",
+      "Finish with avocado or your favorite sauce."
+    ]
+  },
+  {
+    "name": "Trail Mix (controlled)",
+    "meal_type": "snack",
+    "K": 291,
+    "P": 10,
+    "C": 28,
+    "F": 15,
+    "tags": [
+      "snack",
+      "vegetarian"
+    ],
+    "ingredients": [
+      "1/4 cup mixed nuts",
+      "2 tbsp raisins"
+    ],
+    "instructions": [
+      "Portion and eat mindfully."
+    ]
+  },
+  {
+    "name": "Protein Oats with Banana",
+    "meal_type": "breakfast",
+    "K": 453,
+    "P": 32,
+    "C": 67,
+    "F": 6,
+    "tags": [
+      "breakfast",
+      "high_protein",
+      "quick"
+    ],
+    "ingredients": [
+      "1/2 cup oats",
+      "banana",
+      "greek yogurt 0%",
+      "cinnamon"
+    ],
+    "instructions": [
+      "Microwave oats with water or milk 2 minutes.",
+      "Stir in greek yogurt 0%.",
+      "Top with banana and cinnamon."
+    ]
+  },
+  {
+    "name": "Lentils with Rice Cakes & Broccoli, Asparagus",
+    "meal_type": "dinner",
+    "K": 537,
+    "P": 34,
+    "C": 53,
+    "F": 21,
+    "tags": [
+      "dairy_free",
+      "dinner",
+      "gluten_free",
+      "vegan",
+      "vegetarian"
+    ],
+    "ingredients": [
+      "6\u20137 oz lentils",
+      "1 cup rice cakes",
+      "broccoli, asparagus",
+      "1 tsp olive oil"
+    ],
+    "instructions": [
+      "Cook lentils (grill, bake, or saut\u00e9) 6\u201310 minutes until done.",
+      "Prepare rice cakes as directed.",
+      "Plate with vegetables and drizzle oil."
+    ]
+  },
+  {
+    "name": "Sirloin Steak with Quinoa & Carrots, Spinach",
+    "meal_type": "dinner",
+    "K": 627,
+    "P": 41,
+    "C": 64,
+    "F": 23,
+    "tags": [
+      "dinner",
+      "gluten_free"
+    ],
+    "ingredients": [
+      "6\u20137 oz sirloin steak",
+      "1 cup quinoa",
+      "carrots, spinach",
+      "1 tsp light cheese"
+    ],
+    "instructions": [
+      "Cook sirloin steak (grill, bake, or saut\u00e9) 6\u201310 minutes until done.",
+      "Prepare quinoa as directed.",
+      "Plate with vegetables and drizzle oil."
+    ]
+  },
+  {
+    "name": "Cottage Cheese Rice Cakes Bowl",
+    "meal_type": "lunch",
+    "K": 692,
+    "P": 46,
+    "C": 73,
+    "F": 24,
+    "tags": [
+      "high_protein",
+      "lunch",
+      "quick"
+    ],
+    "ingredients": [
+      "6 oz cottage cheese",
+      "3/4 cup rice cakes",
+      "mixed veg: kale, tomato",
+      "1 tbsp olive oil"
+    ],
+    "instructions": [
+      "Warm the carb base.",
+      "Sear or warm cottage cheese until hot.",
+      "Combine in a bowl with veggies.",
+      "Finish with olive oil or your favorite sauce."
+    ]
+  },
+  {
+    "name": "Seitan Whole-Wheat Pasta Bowl",
+    "meal_type": "lunch",
+    "K": 427,
+    "P": 26,
+    "C": 47,
+    "F": 15,
+    "tags": [
+      "lunch",
+      "quick",
+      "vegan",
+      "vegetarian"
+    ],
+    "ingredients": [
+      "6 oz seitan",
+      "3/4 cup whole-wheat pasta",
+      "mixed veg: asparagus, green beans",
+      "1 tbsp avocado"
+    ],
+    "instructions": [
+      "Warm the carb base.",
+      "Sear or warm seitan until hot.",
+      "Combine in a bowl with veggies.",
+      "Finish with avocado or your favorite sauce."
+    ]
+  },
+  {
+    "name": "Big Protein Smoothie",
+    "meal_type": "breakfast",
+    "K": 461,
+    "P": 41,
+    "C": 53,
+    "F": 9,
+    "tags": [
+      "breakfast",
+      "high_protein",
+      "quick"
+    ],
+    "ingredients": [
+      "2 scoops whey",
+      "1 banana",
+      "peanut butter (1 tbsp)",
+      "milk"
+    ],
+    "instructions": [
+      "Blend all 45\u201360 seconds."
+    ]
+  },
+  {
+    "name": "Eggs Corn Tortillas Bowl",
+    "meal_type": "lunch",
+    "K": 398,
+    "P": 24,
+    "C": 44,
+    "F": 14,
+    "tags": [
+      "lunch",
+      "quick"
+    ],
+    "ingredients": [
+      "6 oz eggs",
+      "3/4 cup corn tortillas",
+      "mixed veg: broccoli, kale",
+      "1 tbsp almonds"
+    ],
+    "instructions": [
+      "Warm the carb base.",
+      "Sear or warm eggs until hot.",
+      "Combine in a bowl with veggies.",
+      "Finish with almonds or your favorite sauce."
+    ]
+  },
+  {
+    "name": "Sirloin Steak Oats Bowl",
+    "meal_type": "lunch",
+    "K": 589,
+    "P": 35,
+    "C": 65,
+    "F": 21,
+    "tags": [
+      "gluten_free",
+      "lunch",
+      "quick"
+    ],
+    "ingredients": [
+      "6 oz sirloin steak",
+      "3/4 cup oats",
+      "mixed veg: spinach, green beans",
+      "1 tbsp peanut butter"
+    ],
+    "instructions": [
+      "Warm the carb base.",
+      "Sear or warm sirloin steak until hot.",
+      "Combine in a bowl with veggies.",
+      "Finish with peanut butter or your favorite sauce."
+    ]
+  },
+  {
+    "name": "Veggie Egg Scramble",
+    "meal_type": "breakfast",
+    "K": 257,
+    "P": 23,
+    "C": 18,
+    "F": 10,
+    "tags": [
+      "breakfast",
+      "low_carb",
+      "quick"
+    ],
+    "ingredients": [
+      "3 eggs",
+      "spinach",
+      "mushrooms",
+      "olive oil spray"
+    ],
+    "instructions": [
+      "Saut\u00e9 veggies 2\u20133 min.",
+      "Add beaten eggs; scramble until set."
+    ]
+  },
+  {
+    "name": "Sirloin Steak with Soba Noodles & Cabbage, Carrots",
+    "meal_type": "dinner",
+    "K": 633,
+    "P": 40,
+    "C": 62,
+    "F": 25,
+    "tags": [
+      "dinner",
+      "gluten_free"
+    ],
+    "ingredients": [
+      "6\u20137 oz sirloin steak",
+      "1 cup soba noodles",
+      "cabbage, carrots",
+      "1 tsp olive oil"
+    ],
+    "instructions": [
+      "Cook sirloin steak (grill, bake, or saut\u00e9) 6\u201310 minutes until done.",
+      "Prepare soba noodles as directed.",
+      "Plate with vegetables and drizzle oil."
+    ]
+  },
+  {
+    "name": "Cod Mixed Fruit Bowl",
+    "meal_type": "lunch",
+    "K": 647,
+    "P": 39,
+    "C": 71,
+    "F": 23,
+    "tags": [
+      "gluten_free",
+      "low_carb",
+      "lunch",
+      "quick"
+    ],
+    "ingredients": [
+      "6 oz cod",
+      "3/4 cup mixed fruit",
+      "mixed veg: carrots, tomato",
+      "1 tbsp almonds"
+    ],
+    "instructions": [
+      "Warm the carb base.",
+      "Sear or warm cod until hot.",
+      "Combine in a bowl with veggies.",
+      "Finish with almonds or your favorite sauce."
+    ]
+  },
+  {
+    "name": "Lean Ground Turkey with Soba Noodles & Zucchini, Carrots",
+    "meal_type": "dinner",
+    "K": 503,
+    "P": 36,
+    "C": 47,
+    "F": 19,
+    "tags": [
+      "dinner",
+      "gluten_free",
+      "high_protein"
+    ],
+    "ingredients": [
+      "6\u20137 oz lean ground turkey",
+      "1 cup soba noodles",
+      "zucchini, carrots",
+      "1 tsp almonds"
+    ],
+    "instructions": [
+      "Cook lean ground turkey (grill, bake, or saut\u00e9) 6\u201310 minutes until done.",
+      "Prepare soba noodles as directed.",
+      "Plate with vegetables and drizzle oil."
+    ]
+  },
+  {
+    "name": "Tofu Oats Bowl",
+    "meal_type": "lunch",
+    "K": 689,
+    "P": 41,
+    "C": 75,
+    "F": 25,
+    "tags": [
+      "dairy_free",
+      "gluten_free",
+      "lunch",
+      "quick",
+      "vegan",
+      "vegetarian"
+    ],
+    "ingredients": [
+      "6 oz tofu",
+      "3/4 cup oats",
+      "mixed veg: mushrooms, spinach",
+      "1 tbsp tahini"
+    ],
+    "instructions": [
+      "Warm the carb base.",
+      "Sear or warm tofu until hot.",
+      "Combine in a bowl with veggies.",
+      "Finish with tahini or your favorite sauce."
+    ]
+  },
+  {
+    "name": "Salmon with Cauliflower Rice & Bell Peppers, Onion",
+    "meal_type": "dinner",
+    "K": 550,
+    "P": 39,
+    "C": 49,
+    "F": 22,
+    "tags": [
+      "dinner",
+      "gluten_free",
+      "low_carb"
+    ],
+    "ingredients": [
+      "6\u20137 oz salmon",
+      "1 cup cauliflower rice",
+      "bell peppers, onion",
+      "1 tsp light cheese"
+    ],
+    "instructions": [
+      "Cook salmon (grill, bake, or saut\u00e9) 6\u201310 minutes until done.",
+      "Prepare cauliflower rice as directed.",
+      "Plate with vegetables and drizzle oil."
+    ]
+  },
+  {
+    "name": "Rice Cake + Turkey",
+    "meal_type": "snack",
+    "K": 154,
+    "P": 13,
+    "C": 17,
+    "F": 4,
+    "tags": [
+      "high_protein",
+      "low_carb",
+      "snack"
+    ],
+    "ingredients": [
+      "1 rice cake",
+      "3 oz turkey",
+      "mustard"
+    ],
+    "instructions": [
+      "Layer turkey on rice cake; add mustard."
+    ]
+  },
+  {
+    "name": "Egg Whites with Farro & Kale, Cabbage",
+    "meal_type": "dinner",
+    "K": 529,
+    "P": 33,
+    "C": 52,
+    "F": 21,
+    "tags": [
+      "dinner",
+      "low_carb"
+    ],
+    "ingredients": [
+      "6\u20137 oz egg whites",
+      "1 cup farro",
+      "kale, cabbage",
+      "1 tsp olive oil"
+    ],
+    "instructions": [
+      "Cook egg whites (grill, bake, or saut\u00e9) 6\u201310 minutes until done.",
+      "Prepare farro as directed.",
+      "Plate with vegetables and drizzle oil."
+    ]
+  },
+  {
+    "name": "Shrimp with Whole-Wheat Pasta & Green Beans, Cabbage",
+    "meal_type": "dinner",
+    "K": 598,
+    "P": 39,
+    "C": 61,
+    "F": 22,
+    "tags": [
+      "dinner",
+      "gluten_free",
+      "low_carb"
+    ],
+    "ingredients": [
+      "6\u20137 oz shrimp",
+      "1 cup whole-wheat pasta",
+      "green beans, cabbage",
+      "1 tsp peanut butter"
+    ],
+    "instructions": [
+      "Cook shrimp (grill, bake, or saut\u00e9) 6\u201310 minutes until done.",
+      "Prepare whole-wheat pasta as directed.",
+      "Plate with vegetables and drizzle oil."
+    ]
+  },
+  {
+    "name": "Trail Mix (controlled)",
+    "meal_type": "snack",
+    "K": 269,
+    "P": 9,
+    "C": 25,
+    "F": 15,
+    "tags": [
+      "snack",
+      "vegetarian"
+    ],
+    "ingredients": [
+      "1/4 cup mixed nuts",
+      "2 tbsp raisins"
+    ],
+    "instructions": [
+      "Portion and eat mindfully."
+    ]
+  },
+  {
+    "name": "Black Beans Quinoa Bowl",
+    "meal_type": "lunch",
+    "K": 469,
+    "P": 28,
+    "C": 51,
+    "F": 17,
+    "tags": [
+      "dairy_free",
+      "gluten_free",
+      "lunch",
+      "quick",
+      "vegan",
+      "vegetarian"
+    ],
+    "ingredients": [
+      "6 oz black beans",
+      "3/4 cup quinoa",
+      "mixed veg: bell peppers, mushrooms",
+      "1 tbsp peanut butter"
+    ],
+    "instructions": [
+      "Warm the carb base.",
+      "Sear or warm black beans until hot.",
+      "Combine in a bowl with veggies.",
+      "Finish with peanut butter or your favorite sauce."
+    ]
+  },
+  {
+    "name": "Cod with Quinoa & Spinach, Zucchini",
+    "meal_type": "dinner",
+    "K": 461,
+    "P": 30,
+    "C": 47,
+    "F": 17,
+    "tags": [
+      "dinner",
+      "gluten_free",
+      "low_carb"
+    ],
+    "ingredients": [
+      "6\u20137 oz cod",
+      "1 cup quinoa",
+      "spinach, zucchini",
+      "1 tsp tahini"
+    ],
+    "instructions": [
+      "Cook cod (grill, bake, or saut\u00e9) 6\u201310 minutes until done.",
+      "Prepare quinoa as directed.",
+      "Plate with vegetables and drizzle oil."
+    ]
+  },
+  {
+    "name": "Chickpeas with Rice Cakes & Tomato, Onion",
+    "meal_type": "dinner",
+    "K": 516,
+    "P": 33,
+    "C": 51,
+    "F": 20,
+    "tags": [
+      "dairy_free",
+      "dinner",
+      "gluten_free",
+      "vegan",
+      "vegetarian"
+    ],
+    "ingredients": [
+      "6\u20137 oz chickpeas",
+      "1 cup rice cakes",
+      "tomato, onion",
+      "1 tsp avocado"
+    ],
+    "instructions": [
+      "Cook chickpeas (grill, bake, or saut\u00e9) 6\u201310 minutes until done.",
+      "Prepare rice cakes as directed.",
+      "Plate with vegetables and drizzle oil."
+    ]
+  },
+  {
+    "name": "Apple + Peanut Butter",
+    "meal_type": "snack",
+    "K": 226,
+    "P": 6,
+    "C": 26,
+    "F": 11,
+    "tags": [
+      "budget",
+      "quick",
+      "snack"
+    ],
+    "ingredients": [
+      "1 apple",
+      "1.5 tbsp peanut butter"
+    ],
+    "instructions": [
+      "Slice apple and dip in PB."
+    ]
+  },
+  {
+    "name": "Chickpeas with Rice Cakes & Zucchini, Spinach",
+    "meal_type": "dinner",
+    "K": 598,
+    "P": 39,
+    "C": 61,
+    "F": 22,
+    "tags": [
+      "dairy_free",
+      "dinner",
+      "gluten_free",
+      "vegan",
+      "vegetarian"
+    ],
+    "ingredients": [
+      "6\u20137 oz chickpeas",
+      "1 cup rice cakes",
+      "zucchini, spinach",
+      "1 tsp peanut butter"
+    ],
+    "instructions": [
+      "Cook chickpeas (grill, bake, or saut\u00e9) 6\u201310 minutes until done.",
+      "Prepare rice cakes as directed.",
+      "Plate with vegetables and drizzle oil."
+    ]
+  },
+  {
+    "name": "Hummus + Carrots",
+    "meal_type": "snack",
+    "K": 205,
+    "P": 6,
+    "C": 22,
+    "F": 10,
+    "tags": [
+      "budget",
+      "dairy_free",
+      "snack",
+      "vegan"
+    ],
+    "ingredients": [
+      "1/4 cup hummus",
+      "1 cup carrots"
+    ],
+    "instructions": [
+      "Dip and enjoy."
+    ]
+  },
+  {
+    "name": "Lentils Farro Bowl",
+    "meal_type": "lunch",
+    "K": 618,
+    "P": 37,
+    "C": 68,
+    "F": 22,
+    "tags": [
+      "dairy_free",
+      "gluten_free",
+      "lunch",
+      "quick",
+      "vegan",
+      "vegetarian"
+    ],
+    "ingredients": [
+      "6 oz lentils",
+      "3/4 cup farro",
+      "mixed veg: mushrooms, carrots",
+      "1 tbsp almonds"
+    ],
+    "instructions": [
+      "Warm the carb base.",
+      "Sear or warm lentils until hot.",
+      "Combine in a bowl with veggies.",
+      "Finish with almonds or your favorite sauce."
+    ]
+  },
+  {
+    "name": "Salmon with Sweet Potato & Bell Peppers, Mushrooms",
+    "meal_type": "dinner",
+    "K": 627,
+    "P": 41,
+    "C": 64,
+    "F": 23,
+    "tags": [
+      "dinner",
+      "gluten_free"
+    ],
+    "ingredients": [
+      "6\u20137 oz salmon",
+      "1 cup sweet potato",
+      "bell peppers, mushrooms",
+      "1 tsp light cheese"
+    ],
+    "instructions": [
+      "Cook salmon (grill, bake, or saut\u00e9) 6\u201310 minutes until done.",
+      "Prepare sweet potato as directed.",
+      "Plate with vegetables and drizzle oil."
+    ]
+  },
+  {
+    "name": "Chickpeas Rice Cakes Bowl",
+    "meal_type": "lunch",
+    "K": 421,
+    "P": 27,
+    "C": 49,
+    "F": 13,
+    "tags": [
+      "dairy_free",
+      "gluten_free",
+      "lunch",
+      "quick",
+      "vegan",
+      "vegetarian"
+    ],
+    "ingredients": [
+      "6 oz chickpeas",
+      "3/4 cup rice cakes",
+      "mixed veg: green beans, cabbage",
+      "1 tbsp light cheese"
+    ],
+    "instructions": [
+      "Warm the carb base.",
+      "Sear or warm chickpeas until hot.",
+      "Combine in a bowl with veggies.",
+      "Finish with light cheese or your favorite sauce."
+    ]
+  },
+  {
+    "name": "Hummus + Carrots",
+    "meal_type": "snack",
+    "K": 194,
+    "P": 6,
+    "C": 21,
+    "F": 10,
+    "tags": [
+      "budget",
+      "dairy_free",
+      "snack",
+      "vegan"
+    ],
+    "ingredients": [
+      "1/4 cup hummus",
+      "1 cup carrots"
+    ],
+    "instructions": [
+      "Dip and enjoy."
+    ]
+  },
+  {
+    "name": "Chicken Breast Oats Bowl",
+    "meal_type": "lunch",
+    "K": 485,
+    "P": 32,
+    "C": 51,
+    "F": 17,
+    "tags": [
+      "gluten_free",
+      "high_protein",
+      "lunch",
+      "quick"
+    ],
+    "ingredients": [
+      "6 oz chicken breast",
+      "3/4 cup oats",
+      "mixed veg: zucchini, kale",
+      "1 tbsp almonds"
+    ],
+    "instructions": [
+      "Warm the carb base.",
+      "Sear or warm chicken breast until hot.",
+      "Combine in a bowl with veggies.",
+      "Finish with almonds or your favorite sauce."
+    ]
+  },
+  {
+    "name": "Eggs with Corn Tortillas & Spinach, Tomato",
+    "meal_type": "dinner",
+    "K": 645,
+    "P": 41,
+    "C": 64,
+    "F": 25,
+    "tags": [
+      "dinner"
+    ],
+    "ingredients": [
+      "6\u20137 oz eggs",
+      "1 cup corn tortillas",
+      "spinach, tomato",
+      "1 tsp avocado"
+    ],
+    "instructions": [
+      "Cook eggs (grill, bake, or saut\u00e9) 6\u201310 minutes until done.",
+      "Prepare corn tortillas as directed.",
+      "Plate with vegetables and drizzle oil."
+    ]
+  },
+  {
+    "name": "Cod Farro Bowl",
+    "meal_type": "lunch",
+    "K": 411,
+    "P": 24,
+    "C": 45,
+    "F": 15,
+    "tags": [
+      "gluten_free",
+      "low_carb",
+      "lunch",
+      "quick"
+    ],
+    "ingredients": [
+      "6 oz cod",
+      "3/4 cup farro",
+      "mixed veg: onion, bell peppers",
+      "1 tbsp avocado"
+    ],
+    "instructions": [
+      "Warm the carb base.",
+      "Sear or warm cod until hot.",
+      "Combine in a bowl with veggies.",
+      "Finish with avocado or your favorite sauce."
+    ]
+  },
+  {
+    "name": "Shrimp with Oats & Tomato, Bell Peppers",
+    "meal_type": "dinner",
+    "K": 432,
+    "P": 28,
+    "C": 44,
+    "F": 16,
+    "tags": [
+      "dinner",
+      "gluten_free",
+      "low_carb"
+    ],
+    "ingredients": [
+      "6\u20137 oz shrimp",
+      "1 cup oats",
+      "tomato, bell peppers",
+      "1 tsp tahini"
+    ],
+    "instructions": [
+      "Cook shrimp (grill, bake, or saut\u00e9) 6\u201310 minutes until done.",
+      "Prepare oats as directed.",
+      "Plate with vegetables and drizzle oil."
+    ]
+  },
+  {
+    "name": "Chicken Breast with Sweet Potato & Onion, Broccoli",
+    "meal_type": "dinner",
+    "K": 715,
+    "P": 51,
+    "C": 67,
+    "F": 27,
+    "tags": [
+      "dinner",
+      "gluten_free",
+      "high_protein"
+    ],
+    "ingredients": [
+      "6\u20137 oz chicken breast",
+      "1 cup sweet potato",
+      "onion, broccoli",
+      "1 tsp avocado"
+    ],
+    "instructions": [
+      "Cook chicken breast (grill, bake, or saut\u00e9) 6\u201310 minutes until done.",
+      "Prepare sweet potato as directed.",
+      "Plate with vegetables and drizzle oil."
+    ]
+  },
+  {
+    "name": "Greek Yogurt Power Bowl",
+    "meal_type": "breakfast",
+    "K": 257,
+    "P": 22,
+    "C": 31,
+    "F": 5,
+    "tags": [
+      "breakfast",
+      "high_protein",
+      "quick"
+    ],
+    "ingredients": [
+      "2 cups 0% Greek yogurt",
+      "berries",
+      "granola (light)",
+      "honey"
+    ],
+    "instructions": [
+      "Add yogurt to bowl.",
+      "Top with berries and granola.",
+      "Drizzle a little honey."
+    ]
+  },
+  {
+    "name": "Greek Yogurt 0% with Sweet Potato & Mushrooms, Asparagus",
+    "meal_type": "dinner",
+    "K": 752,
+    "P": 54,
+    "C": 71,
+    "F": 28,
+    "tags": [
+      "dinner",
+      "high_protein"
+    ],
+    "ingredients": [
+      "6\u20137 oz greek yogurt 0%",
+      "1 cup sweet potato",
+      "mushrooms, asparagus",
+      "1 tsp olive oil"
+    ],
+    "instructions": [
+      "Cook greek yogurt 0% (grill, bake, or saut\u00e9) 6\u201310 minutes until done.",
+      "Prepare sweet potato as directed.",
+      "Plate with vegetables and drizzle oil."
+    ]
+  },
+  {
+    "name": "Rice Cake + Turkey",
+    "meal_type": "snack",
+    "K": 150,
+    "P": 13,
+    "C": 16,
+    "F": 4,
+    "tags": [
+      "high_protein",
+      "low_carb",
+      "snack"
+    ],
+    "ingredients": [
+      "1 rice cake",
+      "3 oz turkey",
+      "mustard"
+    ],
+    "instructions": [
+      "Layer turkey on rice cake; add mustard."
+    ]
+  },
+  {
+    "name": "Hummus + Carrots",
+    "meal_type": "snack",
+    "K": 225,
+    "P": 7,
+    "C": 25,
+    "F": 11,
+    "tags": [
+      "budget",
+      "dairy_free",
+      "snack",
+      "vegan"
+    ],
+    "ingredients": [
+      "1/4 cup hummus",
+      "1 cup carrots"
+    ],
+    "instructions": [
+      "Dip and enjoy."
+    ]
+  },
+  {
+    "name": "Hummus + Carrots",
+    "meal_type": "snack",
+    "K": 199,
+    "P": 6,
+    "C": 22,
+    "F": 10,
+    "tags": [
+      "budget",
+      "dairy_free",
+      "snack",
+      "vegan"
+    ],
+    "ingredients": [
+      "1/4 cup hummus",
+      "1 cup carrots"
+    ],
+    "instructions": [
+      "Dip and enjoy."
+    ]
+  },
+  {
+    "name": "Trail Mix (controlled)",
+    "meal_type": "snack",
+    "K": 273,
+    "P": 9,
+    "C": 26,
+    "F": 15,
+    "tags": [
+      "snack",
+      "vegetarian"
+    ],
+    "ingredients": [
+      "1/4 cup mixed nuts",
+      "2 tbsp raisins"
+    ],
+    "instructions": [
+      "Portion and eat mindfully."
+    ]
+  },
+  {
+    "name": "Veggie Egg Scramble",
+    "meal_type": "breakfast",
+    "K": 333,
+    "P": 30,
+    "C": 23,
+    "F": 13,
+    "tags": [
+      "breakfast",
+      "low_carb",
+      "quick"
+    ],
+    "ingredients": [
+      "3 eggs",
+      "spinach",
+      "mushrooms",
+      "olive oil spray"
+    ],
+    "instructions": [
+      "Saut\u00e9 veggies 2\u20133 min.",
+      "Add beaten eggs; scramble until set."
+    ]
+  },
+  {
+    "name": "Lean Ground Turkey Farro Bowl",
+    "meal_type": "lunch",
+    "K": 572,
+    "P": 38,
+    "C": 60,
+    "F": 20,
+    "tags": [
+      "gluten_free",
+      "high_protein",
+      "lunch",
+      "quick"
+    ],
+    "ingredients": [
+      "6 oz lean ground turkey",
+      "3/4 cup farro",
+      "mixed veg: broccoli, carrots",
+      "1 tbsp tahini"
+    ],
+    "instructions": [
+      "Warm the carb base.",
+      "Sear or warm lean ground turkey until hot.",
+      "Combine in a bowl with veggies.",
+      "Finish with tahini or your favorite sauce."
+    ]
+  },
+  {
+    "name": "Tofu Sweet Potato Bowl",
+    "meal_type": "lunch",
+    "K": 448,
+    "P": 27,
+    "C": 49,
+    "F": 16,
+    "tags": [
+      "dairy_free",
+      "gluten_free",
+      "lunch",
+      "quick",
+      "vegan",
+      "vegetarian"
+    ],
+    "ingredients": [
+      "6 oz tofu",
+      "3/4 cup sweet potato",
+      "mixed veg: mushrooms, asparagus",
+      "1 tbsp tahini"
+    ],
+    "instructions": [
+      "Warm the carb base.",
+      "Sear or warm tofu until hot.",
+      "Combine in a bowl with veggies.",
+      "Finish with tahini or your favorite sauce."
+    ]
+  },
+  {
+    "name": "Sirloin Steak with Mixed Fruit & Mushrooms, Kale",
+    "meal_type": "dinner",
+    "K": 487,
+    "P": 31,
+    "C": 48,
+    "F": 19,
+    "tags": [
+      "dinner",
+      "gluten_free"
+    ],
+    "ingredients": [
+      "6\u20137 oz sirloin steak",
+      "1 cup mixed fruit",
+      "mushrooms, kale",
+      "1 tsp avocado"
+    ],
+    "instructions": [
+      "Cook sirloin steak (grill, bake, or saut\u00e9) 6\u201310 minutes until done.",
+      "Prepare mixed fruit as directed.",
+      "Plate with vegetables and drizzle oil."
+    ]
+  },
+  {
+    "name": "Salmon Oats Bowl",
+    "meal_type": "lunch",
+    "K": 701,
+    "P": 42,
+    "C": 77,
+    "F": 25,
+    "tags": [
+      "gluten_free",
+      "lunch",
+      "quick"
+    ],
+    "ingredients": [
+      "6 oz salmon",
+      "3/4 cup oats",
+      "mixed veg: broccoli, tomato",
+      "1 tbsp olive oil"
+    ],
+    "instructions": [
+      "Warm the carb base.",
+      "Sear or warm salmon until hot.",
+      "Combine in a bowl with veggies.",
+      "Finish with olive oil or your favorite sauce."
+    ]
+  },
+  {
+    "name": "Sirloin Steak Sweet Potato Bowl",
+    "meal_type": "lunch",
+    "K": 668,
+    "P": 40,
+    "C": 73,
+    "F": 24,
+    "tags": [
+      "gluten_free",
+      "lunch",
+      "quick"
+    ],
+    "ingredients": [
+      "6 oz sirloin steak",
+      "3/4 cup sweet potato",
+      "mixed veg: onion, asparagus",
+      "1 tbsp avocado"
+    ],
+    "instructions": [
+      "Warm the carb base.",
+      "Sear or warm sirloin steak until hot.",
+      "Combine in a bowl with veggies.",
+      "Finish with avocado or your favorite sauce."
+    ]
+  },
+  {
+    "name": "Black Beans Quinoa Bowl",
+    "meal_type": "lunch",
+    "K": 535,
+    "P": 32,
+    "C": 59,
+    "F": 19,
+    "tags": [
+      "dairy_free",
+      "gluten_free",
+      "lunch",
+      "quick",
+      "vegan",
+      "vegetarian"
+    ],
+    "ingredients": [
+      "6 oz black beans",
+      "3/4 cup quinoa",
+      "mixed veg: onion, green beans",
+      "1 tbsp avocado"
+    ],
+    "instructions": [
+      "Warm the carb base.",
+      "Sear or warm black beans until hot.",
+      "Combine in a bowl with veggies.",
+      "Finish with avocado or your favorite sauce."
+    ]
+  },
+  {
+    "name": "Sirloin Steak with Mixed Fruit & Carrots, Kale",
+    "meal_type": "dinner",
+    "K": 654,
+    "P": 41,
+    "C": 64,
+    "F": 26,
+    "tags": [
+      "dinner",
+      "gluten_free"
+    ],
+    "ingredients": [
+      "6\u20137 oz sirloin steak",
+      "1 cup mixed fruit",
+      "carrots, kale",
+      "1 tsp almonds"
+    ],
+    "instructions": [
+      "Cook sirloin steak (grill, bake, or saut\u00e9) 6\u201310 minutes until done.",
+      "Prepare mixed fruit as directed.",
+      "Plate with vegetables and drizzle oil."
+    ]
+  },
+  {
+    "name": "Lentils with Rice Cakes & Zucchini, Spinach",
+    "meal_type": "dinner",
+    "K": 433,
+    "P": 27,
+    "C": 43,
+    "F": 17,
+    "tags": [
+      "dairy_free",
+      "dinner",
+      "gluten_free",
+      "vegan",
+      "vegetarian"
+    ],
+    "ingredients": [
+      "6\u20137 oz lentils",
+      "1 cup rice cakes",
+      "zucchini, spinach",
+      "1 tsp almonds"
+    ],
+    "instructions": [
+      "Cook lentils (grill, bake, or saut\u00e9) 6\u201310 minutes until done.",
+      "Prepare rice cakes as directed.",
+      "Plate with vegetables and drizzle oil."
+    ]
+  },
+  {
+    "name": "Greek Yogurt Power Bowl",
+    "meal_type": "breakfast",
+    "K": 289,
+    "P": 25,
+    "C": 34,
+    "F": 6,
+    "tags": [
+      "breakfast",
+      "high_protein",
+      "quick"
+    ],
+    "ingredients": [
+      "2 cups 0% Greek yogurt",
+      "berries",
+      "granola (light)",
+      "honey"
+    ],
+    "instructions": [
+      "Add yogurt to bowl.",
+      "Top with berries and granola.",
+      "Drizzle a little honey."
+    ]
+  },
+  {
+    "name": "Cod Sweet Potato Bowl",
+    "meal_type": "lunch",
+    "K": 529,
+    "P": 33,
+    "C": 61,
+    "F": 17,
+    "tags": [
+      "gluten_free",
+      "low_carb",
+      "lunch",
+      "quick"
+    ],
+    "ingredients": [
+      "6 oz cod",
+      "3/4 cup sweet potato",
+      "mixed veg: green beans, kale",
+      "1 tbsp light cheese"
+    ],
+    "instructions": [
+      "Warm the carb base.",
+      "Sear or warm cod until hot.",
+      "Combine in a bowl with veggies.",
+      "Finish with light cheese or your favorite sauce."
+    ]
+  },
+  {
+    "name": "Lean Ground Turkey with Mixed Fruit & Zucchini, Kale",
+    "meal_type": "dinner",
+    "K": 769,
+    "P": 55,
+    "C": 72,
+    "F": 29,
+    "tags": [
+      "dinner",
+      "gluten_free",
+      "high_protein"
+    ],
+    "ingredients": [
+      "6\u20137 oz lean ground turkey",
+      "1 cup mixed fruit",
+      "zucchini, kale",
+      "1 tsp olive oil"
+    ],
+    "instructions": [
+      "Cook lean ground turkey (grill, bake, or saut\u00e9) 6\u201310 minutes until done.",
+      "Prepare mixed fruit as directed.",
+      "Plate with vegetables and drizzle oil."
+    ]
+  },
+  {
+    "name": "Lentils with Soba Noodles & Tomato, Carrots",
+    "meal_type": "dinner",
+    "K": 579,
+    "P": 36,
+    "C": 57,
+    "F": 23,
+    "tags": [
+      "dairy_free",
+      "dinner",
+      "gluten_free",
+      "vegan",
+      "vegetarian"
+    ],
+    "ingredients": [
+      "6\u20137 oz lentils",
+      "1 cup soba noodles",
+      "tomato, carrots",
+      "1 tsp almonds"
+    ],
+    "instructions": [
+      "Cook lentils (grill, bake, or saut\u00e9) 6\u201310 minutes until done.",
+      "Prepare soba noodles as directed.",
+      "Plate with vegetables and drizzle oil."
+    ]
+  },
+  {
+    "name": "Big Protein Smoothie",
+    "meal_type": "breakfast",
+    "K": 426,
+    "P": 38,
+    "C": 49,
+    "F": 9,
+    "tags": [
+      "breakfast",
+      "high_protein",
+      "quick"
+    ],
+    "ingredients": [
+      "2 scoops whey",
+      "1 banana",
+      "peanut butter (1 tbsp)",
+      "milk"
+    ],
+    "instructions": [
+      "Blend all 45\u201360 seconds."
+    ]
+  },
+  {
+    "name": "Greek Yogurt Power Bowl",
+    "meal_type": "breakfast",
+    "K": 250,
+    "P": 21,
+    "C": 30,
+    "F": 5,
+    "tags": [
+      "breakfast",
+      "high_protein",
+      "quick"
+    ],
+    "ingredients": [
+      "2 cups 0% Greek yogurt",
+      "berries",
+      "granola (light)",
+      "honey"
+    ],
+    "instructions": [
+      "Add yogurt to bowl.",
+      "Top with berries and granola.",
+      "Drizzle a little honey."
+    ]
+  },
+  {
+    "name": "Lentils with Corn Tortillas & Mushrooms, Spinach",
+    "meal_type": "dinner",
+    "K": 666,
+    "P": 42,
+    "C": 66,
+    "F": 26,
+    "tags": [
+      "dairy_free",
+      "dinner",
+      "gluten_free",
+      "vegan",
+      "vegetarian"
+    ],
+    "ingredients": [
+      "6\u20137 oz lentils",
+      "1 cup corn tortillas",
+      "mushrooms, spinach",
+      "1 tsp almonds"
+    ],
+    "instructions": [
+      "Cook lentils (grill, bake, or saut\u00e9) 6\u201310 minutes until done.",
+      "Prepare corn tortillas as directed.",
+      "Plate with vegetables and drizzle oil."
+    ]
+  },
+  {
+    "name": "Seitan Rice Cakes Bowl",
+    "meal_type": "lunch",
+    "K": 578,
+    "P": 37,
+    "C": 67,
+    "F": 18,
+    "tags": [
+      "lunch",
+      "quick",
+      "vegan",
+      "vegetarian"
+    ],
+    "ingredients": [
+      "6 oz seitan",
+      "3/4 cup rice cakes",
+      "mixed veg: bell peppers, asparagus",
+      "1 tbsp light cheese"
+    ],
+    "instructions": [
+      "Warm the carb base.",
+      "Sear or warm seitan until hot.",
+      "Combine in a bowl with veggies.",
+      "Finish with light cheese or your favorite sauce."
+    ]
+  },
+  {
+    "name": "Eggs with Quinoa & Asparagus, Spinach",
+    "meal_type": "dinner",
+    "K": 486,
+    "P": 32,
+    "C": 49,
+    "F": 18,
+    "tags": [
+      "dinner"
+    ],
+    "ingredients": [
+      "6\u20137 oz eggs",
+      "1 cup quinoa",
+      "asparagus, spinach",
+      "1 tsp light cheese"
+    ],
+    "instructions": [
+      "Cook eggs (grill, bake, or saut\u00e9) 6\u201310 minutes until done.",
+      "Prepare quinoa as directed.",
+      "Plate with vegetables and drizzle oil."
+    ]
+  },
+  {
+    "name": "Greek Yogurt 0% with Farro & Cabbage, Carrots",
+    "meal_type": "dinner",
+    "K": 752,
+    "P": 54,
+    "C": 71,
+    "F": 28,
+    "tags": [
+      "dinner",
+      "high_protein"
+    ],
+    "ingredients": [
+      "6\u20137 oz greek yogurt 0%",
+      "1 cup farro",
+      "cabbage, carrots",
+      "1 tsp olive oil"
+    ],
+    "instructions": [
+      "Cook greek yogurt 0% (grill, bake, or saut\u00e9) 6\u201310 minutes until done.",
+      "Prepare farro as directed.",
+      "Plate with vegetables and drizzle oil."
+    ]
+  },
+  {
+    "name": "Veggie Egg Scramble",
+    "meal_type": "breakfast",
+    "K": 286,
+    "P": 25,
+    "C": 20,
+    "F": 12,
+    "tags": [
+      "breakfast",
+      "low_carb",
+      "quick"
+    ],
+    "ingredients": [
+      "3 eggs",
+      "spinach",
+      "mushrooms",
+      "olive oil spray"
+    ],
+    "instructions": [
+      "Saut\u00e9 veggies 2\u20133 min.",
+      "Add beaten eggs; scramble until set."
+    ]
+  },
+  {
+    "name": "Chicken Breast with Rice Cakes & Kale, Onion",
+    "meal_type": "dinner",
+    "K": 790,
+    "P": 56,
+    "C": 74,
+    "F": 30,
+    "tags": [
+      "dinner",
+      "gluten_free",
+      "high_protein"
+    ],
+    "ingredients": [
+      "6\u20137 oz chicken breast",
+      "1 cup rice cakes",
+      "kale, onion",
+      "1 tsp olive oil"
+    ],
+    "instructions": [
+      "Cook chicken breast (grill, bake, or saut\u00e9) 6\u201310 minutes until done.",
+      "Prepare rice cakes as directed.",
+      "Plate with vegetables and drizzle oil."
+    ]
+  },
+  {
+    "name": "Apple + Peanut Butter",
+    "meal_type": "snack",
+    "K": 242,
+    "P": 7,
+    "C": 27,
+    "F": 12,
+    "tags": [
+      "budget",
+      "quick",
+      "snack"
+    ],
+    "ingredients": [
+      "1 apple",
+      "1.5 tbsp peanut butter"
+    ],
+    "instructions": [
+      "Slice apple and dip in PB."
+    ]
+  },
+  {
+    "name": "Apple + Peanut Butter",
+    "meal_type": "snack",
+    "K": 241,
+    "P": 7,
+    "C": 27,
+    "F": 12,
+    "tags": [
+      "budget",
+      "quick",
+      "snack"
+    ],
+    "ingredients": [
+      "1 apple",
+      "1.5 tbsp peanut butter"
+    ],
+    "instructions": [
+      "Slice apple and dip in PB."
+    ]
+  },
+  {
+    "name": "Protein Oats with Berries",
+    "meal_type": "breakfast",
+    "K": 421,
+    "P": 36,
+    "C": 56,
+    "F": 6,
+    "tags": [
+      "breakfast",
+      "high_protein",
+      "quick"
+    ],
+    "ingredients": [
+      "1/2 cup oats",
+      "berries",
+      "whey",
+      "cinnamon"
+    ],
+    "instructions": [
+      "Microwave oats with water or milk 2 minutes.",
+      "Stir in whey.",
+      "Top with berries and cinnamon."
+    ]
+  },
+  {
+    "name": "Greek Yogurt Power Bowl",
+    "meal_type": "breakfast",
+    "K": 293,
+    "P": 25,
+    "C": 35,
+    "F": 6,
+    "tags": [
+      "breakfast",
+      "high_protein",
+      "quick"
+    ],
+    "ingredients": [
+      "2 cups 0% Greek yogurt",
+      "berries",
+      "granola (light)",
+      "honey"
+    ],
+    "instructions": [
+      "Add yogurt to bowl.",
+      "Top with berries and granola.",
+      "Drizzle a little honey."
+    ]
+  },
+  {
+    "name": "Rice Cake + Turkey",
+    "meal_type": "snack",
+    "K": 150,
+    "P": 13,
+    "C": 16,
+    "F": 4,
+    "tags": [
+      "high_protein",
+      "low_carb",
+      "snack"
+    ],
+    "ingredients": [
+      "1 rice cake",
+      "3 oz turkey",
+      "mustard"
+    ],
+    "instructions": [
+      "Layer turkey on rice cake; add mustard."
+    ]
+  },
+  {
+    "name": "Protein Oats with Berries",
+    "meal_type": "breakfast",
+    "K": 483,
+    "P": 37,
+    "C": 67,
+    "F": 7,
+    "tags": [
+      "breakfast",
+      "high_protein",
+      "quick"
+    ],
+    "ingredients": [
+      "1/2 cup oats",
+      "berries",
+      "greek yogurt 0%",
+      "cinnamon"
+    ],
+    "instructions": [
+      "Microwave oats with water or milk 2 minutes.",
+      "Stir in greek yogurt 0%.",
+      "Top with berries and cinnamon."
+    ]
+  },
+  {
+    "name": "Black Beans Sweet Potato Bowl",
+    "meal_type": "lunch",
+    "K": 618,
+    "P": 37,
+    "C": 68,
+    "F": 22,
+    "tags": [
+      "dairy_free",
+      "gluten_free",
+      "lunch",
+      "quick",
+      "vegan",
+      "vegetarian"
+    ],
+    "ingredients": [
+      "6 oz black beans",
+      "3/4 cup sweet potato",
+      "mixed veg: mushrooms, onion",
+      "1 tbsp avocado"
+    ],
+    "instructions": [
+      "Warm the carb base.",
+      "Sear or warm black beans until hot.",
+      "Combine in a bowl with veggies.",
+      "Finish with avocado or your favorite sauce."
+    ]
+  },
+  {
+    "name": "Eggs Farro Bowl",
+    "meal_type": "lunch",
+    "K": 640,
+    "P": 41,
+    "C": 74,
+    "F": 20,
+    "tags": [
+      "lunch",
+      "quick"
+    ],
+    "ingredients": [
+      "6 oz eggs",
+      "3/4 cup farro",
+      "mixed veg: green beans, spinach",
+      "1 tbsp light cheese"
+    ],
+    "instructions": [
+      "Warm the carb base.",
+      "Sear or warm eggs until hot.",
+      "Combine in a bowl with veggies.",
+      "Finish with light cheese or your favorite sauce."
+    ]
+  },
+  {
+    "name": "Eggs Farro Bowl",
+    "meal_type": "lunch",
+    "K": 434,
+    "P": 27,
+    "C": 50,
+    "F": 14,
+    "tags": [
+      "lunch",
+      "quick"
+    ],
+    "ingredients": [
+      "6 oz eggs",
+      "3/4 cup farro",
+      "mixed veg: spinach, tomato",
+      "1 tbsp light cheese"
+    ],
+    "instructions": [
+      "Warm the carb base.",
+      "Sear or warm eggs until hot.",
+      "Combine in a bowl with veggies.",
+      "Finish with light cheese or your favorite sauce."
+    ]
+  },
+  {
+    "name": "Protein Oats with Berries",
+    "meal_type": "breakfast",
+    "K": 525,
+    "P": 44,
+    "C": 70,
+    "F": 8,
+    "tags": [
+      "breakfast",
+      "high_protein",
+      "quick"
+    ],
+    "ingredients": [
+      "1/2 cup oats",
+      "berries",
+      "whey",
+      "cinnamon"
+    ],
+    "instructions": [
+      "Microwave oats with water or milk 2 minutes.",
+      "Stir in whey.",
+      "Top with berries and cinnamon."
+    ]
+  },
+  {
+    "name": "Egg Whites Oats Bowl",
+    "meal_type": "lunch",
+    "K": 552,
+    "P": 33,
+    "C": 60,
+    "F": 20,
+    "tags": [
+      "low_carb",
+      "lunch",
+      "quick"
+    ],
+    "ingredients": [
+      "6 oz egg whites",
+      "3/4 cup oats",
+      "mixed veg: bell peppers, onion",
+      "1 tbsp almonds"
+    ],
+    "instructions": [
+      "Warm the carb base.",
+      "Sear or warm egg whites until hot.",
+      "Combine in a bowl with veggies.",
+      "Finish with almonds or your favorite sauce."
+    ]
+  },
+  {
+    "name": "Greek Yogurt Power Bowl",
+    "meal_type": "breakfast",
+    "K": 375,
+    "P": 32,
+    "C": 45,
+    "F": 7,
+    "tags": [
+      "breakfast",
+      "high_protein",
+      "quick"
+    ],
+    "ingredients": [
+      "2 cups 0% Greek yogurt",
+      "berries",
+      "granola (light)",
+      "honey"
+    ],
+    "instructions": [
+      "Add yogurt to bowl.",
+      "Top with berries and granola.",
+      "Drizzle a little honey."
+    ]
+  },
+  {
+    "name": "Chicken Breast Quinoa Bowl",
+    "meal_type": "lunch",
+    "K": 692,
+    "P": 46,
+    "C": 73,
+    "F": 24,
+    "tags": [
+      "gluten_free",
+      "high_protein",
+      "lunch",
+      "quick"
+    ],
+    "ingredients": [
+      "6 oz chicken breast",
+      "3/4 cup quinoa",
+      "mixed veg: mushrooms, green beans",
+      "1 tbsp avocado"
+    ],
+    "instructions": [
+      "Warm the carb base.",
+      "Sear or warm chicken breast until hot.",
+      "Combine in a bowl with veggies.",
+      "Finish with avocado or your favorite sauce."
+    ]
+  },
+  {
+    "name": "Veggie Egg Scramble",
+    "meal_type": "breakfast",
+    "K": 329,
+    "P": 29,
+    "C": 23,
+    "F": 13,
+    "tags": [
+      "breakfast",
+      "low_carb",
+      "quick"
+    ],
+    "ingredients": [
+      "3 eggs",
+      "spinach",
+      "mushrooms",
+      "olive oil spray"
+    ],
+    "instructions": [
+      "Saut\u00e9 veggies 2\u20133 min.",
+      "Add beaten eggs; scramble until set."
+    ]
+  },
+  {
+    "name": "Apple + Peanut Butter",
+    "meal_type": "snack",
+    "K": 273,
+    "P": 8,
+    "C": 31,
+    "F": 13,
+    "tags": [
+      "budget",
+      "quick",
+      "snack"
+    ],
+    "ingredients": [
+      "1 apple",
+      "1.5 tbsp peanut butter"
+    ],
+    "instructions": [
+      "Slice apple and dip in PB."
+    ]
+  },
+  {
+    "name": "Tempeh with Whole-Wheat Pasta & Kale, Tomato",
+    "meal_type": "dinner",
+    "K": 483,
+    "P": 30,
+    "C": 48,
+    "F": 19,
+    "tags": [
+      "dairy_free",
+      "dinner",
+      "gluten_free",
+      "vegan",
+      "vegetarian"
+    ],
+    "ingredients": [
+      "6\u20137 oz tempeh",
+      "1 cup whole-wheat pasta",
+      "kale, tomato",
+      "1 tsp olive oil"
+    ],
+    "instructions": [
+      "Cook tempeh (grill, bake, or saut\u00e9) 6\u201310 minutes until done.",
+      "Prepare whole-wheat pasta as directed.",
+      "Plate with vegetables and drizzle oil."
+    ]
+  },
+  {
+    "name": "Eggs Oats Bowl",
+    "meal_type": "lunch",
+    "K": 585,
+    "P": 35,
+    "C": 64,
+    "F": 21,
+    "tags": [
+      "lunch",
+      "quick"
+    ],
+    "ingredients": [
+      "6 oz eggs",
+      "3/4 cup oats",
+      "mixed veg: onion, cabbage",
+      "1 tbsp tahini"
+    ],
+    "instructions": [
+      "Warm the carb base.",
+      "Sear or warm eggs until hot.",
+      "Combine in a bowl with veggies.",
+      "Finish with tahini or your favorite sauce."
+    ]
+  },
+  {
+    "name": "Eggs Soba Noodles Bowl",
+    "meal_type": "lunch",
+    "K": 556,
+    "P": 33,
+    "C": 61,
+    "F": 20,
+    "tags": [
+      "lunch",
+      "quick"
+    ],
+    "ingredients": [
+      "6 oz eggs",
+      "3/4 cup soba noodles",
+      "mixed veg: broccoli, green beans",
+      "1 tbsp olive oil"
+    ],
+    "instructions": [
+      "Warm the carb base.",
+      "Sear or warm eggs until hot.",
+      "Combine in a bowl with veggies.",
+      "Finish with olive oil or your favorite sauce."
+    ]
+  },
+  {
+    "name": "Cottage Cheese Farro Bowl",
+    "meal_type": "lunch",
+    "K": 656,
+    "P": 46,
+    "C": 73,
+    "F": 20,
+    "tags": [
+      "high_protein",
+      "lunch",
+      "quick"
+    ],
+    "ingredients": [
+      "6 oz cottage cheese",
+      "3/4 cup farro",
+      "mixed veg: onion, cabbage",
+      "1 tbsp light cheese"
+    ],
+    "instructions": [
+      "Warm the carb base.",
+      "Sear or warm cottage cheese until hot.",
+      "Combine in a bowl with veggies.",
+      "Finish with light cheese or your favorite sauce."
+    ]
+  },
+  {
+    "name": "Cottage Cheese Mixed Fruit Bowl",
+    "meal_type": "lunch",
+    "K": 551,
+    "P": 37,
+    "C": 58,
+    "F": 19,
+    "tags": [
+      "high_protein",
+      "lunch",
+      "quick"
+    ],
+    "ingredients": [
+      "6 oz cottage cheese",
+      "3/4 cup mixed fruit",
+      "mixed veg: tomato, asparagus",
+      "1 tbsp almonds"
+    ],
+    "instructions": [
+      "Warm the carb base.",
+      "Sear or warm cottage cheese until hot.",
+      "Combine in a bowl with veggies.",
+      "Finish with almonds or your favorite sauce."
+    ]
+  },
+  {
+    "name": "Greek Yogurt Power Bowl",
+    "meal_type": "breakfast",
+    "K": 364,
+    "P": 31,
+    "C": 43,
+    "F": 8,
+    "tags": [
+      "breakfast",
+      "high_protein",
+      "quick"
+    ],
+    "ingredients": [
+      "2 cups 0% Greek yogurt",
+      "berries",
+      "granola (light)",
+      "honey"
+    ],
+    "instructions": [
+      "Add yogurt to bowl.",
+      "Top with berries and granola.",
+      "Drizzle a little honey."
+    ]
+  },
+  {
+    "name": "Lentils with Cauliflower Rice & Zucchini, Spinach",
+    "meal_type": "dinner",
+    "K": 450,
+    "P": 32,
+    "C": 40,
+    "F": 18,
+    "tags": [
+      "dairy_free",
+      "dinner",
+      "gluten_free",
+      "low_carb",
+      "vegan",
+      "vegetarian"
+    ],
+    "ingredients": [
+      "6\u20137 oz lentils",
+      "1 cup cauliflower rice",
+      "zucchini, spinach",
+      "1 tsp light cheese"
+    ],
+    "instructions": [
+      "Cook lentils (grill, bake, or saut\u00e9) 6\u201310 minutes until done.",
+      "Prepare cauliflower rice as directed.",
+      "Plate with vegetables and drizzle oil."
+    ]
+  },
+  {
+    "name": "Chicken Breast with Mixed Fruit & Tomato, Zucchini",
+    "meal_type": "dinner",
+    "K": 514,
+    "P": 38,
+    "C": 50,
+    "F": 18,
+    "tags": [
+      "dinner",
+      "gluten_free",
+      "high_protein"
+    ],
+    "ingredients": [
+      "6\u20137 oz chicken breast",
+      "1 cup mixed fruit",
+      "tomato, zucchini",
+      "1 tsp tahini"
+    ],
+    "instructions": [
+      "Cook chicken breast (grill, bake, or saut\u00e9) 6\u201310 minutes until done.",
+      "Prepare mixed fruit as directed.",
+      "Plate with vegetables and drizzle oil."
+    ]
+  },
+  {
+    "name": "Sirloin Steak with Rice Cakes & Cabbage, Carrots",
+    "meal_type": "dinner",
+    "K": 623,
+    "P": 41,
+    "C": 63,
+    "F": 23,
+    "tags": [
+      "dinner",
+      "gluten_free"
+    ],
+    "ingredients": [
+      "6\u20137 oz sirloin steak",
+      "1 cup rice cakes",
+      "cabbage, carrots",
+      "1 tsp light cheese"
+    ],
+    "instructions": [
+      "Cook sirloin steak (grill, bake, or saut\u00e9) 6\u201310 minutes until done.",
+      "Prepare rice cakes as directed.",
+      "Plate with vegetables and drizzle oil."
+    ]
+  },
+  {
+    "name": "Black Beans with Quinoa & Green Beans, Tomato",
+    "meal_type": "dinner",
+    "K": 654,
+    "P": 41,
+    "C": 64,
+    "F": 26,
+    "tags": [
+      "dairy_free",
+      "dinner",
+      "gluten_free",
+      "vegan",
+      "vegetarian"
+    ],
+    "ingredients": [
+      "6\u20137 oz black beans",
+      "1 cup quinoa",
+      "green beans, tomato",
+      "1 tsp olive oil"
+    ],
+    "instructions": [
+      "Cook black beans (grill, bake, or saut\u00e9) 6\u201310 minutes until done.",
+      "Prepare quinoa as directed.",
+      "Plate with vegetables and drizzle oil."
+    ]
+  },
+  {
+    "name": "Tofu Soba Noodles Bowl",
+    "meal_type": "lunch",
+    "K": 618,
+    "P": 37,
+    "C": 68,
+    "F": 22,
+    "tags": [
+      "dairy_free",
+      "gluten_free",
+      "lunch",
+      "quick",
+      "vegan",
+      "vegetarian"
+    ],
+    "ingredients": [
+      "6 oz tofu",
+      "3/4 cup soba noodles",
+      "mixed veg: onion, cabbage",
+      "1 tbsp avocado"
+    ],
+    "instructions": [
+      "Warm the carb base.",
+      "Sear or warm tofu until hot.",
+      "Combine in a bowl with veggies.",
+      "Finish with avocado or your favorite sauce."
+    ]
+  },
+  {
+    "name": "Protein Oats with Banana",
+    "meal_type": "breakfast",
+    "K": 478,
+    "P": 33,
+    "C": 71,
+    "F": 7,
+    "tags": [
+      "breakfast",
+      "high_protein",
+      "quick"
+    ],
+    "ingredients": [
+      "1/2 cup oats",
+      "banana",
+      "greek yogurt 0%",
+      "cinnamon"
+    ],
+    "instructions": [
+      "Microwave oats with water or milk 2 minutes.",
+      "Stir in greek yogurt 0%.",
+      "Top with banana and cinnamon."
+    ]
+  },
+  {
+    "name": "Hummus + Carrots",
+    "meal_type": "snack",
+    "K": 192,
+    "P": 6,
+    "C": 21,
+    "F": 9,
+    "tags": [
+      "budget",
+      "dairy_free",
+      "snack",
+      "vegan"
+    ],
+    "ingredients": [
+      "1/4 cup hummus",
+      "1 cup carrots"
+    ],
+    "instructions": [
+      "Dip and enjoy."
+    ]
+  },
+  {
+    "name": "Cottage Cheese with Cauliflower Rice & Carrots, Mushrooms",
+    "meal_type": "dinner",
+    "K": 661,
+    "P": 53,
+    "C": 56,
+    "F": 25,
+    "tags": [
+      "dinner",
+      "high_protein",
+      "low_carb"
+    ],
+    "ingredients": [
+      "6\u20137 oz cottage cheese",
+      "1 cup cauliflower rice",
+      "carrots, mushrooms",
+      "1 tsp light cheese"
+    ],
+    "instructions": [
+      "Cook cottage cheese (grill, bake, or saut\u00e9) 6\u201310 minutes until done.",
+      "Prepare cauliflower rice as directed.",
+      "Plate with vegetables and drizzle oil."
+    ]
+  },
+  {
+    "name": "Big Protein Smoothie",
+    "meal_type": "breakfast",
+    "K": 429,
+    "P": 38,
+    "C": 49,
+    "F": 9,
+    "tags": [
+      "breakfast",
+      "high_protein",
+      "quick"
+    ],
+    "ingredients": [
+      "2 scoops whey",
+      "1 banana",
+      "peanut butter (1 tbsp)",
+      "milk"
+    ],
+    "instructions": [
+      "Blend all 45\u201360 seconds."
+    ]
+  },
+  {
+    "name": "Chickpeas Whole-Wheat Pasta Bowl",
+    "meal_type": "lunch",
+    "K": 388,
+    "P": 25,
+    "C": 45,
+    "F": 12,
+    "tags": [
+      "dairy_free",
+      "gluten_free",
+      "lunch",
+      "quick",
+      "vegan",
+      "vegetarian"
+    ],
+    "ingredients": [
+      "6 oz chickpeas",
+      "3/4 cup whole-wheat pasta",
+      "mixed veg: mushrooms, spinach",
+      "1 tbsp light cheese"
+    ],
+    "instructions": [
+      "Warm the carb base.",
+      "Sear or warm chickpeas until hot.",
+      "Combine in a bowl with veggies.",
+      "Finish with light cheese or your favorite sauce."
+    ]
+  },
+  {
+    "name": "Protein Shake",
+    "meal_type": "snack",
+    "K": 174,
+    "P": 25,
+    "C": 6,
+    "F": 6,
+    "tags": [
+      "high_protein",
+      "quick",
+      "snack"
+    ],
+    "ingredients": [
+      "1 scoop whey",
+      "water or milk"
+    ],
+    "instructions": [
+      "Shake or blend."
+    ]
+  },
+  {
+    "name": "Protein Shake",
+    "meal_type": "snack",
+    "K": 150,
+    "P": 22,
+    "C": 5,
+    "F": 5,
+    "tags": [
+      "high_protein",
+      "quick",
+      "snack"
+    ],
+    "ingredients": [
+      "1 scoop whey",
+      "water or milk"
+    ],
+    "instructions": [
+      "Shake or blend."
+    ]
+  },
+  {
+    "name": "Big Protein Smoothie",
+    "meal_type": "breakfast",
+    "K": 449,
+    "P": 40,
+    "C": 52,
+    "F": 9,
+    "tags": [
+      "breakfast",
+      "high_protein",
+      "quick"
+    ],
+    "ingredients": [
+      "2 scoops whey",
+      "1 banana",
+      "peanut butter (1 tbsp)",
+      "milk"
+    ],
+    "instructions": [
+      "Blend all 45\u201360 seconds."
+    ]
+  },
+  {
+    "name": "Protein Shake",
+    "meal_type": "snack",
+    "K": 182,
+    "P": 26,
+    "C": 7,
+    "F": 6,
+    "tags": [
+      "high_protein",
+      "quick",
+      "snack"
+    ],
+    "ingredients": [
+      "1 scoop whey",
+      "water or milk"
+    ],
+    "instructions": [
+      "Shake or blend."
+    ]
+  },
+  {
+    "name": "Lean Ground Turkey with Mixed Fruit & Carrots, Asparagus",
+    "meal_type": "dinner",
+    "K": 692,
+    "P": 51,
+    "C": 68,
+    "F": 24,
+    "tags": [
+      "dinner",
+      "gluten_free",
+      "high_protein"
+    ],
+    "ingredients": [
+      "6\u20137 oz lean ground turkey",
+      "1 cup mixed fruit",
+      "carrots, asparagus",
+      "1 tsp peanut butter"
+    ],
+    "instructions": [
+      "Cook lean ground turkey (grill, bake, or saut\u00e9) 6\u201310 minutes until done.",
+      "Prepare mixed fruit as directed.",
+      "Plate with vegetables and drizzle oil."
+    ]
+  },
+  {
+    "name": "Black Beans with Cauliflower Rice & Tomato, Green Beans",
+    "meal_type": "dinner",
+    "K": 567,
+    "P": 40,
+    "C": 50,
+    "F": 23,
+    "tags": [
+      "dairy_free",
+      "dinner",
+      "gluten_free",
+      "low_carb",
+      "vegan",
+      "vegetarian"
+    ],
+    "ingredients": [
+      "6\u20137 oz black beans",
+      "1 cup cauliflower rice",
+      "tomato, green beans",
+      "1 tsp peanut butter"
+    ],
+    "instructions": [
+      "Cook black beans (grill, bake, or saut\u00e9) 6\u201310 minutes until done.",
+      "Prepare cauliflower rice as directed.",
+      "Plate with vegetables and drizzle oil."
+    ]
+  },
+  {
+    "name": "Greek Yogurt 0% with Cauliflower Rice & Mushrooms, Cabbage",
+    "meal_type": "dinner",
+    "K": 588,
+    "P": 45,
+    "C": 48,
+    "F": 24,
+    "tags": [
+      "dinner",
+      "high_protein",
+      "low_carb"
+    ],
+    "ingredients": [
+      "6\u20137 oz greek yogurt 0%",
+      "1 cup cauliflower rice",
+      "mushrooms, cabbage",
+      "1 tsp almonds"
+    ],
+    "instructions": [
+      "Cook greek yogurt 0% (grill, bake, or saut\u00e9) 6\u201310 minutes until done.",
+      "Prepare cauliflower rice as directed.",
+      "Plate with vegetables and drizzle oil."
+    ]
+  },
+  {
+    "name": "Tofu Whole-Wheat Pasta Bowl",
+    "meal_type": "lunch",
+    "K": 502,
+    "P": 30,
+    "C": 55,
+    "F": 18,
+    "tags": [
+      "dairy_free",
+      "gluten_free",
+      "lunch",
+      "quick",
+      "vegan",
+      "vegetarian"
+    ],
+    "ingredients": [
+      "6 oz tofu",
+      "3/4 cup whole-wheat pasta",
+      "mixed veg: spinach, green beans",
+      "1 tbsp almonds"
+    ],
+    "instructions": [
+      "Warm the carb base.",
+      "Sear or warm tofu until hot.",
+      "Combine in a bowl with veggies.",
+      "Finish with almonds or your favorite sauce."
+    ]
+  },
+  {
+    "name": "Chicken Breast Quinoa Bowl",
+    "meal_type": "lunch",
+    "K": 435,
+    "P": 29,
+    "C": 46,
+    "F": 15,
+    "tags": [
+      "gluten_free",
+      "high_protein",
+      "lunch",
+      "quick"
+    ],
+    "ingredients": [
+      "6 oz chicken breast",
+      "3/4 cup quinoa",
+      "mixed veg: zucchini, onion",
+      "1 tbsp avocado"
+    ],
+    "instructions": [
+      "Warm the carb base.",
+      "Sear or warm chicken breast until hot.",
+      "Combine in a bowl with veggies.",
+      "Finish with avocado or your favorite sauce."
+    ]
+  },
+  {
+    "name": "Cod with Corn Tortillas & Green Beans, Spinach",
+    "meal_type": "dinner",
+    "K": 548,
+    "P": 36,
+    "C": 56,
+    "F": 20,
+    "tags": [
+      "dinner",
+      "gluten_free",
+      "low_carb"
+    ],
+    "ingredients": [
+      "6\u20137 oz cod",
+      "1 cup corn tortillas",
+      "green beans, spinach",
+      "1 tsp peanut butter"
+    ],
+    "instructions": [
+      "Cook cod (grill, bake, or saut\u00e9) 6\u201310 minutes until done.",
+      "Prepare corn tortillas as directed.",
+      "Plate with vegetables and drizzle oil."
+    ]
+  },
+  {
+    "name": "Tofu with Oats & Carrots, Onion",
+    "meal_type": "dinner",
+    "K": 644,
+    "P": 42,
+    "C": 65,
+    "F": 24,
+    "tags": [
+      "dairy_free",
+      "dinner",
+      "gluten_free",
+      "vegan",
+      "vegetarian"
+    ],
+    "ingredients": [
+      "6\u20137 oz tofu",
+      "1 cup oats",
+      "carrots, onion",
+      "1 tsp tahini"
+    ],
+    "instructions": [
+      "Cook tofu (grill, bake, or saut\u00e9) 6\u201310 minutes until done.",
+      "Prepare oats as directed.",
+      "Plate with vegetables and drizzle oil."
+    ]
+  },
+  {
+    "name": "Greek Yogurt Power Bowl",
+    "meal_type": "breakfast",
+    "K": 321,
+    "P": 27,
+    "C": 38,
+    "F": 7,
+    "tags": [
+      "breakfast",
+      "high_protein",
+      "quick"
+    ],
+    "ingredients": [
+      "2 cups 0% Greek yogurt",
+      "berries",
+      "granola (light)",
+      "honey"
+    ],
+    "instructions": [
+      "Add yogurt to bowl.",
+      "Top with berries and granola.",
+      "Drizzle a little honey."
+    ]
+  },
+  {
+    "name": "Shrimp with Quinoa & Asparagus, Carrots",
+    "meal_type": "dinner",
+    "K": 577,
+    "P": 38,
+    "C": 59,
+    "F": 21,
+    "tags": [
+      "dinner",
+      "gluten_free",
+      "low_carb"
+    ],
+    "ingredients": [
+      "6\u20137 oz shrimp",
+      "1 cup quinoa",
+      "asparagus, carrots",
+      "1 tsp peanut butter"
+    ],
+    "instructions": [
+      "Cook shrimp (grill, bake, or saut\u00e9) 6\u201310 minutes until done.",
+      "Prepare quinoa as directed.",
+      "Plate with vegetables and drizzle oil."
+    ]
+  },
+  {
+    "name": "Lean Ground Turkey with Soba Noodles & Cabbage, Onion",
+    "meal_type": "dinner",
+    "K": 477,
+    "P": 35,
+    "C": 46,
+    "F": 17,
+    "tags": [
+      "dinner",
+      "gluten_free",
+      "high_protein"
+    ],
+    "ingredients": [
+      "6\u20137 oz lean ground turkey",
+      "1 cup soba noodles",
+      "cabbage, onion",
+      "1 tsp peanut butter"
+    ],
+    "instructions": [
+      "Cook lean ground turkey (grill, bake, or saut\u00e9) 6\u201310 minutes until done.",
+      "Prepare soba noodles as directed.",
+      "Plate with vegetables and drizzle oil."
+    ]
+  },
+  {
+    "name": "Trail Mix (controlled)",
+    "meal_type": "snack",
+    "K": 274,
+    "P": 9,
+    "C": 26,
+    "F": 15,
+    "tags": [
+      "snack",
+      "vegetarian"
+    ],
+    "ingredients": [
+      "1/4 cup mixed nuts",
+      "2 tbsp raisins"
+    ],
+    "instructions": [
+      "Portion and eat mindfully."
+    ]
+  },
+  {
+    "name": "Cod Soba Noodles Bowl",
+    "meal_type": "lunch",
+    "K": 440,
+    "P": 26,
+    "C": 48,
+    "F": 16,
+    "tags": [
+      "gluten_free",
+      "low_carb",
+      "lunch",
+      "quick"
+    ],
+    "ingredients": [
+      "6 oz cod",
+      "3/4 cup soba noodles",
+      "mixed veg: onion, carrots",
+      "1 tbsp avocado"
+    ],
+    "instructions": [
+      "Warm the carb base.",
+      "Sear or warm cod until hot.",
+      "Combine in a bowl with veggies.",
+      "Finish with avocado or your favorite sauce."
+    ]
+  },
+  {
+    "name": "Cottage Cheese + Pineapple",
+    "meal_type": "snack",
+    "K": 244,
+    "P": 26,
+    "C": 23,
+    "F": 5,
+    "tags": [
+      "high_protein",
+      "snack"
+    ],
+    "ingredients": [
+      "1 cup cottage cheese",
+      "1/2 cup pineapple"
+    ],
+    "instructions": [
+      "Combine and serve."
+    ]
+  },
+  {
+    "name": "Eggs with Corn Tortillas & Green Beans, Asparagus",
+    "meal_type": "dinner",
+    "K": 465,
+    "P": 30,
+    "C": 48,
+    "F": 17,
+    "tags": [
+      "dinner"
+    ],
+    "ingredients": [
+      "6\u20137 oz eggs",
+      "1 cup corn tortillas",
+      "green beans, asparagus",
+      "1 tsp peanut butter"
+    ],
+    "instructions": [
+      "Cook eggs (grill, bake, or saut\u00e9) 6\u201310 minutes until done.",
+      "Prepare corn tortillas as directed.",
+      "Plate with vegetables and drizzle oil."
+    ]
+  },
+  {
+    "name": "Rice Cake + Turkey",
+    "meal_type": "snack",
+    "K": 172,
+    "P": 15,
+    "C": 19,
+    "F": 4,
+    "tags": [
+      "high_protein",
+      "low_carb",
+      "snack"
+    ],
+    "ingredients": [
+      "1 rice cake",
+      "3 oz turkey",
+      "mustard"
+    ],
+    "instructions": [
+      "Layer turkey on rice cake; add mustard."
+    ]
+  },
+  {
+    "name": "Veggie Egg Scramble",
+    "meal_type": "breakfast",
+    "K": 273,
+    "P": 24,
+    "C": 19,
+    "F": 11,
+    "tags": [
+      "breakfast",
+      "low_carb",
+      "quick"
+    ],
+    "ingredients": [
+      "3 eggs",
+      "spinach",
+      "mushrooms",
+      "olive oil spray"
+    ],
+    "instructions": [
+      "Saut\u00e9 veggies 2\u20133 min.",
+      "Add beaten eggs; scramble until set."
+    ]
+  },
+  {
+    "name": "Cottage Cheese + Pineapple",
+    "meal_type": "snack",
+    "K": 224,
+    "P": 23,
+    "C": 22,
+    "F": 5,
+    "tags": [
+      "high_protein",
+      "snack"
+    ],
+    "ingredients": [
+      "1 cup cottage cheese",
+      "1/2 cup pineapple"
+    ],
+    "instructions": [
+      "Combine and serve."
+    ]
+  },
+  {
+    "name": "Black Beans Quinoa Bowl",
+    "meal_type": "lunch",
+    "K": 498,
+    "P": 30,
+    "C": 54,
+    "F": 18,
+    "tags": [
+      "dairy_free",
+      "gluten_free",
+      "lunch",
+      "quick",
+      "vegan",
+      "vegetarian"
+    ],
+    "ingredients": [
+      "6 oz black beans",
+      "3/4 cup quinoa",
+      "mixed veg: carrots, onion",
+      "1 tbsp tahini"
+    ],
+    "instructions": [
+      "Warm the carb base.",
+      "Sear or warm black beans until hot.",
+      "Combine in a bowl with veggies.",
+      "Finish with tahini or your favorite sauce."
+    ]
+  },
+  {
+    "name": "Egg Whites Oats Bowl",
+    "meal_type": "lunch",
+    "K": 487,
+    "P": 31,
+    "C": 57,
+    "F": 15,
+    "tags": [
+      "low_carb",
+      "lunch",
+      "quick"
+    ],
+    "ingredients": [
+      "6 oz egg whites",
+      "3/4 cup oats",
+      "mixed veg: cabbage, carrots",
+      "1 tbsp light cheese"
+    ],
+    "instructions": [
+      "Warm the carb base.",
+      "Sear or warm egg whites until hot.",
+      "Combine in a bowl with veggies.",
+      "Finish with light cheese or your favorite sauce."
+    ]
+  },
+  {
+    "name": "Greek Yogurt Power Bowl",
+    "meal_type": "breakfast",
+    "K": 301,
+    "P": 26,
+    "C": 36,
+    "F": 6,
+    "tags": [
+      "breakfast",
+      "high_protein",
+      "quick"
+    ],
+    "ingredients": [
+      "2 cups 0% Greek yogurt",
+      "berries",
+      "granola (light)",
+      "honey"
+    ],
+    "instructions": [
+      "Add yogurt to bowl.",
+      "Top with berries and granola.",
+      "Drizzle a little honey."
+    ]
+  },
+  {
+    "name": "Big Protein Smoothie",
+    "meal_type": "breakfast",
+    "K": 333,
+    "P": 30,
+    "C": 38,
+    "F": 7,
+    "tags": [
+      "breakfast",
+      "high_protein",
+      "quick"
+    ],
+    "ingredients": [
+      "2 scoops whey",
+      "1 banana",
+      "peanut butter (1 tbsp)",
+      "milk"
+    ],
+    "instructions": [
+      "Blend all 45\u201360 seconds."
+    ]
+  },
+  {
+    "name": "Sirloin Steak with Oats & Asparagus, Bell Peppers",
+    "meal_type": "dinner",
+    "K": 612,
+    "P": 39,
+    "C": 60,
+    "F": 24,
+    "tags": [
+      "dinner",
+      "gluten_free"
+    ],
+    "ingredients": [
+      "6\u20137 oz sirloin steak",
+      "1 cup oats",
+      "asparagus, bell peppers",
+      "1 tsp almonds"
+    ],
+    "instructions": [
+      "Cook sirloin steak (grill, bake, or saut\u00e9) 6\u201310 minutes until done.",
+      "Prepare oats as directed.",
+      "Plate with vegetables and drizzle oil."
+    ]
+  },
+  {
+    "name": "Lentils with Oats & Zucchini, Bell Peppers",
+    "meal_type": "dinner",
+    "K": 490,
+    "P": 32,
+    "C": 50,
+    "F": 18,
+    "tags": [
+      "dairy_free",
+      "dinner",
+      "gluten_free",
+      "vegan",
+      "vegetarian"
+    ],
+    "ingredients": [
+      "6\u20137 oz lentils",
+      "1 cup oats",
+      "zucchini, bell peppers",
+      "1 tsp light cheese"
+    ],
+    "instructions": [
+      "Cook lentils (grill, bake, or saut\u00e9) 6\u201310 minutes until done.",
+      "Prepare oats as directed.",
+      "Plate with vegetables and drizzle oil."
+    ]
+  },
+  {
+    "name": "Cod Rice Cakes Bowl",
+    "meal_type": "lunch",
+    "K": 689,
+    "P": 41,
+    "C": 75,
+    "F": 25,
+    "tags": [
+      "gluten_free",
+      "low_carb",
+      "lunch",
+      "quick"
+    ],
+    "ingredients": [
+      "6 oz cod",
+      "3/4 cup rice cakes",
+      "mixed veg: tomato, cabbage",
+      "1 tbsp peanut butter"
+    ],
+    "instructions": [
+      "Warm the carb base.",
+      "Sear or warm cod until hot.",
+      "Combine in a bowl with veggies.",
+      "Finish with peanut butter or your favorite sauce."
+    ]
+  },
+  {
+    "name": "Greek Yogurt Power Bowl",
+    "meal_type": "breakfast",
+    "K": 414,
+    "P": 35,
+    "C": 49,
+    "F": 9,
+    "tags": [
+      "breakfast",
+      "high_protein",
+      "quick"
+    ],
+    "ingredients": [
+      "2 cups 0% Greek yogurt",
+      "berries",
+      "granola (light)",
+      "honey"
+    ],
+    "instructions": [
+      "Add yogurt to bowl.",
+      "Top with berries and granola.",
+      "Drizzle a little honey."
+    ]
+  },
+  {
+    "name": "Shrimp with Cauliflower Rice & Mushrooms, Broccoli",
+    "meal_type": "dinner",
+    "K": 621,
+    "P": 44,
+    "C": 55,
+    "F": 25,
+    "tags": [
+      "dinner",
+      "gluten_free",
+      "low_carb"
+    ],
+    "ingredients": [
+      "6\u20137 oz shrimp",
+      "1 cup cauliflower rice",
+      "mushrooms, broccoli",
+      "1 tsp peanut butter"
+    ],
+    "instructions": [
+      "Cook shrimp (grill, bake, or saut\u00e9) 6\u201310 minutes until done.",
+      "Prepare cauliflower rice as directed.",
+      "Plate with vegetables and drizzle oil."
+    ]
+  },
+  {
+    "name": "Greek Yogurt 0% Mixed Fruit Bowl",
+    "meal_type": "lunch",
+    "K": 717,
+    "P": 48,
+    "C": 75,
+    "F": 25,
+    "tags": [
+      "high_protein",
+      "lunch",
+      "quick"
+    ],
+    "ingredients": [
+      "6 oz greek yogurt 0%",
+      "3/4 cup mixed fruit",
+      "mixed veg: mushrooms, green beans",
+      "1 tbsp almonds"
+    ],
+    "instructions": [
+      "Warm the carb base.",
+      "Sear or warm greek yogurt 0% until hot.",
+      "Combine in a bowl with veggies.",
+      "Finish with almonds or your favorite sauce."
+    ]
+  },
+  {
+    "name": "Protein Oats with Berries",
+    "meal_type": "breakfast",
+    "K": 468,
+    "P": 31,
+    "C": 69,
+    "F": 8,
+    "tags": [
+      "breakfast",
+      "high_protein",
+      "quick"
+    ],
+    "ingredients": [
+      "1/2 cup oats",
+      "berries",
+      "egg whites",
+      "cinnamon"
+    ],
+    "instructions": [
+      "Microwave oats with water or milk 2 minutes.",
+      "Stir in egg whites.",
+      "Top with berries and cinnamon."
+    ]
+  },
+  {
+    "name": "Greek Yogurt 0% with Farro & Zucchini, Broccoli",
+    "meal_type": "dinner",
+    "K": 752,
+    "P": 54,
+    "C": 71,
+    "F": 28,
+    "tags": [
+      "dinner",
+      "high_protein"
+    ],
+    "ingredients": [
+      "6\u20137 oz greek yogurt 0%",
+      "1 cup farro",
+      "zucchini, broccoli",
+      "1 tsp avocado"
+    ],
+    "instructions": [
+      "Cook greek yogurt 0% (grill, bake, or saut\u00e9) 6\u201310 minutes until done.",
+      "Prepare farro as directed.",
+      "Plate with vegetables and drizzle oil."
+    ]
+  },
+  {
+    "name": "Cottage Cheese Farro Bowl",
+    "meal_type": "lunch",
+    "K": 630,
+    "P": 42,
+    "C": 66,
+    "F": 22,
+    "tags": [
+      "high_protein",
+      "lunch",
+      "quick"
+    ],
+    "ingredients": [
+      "6 oz cottage cheese",
+      "3/4 cup farro",
+      "mixed veg: mushrooms, tomato",
+      "1 tbsp almonds"
+    ],
+    "instructions": [
+      "Warm the carb base.",
+      "Sear or warm cottage cheese until hot.",
+      "Combine in a bowl with veggies.",
+      "Finish with almonds or your favorite sauce."
+    ]
+  },
+  {
+    "name": "Lentils Oats Bowl",
+    "meal_type": "lunch",
+    "K": 597,
+    "P": 36,
+    "C": 66,
+    "F": 21,
+    "tags": [
+      "dairy_free",
+      "gluten_free",
+      "lunch",
+      "quick",
+      "vegan",
+      "vegetarian"
+    ],
+    "ingredients": [
+      "6 oz lentils",
+      "3/4 cup oats",
+      "mixed veg: green beans, bell peppers",
+      "1 tbsp avocado"
+    ],
+    "instructions": [
+      "Warm the carb base.",
+      "Sear or warm lentils until hot.",
+      "Combine in a bowl with veggies.",
+      "Finish with avocado or your favorite sauce."
+    ]
+  },
+  {
+    "name": "Protein Shake",
+    "meal_type": "snack",
+    "K": 183,
+    "P": 27,
+    "C": 7,
+    "F": 5,
+    "tags": [
+      "high_protein",
+      "quick",
+      "snack"
+    ],
+    "ingredients": [
+      "1 scoop whey",
+      "water or milk"
+    ],
+    "instructions": [
+      "Shake or blend."
+    ]
+  },
+  {
+    "name": "Seitan with Cauliflower Rice & Asparagus, Broccoli",
+    "meal_type": "dinner",
+    "K": 476,
+    "P": 33,
+    "C": 41,
+    "F": 20,
+    "tags": [
+      "dinner",
+      "low_carb",
+      "vegan",
+      "vegetarian"
+    ],
+    "ingredients": [
+      "6\u20137 oz seitan",
+      "1 cup cauliflower rice",
+      "asparagus, broccoli",
+      "1 tsp avocado"
+    ],
+    "instructions": [
+      "Cook seitan (grill, bake, or saut\u00e9) 6\u201310 minutes until done.",
+      "Prepare cauliflower rice as directed.",
+      "Plate with vegetables and drizzle oil."
+    ]
+  },
+  {
+    "name": "Cod with Quinoa & Tomato, Asparagus",
+    "meal_type": "dinner",
+    "K": 666,
+    "P": 42,
+    "C": 66,
+    "F": 26,
+    "tags": [
+      "dinner",
+      "gluten_free",
+      "low_carb"
+    ],
+    "ingredients": [
+      "6\u20137 oz cod",
+      "1 cup quinoa",
+      "tomato, asparagus",
+      "1 tsp olive oil"
+    ],
+    "instructions": [
+      "Cook cod (grill, bake, or saut\u00e9) 6\u201310 minutes until done.",
+      "Prepare quinoa as directed.",
+      "Plate with vegetables and drizzle oil."
+    ]
+  },
+  {
+    "name": "Veggie Egg Scramble",
+    "meal_type": "breakfast",
+    "K": 307,
+    "P": 27,
+    "C": 21,
+    "F": 13,
+    "tags": [
+      "breakfast",
+      "low_carb",
+      "quick"
+    ],
+    "ingredients": [
+      "3 eggs",
+      "spinach",
+      "mushrooms",
+      "olive oil spray"
+    ],
+    "instructions": [
+      "Saut\u00e9 veggies 2\u20133 min.",
+      "Add beaten eggs; scramble until set."
+    ]
+  },
+  {
+    "name": "Cod with Corn Tortillas & Broccoli, Bell Peppers",
+    "meal_type": "dinner",
+    "K": 536,
+    "P": 35,
+    "C": 54,
+    "F": 20,
+    "tags": [
+      "dinner",
+      "gluten_free",
+      "low_carb"
+    ],
+    "ingredients": [
+      "6\u20137 oz cod",
+      "1 cup corn tortillas",
+      "broccoli, bell peppers",
+      "1 tsp tahini"
+    ],
+    "instructions": [
+      "Cook cod (grill, bake, or saut\u00e9) 6\u201310 minutes until done.",
+      "Prepare corn tortillas as directed.",
+      "Plate with vegetables and drizzle oil."
+    ]
+  },
+  {
+    "name": "Greek Yogurt Power Bowl",
+    "meal_type": "breakfast",
+    "K": 343,
+    "P": 29,
+    "C": 41,
+    "F": 7,
+    "tags": [
+      "breakfast",
+      "high_protein",
+      "quick"
+    ],
+    "ingredients": [
+      "2 cups 0% Greek yogurt",
+      "berries",
+      "granola (light)",
+      "honey"
+    ],
+    "instructions": [
+      "Add yogurt to bowl.",
+      "Top with berries and granola.",
+      "Drizzle a little honey."
+    ]
+  },
+  {
+    "name": "Egg Whites Soba Noodles Bowl",
+    "meal_type": "lunch",
+    "K": 446,
+    "P": 28,
+    "C": 52,
+    "F": 14,
+    "tags": [
+      "low_carb",
+      "lunch",
+      "quick"
+    ],
+    "ingredients": [
+      "6 oz egg whites",
+      "3/4 cup soba noodles",
+      "mixed veg: tomato, asparagus",
+      "1 tbsp light cheese"
+    ],
+    "instructions": [
+      "Warm the carb base.",
+      "Sear or warm egg whites until hot.",
+      "Combine in a bowl with veggies.",
+      "Finish with light cheese or your favorite sauce."
+    ]
+  },
+  {
+    "name": "Hummus + Carrots",
+    "meal_type": "snack",
+    "K": 212,
+    "P": 6,
+    "C": 23,
+    "F": 11,
+    "tags": [
+      "budget",
+      "dairy_free",
+      "snack",
+      "vegan"
+    ],
+    "ingredients": [
+      "1/4 cup hummus",
+      "1 cup carrots"
+    ],
+    "instructions": [
+      "Dip and enjoy."
+    ]
+  },
+  {
+    "name": "Cod Corn Tortillas Bowl",
+    "meal_type": "lunch",
+    "K": 523,
+    "P": 31,
+    "C": 57,
+    "F": 19,
+    "tags": [
+      "gluten_free",
+      "low_carb",
+      "lunch",
+      "quick"
+    ],
+    "ingredients": [
+      "6 oz cod",
+      "3/4 cup corn tortillas",
+      "mixed veg: broccoli, bell peppers",
+      "1 tbsp almonds"
+    ],
+    "instructions": [
+      "Warm the carb base.",
+      "Sear or warm cod until hot.",
+      "Combine in a bowl with veggies.",
+      "Finish with almonds or your favorite sauce."
+    ]
+  },
+  {
+    "name": "Hummus + Carrots",
+    "meal_type": "snack",
+    "K": 232,
+    "P": 7,
+    "C": 25,
+    "F": 12,
+    "tags": [
+      "budget",
+      "dairy_free",
+      "snack",
+      "vegan"
+    ],
+    "ingredients": [
+      "1/4 cup hummus",
+      "1 cup carrots"
+    ],
+    "instructions": [
+      "Dip and enjoy."
+    ]
+  },
+  {
+    "name": "Hummus + Carrots",
+    "meal_type": "snack",
+    "K": 190,
+    "P": 6,
+    "C": 21,
+    "F": 9,
+    "tags": [
+      "budget",
+      "dairy_free",
+      "snack",
+      "vegan"
+    ],
+    "ingredients": [
+      "1/4 cup hummus",
+      "1 cup carrots"
+    ],
+    "instructions": [
+      "Dip and enjoy."
+    ]
+  },
+  {
+    "name": "Protein Shake",
+    "meal_type": "snack",
+    "K": 166,
+    "P": 24,
+    "C": 6,
+    "F": 5,
+    "tags": [
+      "high_protein",
+      "quick",
+      "snack"
+    ],
+    "ingredients": [
+      "1 scoop whey",
+      "water or milk"
+    ],
+    "instructions": [
+      "Shake or blend."
+    ]
+  },
+  {
+    "name": "Black Beans with Corn Tortillas & Cabbage, Tomato",
+    "meal_type": "dinner",
+    "K": 565,
+    "P": 37,
+    "C": 57,
+    "F": 21,
+    "tags": [
+      "dairy_free",
+      "dinner",
+      "gluten_free",
+      "vegan",
+      "vegetarian"
+    ],
+    "ingredients": [
+      "6\u20137 oz black beans",
+      "1 cup corn tortillas",
+      "cabbage, tomato",
+      "1 tsp peanut butter"
+    ],
+    "instructions": [
+      "Cook black beans (grill, bake, or saut\u00e9) 6\u201310 minutes until done.",
+      "Prepare corn tortillas as directed.",
+      "Plate with vegetables and drizzle oil."
+    ]
+  },
+  {
+    "name": "Cottage Cheese + Pineapple",
+    "meal_type": "snack",
+    "K": 201,
+    "P": 21,
+    "C": 19,
+    "F": 5,
+    "tags": [
+      "high_protein",
+      "snack"
+    ],
+    "ingredients": [
+      "1 cup cottage cheese",
+      "1/2 cup pineapple"
+    ],
+    "instructions": [
+      "Combine and serve."
+    ]
+  },
+  {
+    "name": "Salmon with Whole-Wheat Pasta & Spinach, Asparagus",
+    "meal_type": "dinner",
+    "K": 645,
+    "P": 41,
+    "C": 64,
+    "F": 25,
+    "tags": [
+      "dinner",
+      "gluten_free"
+    ],
+    "ingredients": [
+      "6\u20137 oz salmon",
+      "1 cup whole-wheat pasta",
+      "spinach, asparagus",
+      "1 tsp olive oil"
+    ],
+    "instructions": [
+      "Cook salmon (grill, bake, or saut\u00e9) 6\u201310 minutes until done.",
+      "Prepare whole-wheat pasta as directed.",
+      "Plate with vegetables and drizzle oil."
+    ]
+  },
+  {
+    "name": "Shrimp with Corn Tortillas & Zucchini, Mushrooms",
+    "meal_type": "dinner",
+    "K": 716,
+    "P": 45,
+    "C": 71,
+    "F": 28,
+    "tags": [
+      "dinner",
+      "gluten_free",
+      "low_carb"
+    ],
+    "ingredients": [
+      "6\u20137 oz shrimp",
+      "1 cup corn tortillas",
+      "zucchini, mushrooms",
+      "1 tsp almonds"
+    ],
+    "instructions": [
+      "Cook shrimp (grill, bake, or saut\u00e9) 6\u201310 minutes until done.",
+      "Prepare corn tortillas as directed.",
+      "Plate with vegetables and drizzle oil."
+    ]
+  },
+  {
+    "name": "Tofu with Soba Noodles & Cabbage, Mushrooms",
+    "meal_type": "dinner",
+    "K": 594,
+    "P": 39,
+    "C": 60,
+    "F": 22,
+    "tags": [
+      "dairy_free",
+      "dinner",
+      "gluten_free",
+      "vegan",
+      "vegetarian"
+    ],
+    "ingredients": [
+      "6\u20137 oz tofu",
+      "1 cup soba noodles",
+      "cabbage, mushrooms",
+      "1 tsp tahini"
+    ],
+    "instructions": [
+      "Cook tofu (grill, bake, or saut\u00e9) 6\u201310 minutes until done.",
+      "Prepare soba noodles as directed.",
+      "Plate with vegetables and drizzle oil."
+    ]
+  },
+  {
+    "name": "Lentils with Whole-Wheat Pasta & Green Beans, Broccoli",
+    "meal_type": "dinner",
+    "K": 656,
+    "P": 43,
+    "C": 67,
+    "F": 24,
+    "tags": [
+      "dairy_free",
+      "dinner",
+      "gluten_free",
+      "vegan",
+      "vegetarian"
+    ],
+    "ingredients": [
+      "6\u20137 oz lentils",
+      "1 cup whole-wheat pasta",
+      "green beans, broccoli",
+      "1 tsp peanut butter"
+    ],
+    "instructions": [
+      "Cook lentils (grill, bake, or saut\u00e9) 6\u201310 minutes until done.",
+      "Prepare whole-wheat pasta as directed.",
+      "Plate with vegetables and drizzle oil."
+    ]
+  },
+  {
+    "name": "Cod with Farro & Cabbage, Onion",
+    "meal_type": "dinner",
+    "K": 727,
+    "P": 47,
+    "C": 74,
+    "F": 27,
+    "tags": [
+      "dinner",
+      "gluten_free",
+      "low_carb"
+    ],
+    "ingredients": [
+      "6\u20137 oz cod",
+      "1 cup farro",
+      "cabbage, onion",
+      "1 tsp light cheese"
+    ],
+    "instructions": [
+      "Cook cod (grill, bake, or saut\u00e9) 6\u201310 minutes until done.",
+      "Prepare farro as directed.",
+      "Plate with vegetables and drizzle oil."
+    ]
+  },
+  {
+    "name": "Trail Mix (controlled)",
+    "meal_type": "snack",
+    "K": 315,
+    "P": 11,
+    "C": 30,
+    "F": 17,
+    "tags": [
+      "snack",
+      "vegetarian"
+    ],
+    "ingredients": [
+      "1/4 cup mixed nuts",
+      "2 tbsp raisins"
+    ],
+    "instructions": [
+      "Portion and eat mindfully."
+    ]
+  },
+  {
+    "name": "Lentils Mixed Fruit Bowl",
+    "meal_type": "lunch",
+    "K": 693,
+    "P": 41,
+    "C": 76,
+    "F": 25,
+    "tags": [
+      "dairy_free",
+      "gluten_free",
+      "lunch",
+      "quick",
+      "vegan",
+      "vegetarian"
+    ],
+    "ingredients": [
+      "6 oz lentils",
+      "3/4 cup mixed fruit",
+      "mixed veg: asparagus, tomato",
+      "1 tbsp peanut butter"
+    ],
+    "instructions": [
+      "Warm the carb base.",
+      "Sear or warm lentils until hot.",
+      "Combine in a bowl with veggies.",
+      "Finish with peanut butter or your favorite sauce."
+    ]
+  },
+  {
+    "name": "Veggie Egg Scramble",
+    "meal_type": "breakfast",
+    "K": 250,
+    "P": 22,
+    "C": 17,
+    "F": 10,
+    "tags": [
+      "breakfast",
+      "low_carb",
+      "quick"
+    ],
+    "ingredients": [
+      "3 eggs",
+      "spinach",
+      "mushrooms",
+      "olive oil spray"
+    ],
+    "instructions": [
+      "Saut\u00e9 veggies 2\u20133 min.",
+      "Add beaten eggs; scramble until set."
+    ]
+  },
+  {
+    "name": "Protein Shake",
+    "meal_type": "snack",
+    "K": 169,
+    "P": 25,
+    "C": 6,
+    "F": 5,
+    "tags": [
+      "high_protein",
+      "quick",
+      "snack"
+    ],
+    "ingredients": [
+      "1 scoop whey",
+      "water or milk"
+    ],
+    "instructions": [
+      "Shake or blend."
+    ]
+  },
+  {
+    "name": "Veggie Egg Scramble",
+    "meal_type": "breakfast",
+    "K": 381,
+    "P": 34,
+    "C": 26,
+    "F": 16,
+    "tags": [
+      "breakfast",
+      "low_carb",
+      "quick"
+    ],
+    "ingredients": [
+      "3 eggs",
+      "spinach",
+      "mushrooms",
+      "olive oil spray"
+    ],
+    "instructions": [
+      "Saut\u00e9 veggies 2\u20133 min.",
+      "Add beaten eggs; scramble until set."
+    ]
+  },
+  {
+    "name": "Cottage Cheese with Whole-Wheat Pasta & Tomato, Spinach",
+    "meal_type": "dinner",
+    "K": 576,
+    "P": 43,
+    "C": 56,
+    "F": 20,
+    "tags": [
+      "dinner",
+      "high_protein"
+    ],
+    "ingredients": [
+      "6\u20137 oz cottage cheese",
+      "1 cup whole-wheat pasta",
+      "tomato, spinach",
+      "1 tsp peanut butter"
+    ],
+    "instructions": [
+      "Cook cottage cheese (grill, bake, or saut\u00e9) 6\u201310 minutes until done.",
+      "Prepare whole-wheat pasta as directed.",
+      "Plate with vegetables and drizzle oil."
+    ]
+  },
+  {
+    "name": "Protein Oats with Berries",
+    "meal_type": "breakfast",
+    "K": 350,
+    "P": 27,
+    "C": 49,
+    "F": 5,
+    "tags": [
+      "breakfast",
+      "high_protein",
+      "quick"
+    ],
+    "ingredients": [
+      "1/2 cup oats",
+      "berries",
+      "greek yogurt 0%",
+      "cinnamon"
+    ],
+    "instructions": [
+      "Microwave oats with water or milk 2 minutes.",
+      "Stir in greek yogurt 0%.",
+      "Top with berries and cinnamon."
+    ]
+  },
+  {
+    "name": "Salmon Farro Bowl",
+    "meal_type": "lunch",
+    "K": 473,
+    "P": 28,
+    "C": 52,
+    "F": 17,
+    "tags": [
+      "gluten_free",
+      "lunch",
+      "quick"
+    ],
+    "ingredients": [
+      "6 oz salmon",
+      "3/4 cup farro",
+      "mixed veg: broccoli, cabbage",
+      "1 tbsp tahini"
+    ],
+    "instructions": [
+      "Warm the carb base.",
+      "Sear or warm salmon until hot.",
+      "Combine in a bowl with veggies.",
+      "Finish with tahini or your favorite sauce."
+    ]
+  },
+  {
+    "name": "Tofu Rice Cakes Bowl",
+    "meal_type": "lunch",
+    "K": 564,
+    "P": 34,
+    "C": 62,
+    "F": 20,
+    "tags": [
+      "dairy_free",
+      "gluten_free",
+      "lunch",
+      "quick",
+      "vegan",
+      "vegetarian"
+    ],
+    "ingredients": [
+      "6 oz tofu",
+      "3/4 cup rice cakes",
+      "mixed veg: broccoli, zucchini",
+      "1 tbsp tahini"
+    ],
+    "instructions": [
+      "Warm the carb base.",
+      "Sear or warm tofu until hot.",
+      "Combine in a bowl with veggies.",
+      "Finish with tahini or your favorite sauce."
+    ]
+  },
+  {
+    "name": "Veggie Egg Scramble",
+    "meal_type": "breakfast",
+    "K": 295,
+    "P": 26,
+    "C": 20,
+    "F": 12,
+    "tags": [
+      "breakfast",
+      "low_carb",
+      "quick"
+    ],
+    "ingredients": [
+      "3 eggs",
+      "spinach",
+      "mushrooms",
+      "olive oil spray"
+    ],
+    "instructions": [
+      "Saut\u00e9 veggies 2\u20133 min.",
+      "Add beaten eggs; scramble until set."
+    ]
+  },
+  {
+    "name": "Protein Oats with Banana",
+    "meal_type": "breakfast",
+    "K": 532,
+    "P": 37,
+    "C": 79,
+    "F": 8,
+    "tags": [
+      "breakfast",
+      "high_protein",
+      "quick"
+    ],
+    "ingredients": [
+      "1/2 cup oats",
+      "banana",
+      "greek yogurt 0%",
+      "cinnamon"
+    ],
+    "instructions": [
+      "Microwave oats with water or milk 2 minutes.",
+      "Stir in greek yogurt 0%.",
+      "Top with banana and cinnamon."
+    ]
+  },
+  {
+    "name": "Cottage Cheese Corn Tortillas Bowl",
+    "meal_type": "lunch",
+    "K": 487,
+    "P": 34,
+    "C": 54,
+    "F": 15,
+    "tags": [
+      "high_protein",
+      "lunch",
+      "quick"
+    ],
+    "ingredients": [
+      "6 oz cottage cheese",
+      "3/4 cup corn tortillas",
+      "mixed veg: kale, mushrooms",
+      "1 tbsp light cheese"
+    ],
+    "instructions": [
+      "Warm the carb base.",
+      "Sear or warm cottage cheese until hot.",
+      "Combine in a bowl with veggies.",
+      "Finish with light cheese or your favorite sauce."
+    ]
+  },
+  {
+    "name": "Big Protein Smoothie",
+    "meal_type": "breakfast",
+    "K": 475,
+    "P": 42,
+    "C": 55,
+    "F": 10,
+    "tags": [
+      "breakfast",
+      "high_protein",
+      "quick"
+    ],
+    "ingredients": [
+      "2 scoops whey",
+      "1 banana",
+      "peanut butter (1 tbsp)",
+      "milk"
+    ],
+    "instructions": [
+      "Blend all 45\u201360 seconds."
+    ]
+  },
+  {
+    "name": "Cottage Cheese + Pineapple",
+    "meal_type": "snack",
+    "K": 246,
+    "P": 26,
+    "C": 24,
+    "F": 5,
+    "tags": [
+      "high_protein",
+      "snack"
+    ],
+    "ingredients": [
+      "1 cup cottage cheese",
+      "1/2 cup pineapple"
+    ],
+    "instructions": [
+      "Combine and serve."
+    ]
+  },
+  {
+    "name": "Cottage Cheese + Pineapple",
+    "meal_type": "snack",
+    "K": 228,
+    "P": 24,
+    "C": 22,
+    "F": 5,
+    "tags": [
+      "high_protein",
+      "snack"
+    ],
+    "ingredients": [
+      "1 cup cottage cheese",
+      "1/2 cup pineapple"
+    ],
+    "instructions": [
+      "Combine and serve."
+    ]
+  },
+  {
+    "name": "Shrimp Sweet Potato Bowl",
+    "meal_type": "lunch",
+    "K": 411,
+    "P": 24,
+    "C": 45,
+    "F": 15,
+    "tags": [
+      "gluten_free",
+      "low_carb",
+      "lunch",
+      "quick"
+    ],
+    "ingredients": [
+      "6 oz shrimp",
+      "3/4 cup sweet potato",
+      "mixed veg: onion, spinach",
+      "1 tbsp tahini"
+    ],
+    "instructions": [
+      "Warm the carb base.",
+      "Sear or warm shrimp until hot.",
+      "Combine in a bowl with veggies.",
+      "Finish with tahini or your favorite sauce."
+    ]
+  },
+  {
+    "name": "Cod Soba Noodles Bowl",
+    "meal_type": "lunch",
+    "K": 585,
+    "P": 35,
+    "C": 64,
+    "F": 21,
+    "tags": [
+      "gluten_free",
+      "low_carb",
+      "lunch",
+      "quick"
+    ],
+    "ingredients": [
+      "6 oz cod",
+      "3/4 cup soba noodles",
+      "mixed veg: zucchini, kale",
+      "1 tbsp tahini"
+    ],
+    "instructions": [
+      "Warm the carb base.",
+      "Sear or warm cod until hot.",
+      "Combine in a bowl with veggies.",
+      "Finish with tahini or your favorite sauce."
+    ]
+  },
+  {
+    "name": "Sirloin Steak Whole-Wheat Pasta Bowl",
+    "meal_type": "lunch",
+    "K": 471,
+    "P": 30,
+    "C": 54,
+    "F": 15,
+    "tags": [
+      "gluten_free",
+      "lunch",
+      "quick"
+    ],
+    "ingredients": [
+      "6 oz sirloin steak",
+      "3/4 cup whole-wheat pasta",
+      "mixed veg: tomato, bell peppers",
+      "1 tbsp light cheese"
+    ],
+    "instructions": [
+      "Warm the carb base.",
+      "Sear or warm sirloin steak until hot.",
+      "Combine in a bowl with veggies.",
+      "Finish with light cheese or your favorite sauce."
+    ]
+  },
+  {
+    "name": "Protein Shake",
+    "meal_type": "snack",
+    "K": 172,
+    "P": 25,
+    "C": 6,
+    "F": 5,
+    "tags": [
+      "high_protein",
+      "quick",
+      "snack"
+    ],
+    "ingredients": [
+      "1 scoop whey",
+      "water or milk"
+    ],
+    "instructions": [
+      "Shake or blend."
+    ]
+  },
+  {
+    "name": "Egg Whites with Rice Cakes & Kale, Green Beans",
+    "meal_type": "dinner",
+    "K": 558,
+    "P": 35,
+    "C": 55,
+    "F": 22,
+    "tags": [
+      "dinner",
+      "low_carb"
+    ],
+    "ingredients": [
+      "6\u20137 oz egg whites",
+      "1 cup rice cakes",
+      "kale, green beans",
+      "1 tsp almonds"
+    ],
+    "instructions": [
+      "Cook egg whites (grill, bake, or saut\u00e9) 6\u201310 minutes until done.",
+      "Prepare rice cakes as directed.",
+      "Plate with vegetables and drizzle oil."
+    ]
+  },
+  {
+    "name": "Veggie Egg Scramble",
+    "meal_type": "breakfast",
+    "K": 395,
+    "P": 35,
+    "C": 27,
+    "F": 16,
+    "tags": [
+      "breakfast",
+      "low_carb",
+      "quick"
+    ],
+    "ingredients": [
+      "3 eggs",
+      "spinach",
+      "mushrooms",
+      "olive oil spray"
+    ],
+    "instructions": [
+      "Saut\u00e9 veggies 2\u20133 min.",
+      "Add beaten eggs; scramble until set."
+    ]
+  },
+  {
+    "name": "Cottage Cheese + Pineapple",
+    "meal_type": "snack",
+    "K": 215,
+    "P": 23,
+    "C": 21,
+    "F": 4,
+    "tags": [
+      "high_protein",
+      "snack"
+    ],
+    "ingredients": [
+      "1 cup cottage cheese",
+      "1/2 cup pineapple"
+    ],
+    "instructions": [
+      "Combine and serve."
+    ]
+  },
+  {
+    "name": "Black Beans with Corn Tortillas & Kale, Bell Peppers",
+    "meal_type": "dinner",
+    "K": 691,
+    "P": 44,
+    "C": 68,
+    "F": 27,
+    "tags": [
+      "dairy_free",
+      "dinner",
+      "gluten_free",
+      "vegan",
+      "vegetarian"
+    ],
+    "ingredients": [
+      "6\u20137 oz black beans",
+      "1 cup corn tortillas",
+      "kale, bell peppers",
+      "1 tsp avocado"
+    ],
+    "instructions": [
+      "Cook black beans (grill, bake, or saut\u00e9) 6\u201310 minutes until done.",
+      "Prepare corn tortillas as directed.",
+      "Plate with vegetables and drizzle oil."
+    ]
+  },
+  {
+    "name": "Big Protein Smoothie",
+    "meal_type": "breakfast",
+    "K": 343,
+    "P": 31,
+    "C": 39,
+    "F": 7,
+    "tags": [
+      "breakfast",
+      "high_protein",
+      "quick"
+    ],
+    "ingredients": [
+      "2 scoops whey",
+      "1 banana",
+      "peanut butter (1 tbsp)",
+      "milk"
+    ],
+    "instructions": [
+      "Blend all 45\u201360 seconds."
+    ]
+  },
+  {
+    "name": "Veggie Egg Scramble",
+    "meal_type": "breakfast",
+    "K": 272,
+    "P": 24,
+    "C": 19,
+    "F": 11,
+    "tags": [
+      "breakfast",
+      "low_carb",
+      "quick"
+    ],
+    "ingredients": [
+      "3 eggs",
+      "spinach",
+      "mushrooms",
+      "olive oil spray"
+    ],
+    "instructions": [
+      "Saut\u00e9 veggies 2\u20133 min.",
+      "Add beaten eggs; scramble until set."
+    ]
+  },
+  {
+    "name": "Cod Sweet Potato Bowl",
+    "meal_type": "lunch",
+    "K": 672,
+    "P": 40,
+    "C": 74,
+    "F": 24,
+    "tags": [
+      "gluten_free",
+      "low_carb",
+      "lunch",
+      "quick"
+    ],
+    "ingredients": [
+      "6 oz cod",
+      "3/4 cup sweet potato",
+      "mixed veg: cabbage, tomato",
+      "1 tbsp olive oil"
+    ],
+    "instructions": [
+      "Warm the carb base.",
+      "Sear or warm cod until hot.",
+      "Combine in a bowl with veggies.",
+      "Finish with olive oil or your favorite sauce."
+    ]
+  },
+  {
+    "name": "Lentils Soba Noodles Bowl",
+    "meal_type": "lunch",
+    "K": 614,
+    "P": 37,
+    "C": 67,
+    "F": 22,
+    "tags": [
+      "dairy_free",
+      "gluten_free",
+      "lunch",
+      "quick",
+      "vegan",
+      "vegetarian"
+    ],
+    "ingredients": [
+      "6 oz lentils",
+      "3/4 cup soba noodles",
+      "mixed veg: asparagus, onion",
+      "1 tbsp almonds"
+    ],
+    "instructions": [
+      "Warm the carb base.",
+      "Sear or warm lentils until hot.",
+      "Combine in a bowl with veggies.",
+      "Finish with almonds or your favorite sauce."
+    ]
+  },
+  {
+    "name": "Black Beans Farro Bowl",
+    "meal_type": "lunch",
+    "K": 477,
+    "P": 29,
+    "C": 52,
+    "F": 17,
+    "tags": [
+      "dairy_free",
+      "gluten_free",
+      "lunch",
+      "quick",
+      "vegan",
+      "vegetarian"
+    ],
+    "ingredients": [
+      "6 oz black beans",
+      "3/4 cup farro",
+      "mixed veg: green beans, onion",
+      "1 tbsp almonds"
+    ],
+    "instructions": [
+      "Warm the carb base.",
+      "Sear or warm black beans until hot.",
+      "Combine in a bowl with veggies.",
+      "Finish with almonds or your favorite sauce."
+    ]
+  },
+  {
+    "name": "Trail Mix (controlled)",
+    "meal_type": "snack",
+    "K": 281,
+    "P": 9,
+    "C": 27,
+    "F": 15,
+    "tags": [
+      "snack",
+      "vegetarian"
+    ],
+    "ingredients": [
+      "1/4 cup mixed nuts",
+      "2 tbsp raisins"
+    ],
+    "instructions": [
+      "Portion and eat mindfully."
+    ]
+  }
+]
