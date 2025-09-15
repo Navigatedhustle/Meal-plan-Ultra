@@ -695,15 +695,14 @@ from flask import redirect, url_for  # add to imports
 
 @app.route('/generate', methods=['GET','POST'])
 def generate():
+    # If someone hits /generate via GET (e.g., an iframe or a direct link),
+    # send them to the form page instead of returning 405.
     if request.method == 'GET':
         return redirect(url_for('index'), code=302)
-    # ... existing POST logic ...
 
-
-@app.post('/generate')
-def generate():
     form = request.form
-    # Pull TDEE or compute
+
+    # Pull TDEE or compute from stats
     tdee_raw = form.get('tdee', '').strip()
     activity = form.get('activity', 'sedentary')
     if tdee_raw:
@@ -731,6 +730,7 @@ def generate():
         lb_raw = form.get('weight_lb', '').strip()
         height_cm = None
         weight_kg = None
+
         ft = _to_float(ft_raw, None)
         inches = _to_float(in_raw, None)
         if ft is not None or inches is not None:
@@ -738,12 +738,12 @@ def generate():
             inches = inches or 0.0
             height_cm = (ft * 12.0 + inches) * 2.54
 
-        # Weight
+        # Weight (imperial)
         lb = _to_float(lb_raw, None)
         if lb is not None:
             weight_kg = lb * 0.45359237
 
-        # Fallback to metric fields if needed
+        # Fallback to metric fields if still missing
         if height_cm is None:
             height_cm = _to_float(form.get('height_cm','175'), 175.0)
         if weight_kg is None:
@@ -766,24 +766,23 @@ def generate():
     # 25% deficit
     target_kcal = int(round(tdee * 0.75))
 
-    # 40/30/30 macro targets
+    # 40/30/30 macro targets (P/C/F grams)
     p_g, c_g, f_g = grams_from_kcal(target_kcal)
 
-    # Filter meals for prefs
+    # Build meal pool honoring prefs
     pool = filter_meals(prefs) or MEALS[:]
 
-    # Build plan (correctly indented!)
+    # Create plan
     plan: List[List[Dict[str,Any]]] = []
     day_totals: List[int] = []
     for _ in range(days):
         picks, total = pick_day_plan(target_kcal, pool, meals_per_day, macro_targets=(p_g, c_g, f_g))
-        # Tighten to 40/30/30 with tiny adjustment items
-        picks = macro_rebalance_day(picks, target_kcal, (p_g, c_g, f_g))
         plan.append(picks)
-        day_totals.append(sum(m["K"] for m in picks))  # or use `total` if you prefer pre-adjustment
+        day_totals.append(total)
 
     grocery = aggregate_grocery_list(plan)
 
+    # Store transient result
     token = str(random.randint(10**9, 10**10-1))
     _RESULTS[token] = {
         "tdee": tdee,
@@ -800,8 +799,15 @@ def generate():
     }
 
     result = Result(token, tdee, target_kcal, days, meals_per_day, p_g, c_g, f_g, plan, day_totals, grocery)
-    return render_template_string(HTML, app_name=APP_NAME, activities=ACTIVITY_FACTORS, result=result, csp=ALLOWED_EMBED_DOMAIN, year=datetime.datetime.now().year)
 
+    return render_template_string(
+        HTML,
+        app_name=APP_NAME,
+        activities=ACTIVITY_FACTORS,
+        result=result,
+        csp=ALLOWED_EMBED_DOMAIN,
+        year=datetime.datetime.now().year
+    )
 
 _RESULTS: Dict[str,Dict[str,Any]] = {}
 
