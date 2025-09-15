@@ -691,6 +691,15 @@ class Result:
     day_totals: List[int]
     grocery: Dict[str,int]
 
+from flask import redirect, url_for  # add to imports
+
+@app.route('/generate', methods=['GET','POST'])
+def generate():
+    if request.method == 'GET':
+        return redirect(url_for('index'), code=302)
+    # ... existing POST logic ...
+
+
 @app.post('/generate')
 def generate():
     form = request.form
