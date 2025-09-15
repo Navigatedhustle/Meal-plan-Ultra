@@ -258,12 +258,6 @@ MACRO_LEVERS = {
           "instructions":["Drizzle over salad or veggies."]},
 }
 
-def _totals(picks):
-    k = sum(m["K"] for m in picks)
-    p = sum(m["P"] for m in picks)
-    c = sum(m["C"] for m in picks)
-    f = sum(m["F"] for m in picks)
-    return k, p, c, f
 
 def macro_rebalance_day(picks, kcal_target, macro_targets, max_adjustments=4):
     """
@@ -710,15 +704,19 @@ def generate():
             tdee = 0
     else:
         sex = form.get('sex','male')
+
         def _to_float(val, default=None):
             try:
                 return float(val)
             except Exception:
                 return default
+
         try:
             age = int(form.get('age','30'))
         except Exception:
             age = 30
+
+        # Height (imperial first)
         ft_raw = form.get('height_ft', '').strip()
         in_raw = form.get('height_in', '').strip()
         lb_raw = form.get('weight_lb', '').strip()
@@ -730,13 +728,18 @@ def generate():
             ft = ft or 0.0
             inches = inches or 0.0
             height_cm = (ft * 12.0 + inches) * 2.54
+
+        # Weight
         lb = _to_float(lb_raw, None)
         if lb is not None:
             weight_kg = lb * 0.45359237
+
+        # Fallback to metric fields if needed
         if height_cm is None:
             height_cm = _to_float(form.get('height_cm','175'), 175.0)
         if weight_kg is None:
             weight_kg = _to_float(form.get('weight_kg','80'), 80.0)
+
         bmr = mifflin_st_jeor(sex, age, float(height_cm), float(weight_kg))
         tdee = int(round(compute_tdee(bmr, activity)))
 
@@ -758,20 +761,17 @@ def generate():
     p_g, c_g, f_g = grams_from_kcal(target_kcal)
 
     # Filter meals for prefs
-    pool = filter_meals(prefs)
-    if not pool:
-        pool = MEALS[:]  # fallback
+    pool = filter_meals(prefs) or MEALS[:]
 
-    # Build plan
+    # Build plan (correctly indented!)
     plan: List[List[Dict[str,Any]]] = []
-day_totals: List[int] = []
-for _ in range(days):
-    picks, _ = pick_day_plan(target_kcal, pool, meals_per_day, macro_targets=(p_g, c_g, f_g))
-    # NEW: tighten to 40/30/30 with tiny adjustment items
-    picks = macro_rebalance_day(picks, target_kcal, (p_g, c_g, f_g))
-    plan.append(picks)
-    day_totals.append(sum(m["K"] for m in picks))
-
+    day_totals: List[int] = []
+    for _ in range(days):
+        picks, total = pick_day_plan(target_kcal, pool, meals_per_day, macro_targets=(p_g, c_g, f_g))
+        # Tighten to 40/30/30 with tiny adjustment items
+        picks = macro_rebalance_day(picks, target_kcal, (p_g, c_g, f_g))
+        plan.append(picks)
+        day_totals.append(sum(m["K"] for m in picks))  # or use `total` if you prefer pre-adjustment
 
     grocery = aggregate_grocery_list(plan)
 
@@ -792,6 +792,7 @@ for _ in range(days):
 
     result = Result(token, tdee, target_kcal, days, meals_per_day, p_g, c_g, f_g, plan, day_totals, grocery)
     return render_template_string(HTML, app_name=APP_NAME, activities=ACTIVITY_FACTORS, result=result, csp=ALLOWED_EMBED_DOMAIN, year=datetime.datetime.now().year)
+
 
 _RESULTS: Dict[str,Dict[str,Any]] = {}
 
