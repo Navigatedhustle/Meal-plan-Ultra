@@ -208,6 +208,36 @@ MEALS: List[Dict[str, Any]] = [
     {"name":"Chicken Breast Bites","meal_type":"snack","K":120,"P":26,"C":0,"F":2,
      "tags":["snack","high_protein","protein_boost","gluten_free","quick"],
      "ingredients":["4 oz cooked chicken breast, cubed"],"instructions":["Keep pre-cooked in fridge; eat chilled or warm."]},
+        # --- High-Protein Power Pack (for 40% P macro support) ---
+    {"name":"Chicken Breast + Greens (LC)","meal_type":"lunch","K":380,"P":52,"C":18,"F":10,
+     "tags":["lunch","high_protein","low_carb","quick","gluten_free"],
+     "ingredients":["7 oz chicken breast","2 cups mixed greens","1/2 cup cherry tomatoes","2 tbsp light vinaigrette"],
+     "instructions":["Grill or pan-sear chicken 4–6 min/side.","Toss greens and tomatoes with vinaigrette.","Slice chicken and serve on top."]},
+    {"name":"Turkey Egg-White Scramble","meal_type":"breakfast","K":320,"P":46,"C":18,"F":6,
+     "tags":["breakfast","high_protein","low_carb","quick"],
+     "ingredients":["5 egg whites","2 oz lean turkey","1/2 cup peppers/onion","nonstick spray"],
+     "instructions":["Spray pan and sauté veg 2–3 min.","Add turkey, then egg whites; scramble until set."]},
+    {"name":"Shrimp & Veggie Stir-Fry (LC)","meal_type":"dinner","K":410,"P":48,"C":24,"F":10,
+     "tags":["dinner","high_protein","low_carb","quick","gluten_free","dairy_free"],
+     "ingredients":["7 oz shrimp","2 cups mixed veg","1 tbsp soy sauce or coco aminos","1 tsp sesame oil"],
+     "instructions":["Stir-fry veg 3–4 min.","Add shrimp 2–3 min until pink.","Finish with soy sauce and sesame oil."]},
+    {"name":"Skyr Cup + Berries","meal_type":"snack","K":170,"P":24,"C":16,"F":1,
+     "tags":["snack","high_protein","quick"],
+     "ingredients":["1 cup plain skyr (or 0% Greek yogurt)","1/3 cup berries"],
+     "instructions":["Spoon skyr into a cup.","Top with berries."]},
+    {"name":"Cottage Cheese Bowl (Lean)","meal_type":"snack","K":190,"P":28,"C":10,"F":4,
+     "tags":["snack","high_protein","quick"],
+     "ingredients":["1 cup low-fat cottage cheese","cucumber slices","pepper"],
+     "instructions":["Add cottage cheese to a bowl.","Top with cucumber and pepper."]},
+    {"name":"High-Protein Chicken Wrap","meal_type":"lunch","K":430,"P":48,"C":36,"F":10,
+     "tags":["lunch","high_protein","quick"],
+     "ingredients":["1 high-protein tortilla","5 oz cooked chicken breast","lettuce","tomato","mustard"],
+     "instructions":["Layer chicken and veg in tortilla.","Add mustard and wrap."]},
+    {"name":"Lean Beef & Veg Plate","meal_type":"dinner","K":500,"P":50,"C":34,"F":16,
+     "tags":["dinner","high_protein","gluten_free"],
+     "ingredients":["6 oz 93% lean ground beef","2 cups zucchini/peppers","salt","pepper"],
+     "instructions":["Brown beef 5–7 min.","Sauté veg 4–5 min.","Season and plate together."]}
+
 ]
 
 MEAL_TYPES = ["breakfast","lunch","dinner","snack"]
@@ -334,131 +364,131 @@ def _totals(picks: List[Dict[str,Any]]) -> Tuple[int,int,int,int]:
     return k,p,c,f
 
 def _score_plan(picks, kcal_target, p_target, c_target, f_target):
-    """Lower is better. Macro miss is heavily penalized (esp. protein)."""
-    k, p, c, f = _totals(picks)
+    """Lower is better. Strongly favors protein hitting target; penalizes carb overages.
+       Also adds a small penalty when the average protein density (P per kcal) is low."""
+    k = sum(m["K"] for m in picks)
+    p = sum(m["P"] for m in picks)
+    c = sum(m["C"] for m in picks)
+    f = sum(m["F"] for m in picks)
+
+    # Relative errors/penalties
+    kcal_err = abs(k - kcal_target) / max(1, kcal_target)
+
+    # Protein: under-shoot is heavily punished; overshoot lightly punished (we prefer slightly high protein)
+    p_under = max(0.0, (p_target - p) / max(1.0, p_target))
+    p_over  = max(0.0, (p - p_target) / max(1.0, p_target)) * 0.25
+
+    # Carbs: we mostly care about not going too high
+    c_over  = max(0.0, (c - c_target) / max(1.0, c_target))
+    c_under = max(0.0, (c_target - c) / max(1.0, c_target)) * 0.40  # small penalty (low-carb days are OK)
+
+    # Fat: symmetric but lighter weight than protein/carbs
+    f_err   = abs(f - f_target) / max(1.0, f_target) * 0.60
+
+    # Protein density bonus: encourage meals with more P per kcal
+    avg_pd = (sum(m["P"] / max(1, m["K"]) for m in picks) / len(picks)) if picks else 0.0
+    density_bonus = max(0.0, 0.10 - avg_pd)  # if avg < 0.10 P/kcal, nudge upward
+
     return (
-        abs(k - kcal_target) * 1.0 +
-        abs(p - p_target) * 3.0 +
-        abs(c - c_target) * 2.0 +
-        abs(f - f_target) * 2.0
+        kcal_err * 30
+        + p_under * 120
+        + p_over  * 15
+        + c_over  * 80
+        + c_under * 25
+        + f_err
+        + density_bonus * 40
     )
 
-def _best_from_bucket(bucket: List[Dict[str,Any]], key: str) -> Optional[Dict[str,Any]]:
-    """Pick the highest ratio item for a macro within this bucket."""
-    if not bucket: return None
-    if key == "P":
-        return max(bucket, key=lambda m: (m["P"] / max(1,m["K"]), m["P"]))
-    if key == "C":
-        return max(bucket, key=lambda m: (m["C"] / max(1,m["K"]), m["C"]))
-    if key == "F":
-        return max(bucket, key=lambda m: (m["F"] / max(1,m["K"]), m["F"]))
-    return None
 
 def pick_day_plan(target_kcal: int, meals_db: List[Dict[str,Any]], meals_per_day: int,
                   macro_targets: Optional[Tuple[int,int,int]] = None) -> Tuple[List[Dict[str,Any]], int]:
-    """Macro-aware selection with refinement and final top-offs."""
-    # Buckets
-    by_type: Dict[str,List[Dict[str,Any]]] = {mt: [m for m in meals_db if m["meal_type"]==mt] for mt in MEAL_TYPES}
-    protein_snacks = [m for m in meals_db if m["meal_type"]=="snack" and ("protein_boost" in m.get("tags",[]) or m["P"]>=20)]
-    carb_snacks = [m for m in meals_db if m["meal_type"]=="snack" and ("carb_boost" in m.get("tags",[]) or m["C"]>=25)]
-    fat_snacks = [m for m in meals_db if m["meal_type"]=="snack" and (m["F"]>=12)]
+    """Macro-aware selection: starts with high-protein picks per meal type, then refines with swaps.
+       Aims for kcal ±5% AND grams near the 40/30/30 daily targets."""
+    if not meals_db:
+        return [], 0
 
-    picks: List[Dict[str,Any]] = []
+    p_t, c_t, f_t = macro_targets if macro_targets else (0, 0, 0)
 
-    # Ensure main meals if possible
-    seq = []
+    # Helper: protein density
+    def pd(m: Dict[str,Any]) -> float:
+        return m["P"] / max(1.0, m["K"])
+
+    # Buckets by type sorted by protein density
+    MEAL_TYPES_LOCAL = ["breakfast", "lunch", "dinner", "snack"]
+    by_type: Dict[str,List[Dict[str,Any]]] = {mt: [] for mt in MEAL_TYPES_LOCAL}
+    for m in meals_db:
+        by_type.setdefault(m["meal_type"], []).append(m)
+
+    sorted_global = sorted(meals_db, key=pd, reverse=True)
+    sorted_by_type = {mt: sorted(bucket, key=pd, reverse=True) for mt, bucket in by_type.items()}
+
+    # Build the sequence we want to fill
     if meals_per_day >= 3:
-        seq = ["breakfast","lunch","dinner"]
-        remain = meals_per_day - 3
+        seq = ["breakfast", "lunch", "dinner"] + ["snack"] * (meals_per_day - 3)
+    elif meals_per_day == 2:
+        seq = ["lunch", "dinner"]
     else:
-        seq = ["lunch","dinner"][:meals_per_day]
-        remain = 0
-    for _ in range(remain):
-        seq.append("snack")
-    random.shuffle(seq)
+        seq = ["dinner"]
 
+    # Seed with high-protein options per slot
+    picks: List[Dict[str,Any]] = []
     total_k = 0
     for mt in seq:
-        bucket = by_type.get(mt, []) or meals_db
-        # seed choice biased toward macro-dense for main meals
-        if macro_targets and mt in ("breakfast","lunch","dinner"):
-            cand = _best_from_bucket(bucket, "P") or random.choice(bucket)
-        else:
-            cand = random.choice(bucket)
-        picks.append(cand)
-        total_k += cand["K"]
+        bucket = sorted_by_type.get(mt) or sorted_global
+        cutoff = max(3, len(bucket) // 2) if len(bucket) > 3 else len(bucket)  # prefer top half by PD
+        candidate_pool = bucket[:cutoff] if cutoff else bucket
+        choice = random.choice(candidate_pool) if candidate_pool else random.choice(sorted_global)
+        picks.append(choice)
+        total_k += choice["K"]
 
-    # Refinement via swaps
-    attempts = 220
+    # Hill-climb with swaps to improve score
+    attempts = 350
+    best_score = _score_plan(picks, target_kcal, p_t, c_t, f_t)
     lower = int(target_kcal * 0.95)
     upper = int(target_kcal * 1.05)
 
-    if macro_targets:
-        p_t, c_t, f_t = macro_targets
-        best_score = _score_plan(picks, target_kcal, p_t, c_t, f_t)
-    else:
-        p_t=c_t=f_t=0
-        best_score = abs(total_k - target_kcal)
-
     while attempts > 0:
         attempts -= 1
-        idx = random.randrange(0, len(picks))
+        idx = random.randrange(len(picks))
         mt = picks[idx]["meal_type"]
-        bucket = by_type.get(mt, meals_db) or meals_db
-        candidate = random.choice(bucket)
+        bucket = sorted_by_type.get(mt) or sorted_global
+        top_span = max(5, len(bucket) // 2) if len(bucket) > 5 else len(bucket)
+        candidate = random.choice(bucket[:top_span]) if top_span else random.choice(sorted_global)
 
-        new_picks = picks[:]
-        new_picks[idx] = candidate
+        trial = picks[:]
+        trial[idx] = candidate
+        new_score = _score_plan(trial, target_kcal, p_t, c_t, f_t)
+        if new_score < best_score:
+            picks = trial
+            best_score = new_score
+            total_k = sum(m["K"] for m in picks)
 
-        if macro_targets:
-            new_score = _score_plan(new_picks, target_kcal, p_t, c_t, f_t)
-            if new_score < best_score:
-                picks = new_picks
-                best_score = new_score
-                total_k = sum(m["K"] for m in picks)
-        else:
-            new_total = total_k - picks[idx]["K"] + candidate["K"]
-            if abs(new_total - target_kcal) < abs(total_k - target_kcal):
-                picks[idx] = candidate
-                total_k = new_total
+            # early exit if we’re within kcal and each macro is close
+            kcal_ok = lower <= total_k <= upper
+            p_ok = abs(sum(m["P"] for m in picks) - p_t) <= max(6, 0.06 * p_t)
+            c_ok = abs(sum(m["C"] for m in picks) - c_t) <= max(8, 0.08 * c_t)
+            f_ok = abs(sum(m["F"] for m in picks) - f_t) <= max(6, 0.06 * f_t)
+            if kcal_ok and p_ok and c_ok and f_ok:
+                break
 
-        if lower <= total_k <= upper and (not macro_targets or best_score < 18):
-            break
+    # Last-mile: if protein still low, replace the weakest (often snack) with a much denser pick
+    current_P = sum(m["P"] for m in picks)
+    if current_P < p_t - max(8, 0.06 * p_t):
+        indices = list(range(len(picks)))
+        snack_idxs = [i for i in indices if picks[i]["meal_type"] == "snack"]
+        pool_idxs = snack_idxs if snack_idxs else indices
+        victim_idx = min(pool_idxs, key=lambda i: pd(picks[i]))
+        victim_type = picks[victim_idx]["meal_type"]
+        candidate_bucket = sorted_by_type.get(victim_type) or sorted_global
+        # grab a meaningfully denser item than the victim (or fall back to top)
+        hp_candidate = next(
+            (m for m in candidate_bucket if pd(m) >= pd(picks[victim_idx]) * 1.25),
+            candidate_bucket[0]
+        )
+        picks[victim_idx] = hp_candidate
+        total_k = sum(m["K"] for m in picks)
 
-    # Final macro top-off (swap a snack first, else add one extra snack if still way off)
-    if macro_targets:
-        k,p,c,f = _totals(picks)
-        gaps = {"P": p_t - p, "C": c_t - c, "F": f_t - f}
-        # address biggest absolute gap first
-        biggest = max(gaps.items(), key=lambda kv: abs(kv[1]))[0]
-        if gaps[biggest] > 0:  # we are short on that macro
-            if biggest == "P" and protein_snacks:
-                lever = _best_from_bucket(protein_snacks, "P")
-            elif biggest == "C" and carb_snacks:
-                lever = _best_from_bucket(carb_snacks, "C")
-            elif biggest == "F" and fat_snacks:
-                lever = _best_from_bucket(fat_snacks, "F")
-            else:
-                lever = None
-
-            if lever:
-                # Try to replace a snack first
-                snack_idxs = [i for i,m in enumerate(picks) if m["meal_type"]=="snack"]
-                replaced = False
-                for i in snack_idxs:
-                    trial = picks[:]
-                    trial[i] = lever
-                    if _score_plan(trial, target_kcal, p_t, c_t, f_t) < _score_plan(picks, target_kcal, p_t, c_t, f_t):
-                        picks = trial
-                        replaced = True
-                        break
-                # If no snack to swap (e.g., only 2 meals/day) and calories allow, append lever as an extra micro snack
-                if not replaced:
-                    k2 = k + lever["K"]
-                    if k2 <= upper:
-                        picks.append(lever)
-
-    return picks, sum(m["K"] for m in picks)
+    return picks, total_k
 
 def aggregate_grocery_list(plan: List[List[Dict[str,Any]]]) -> Dict[str,int]:
     counts: Dict[str,int] = {}
