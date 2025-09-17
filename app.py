@@ -1,15 +1,30 @@
 """
 Home Meal Planner App - Simple At-Home Meal Plan Generator
 - Inputs: TDEE (or compute from BMR stats) + activity level, days (1-7), meals/day, dietary prefs
-- Output: Daily plan at 25% deficit, grocery list, and downloadable PDF (with per-meal steps)
+- Output: Daily plan at 25% deficit, grocery list, and downloadable PDF (with per‑meal steps)
 - Embeddable UI (single-file Flask app using render_template_string)
+
+How to run (Windows/macOS/Linux):
+1) Install deps once:
+   python -m pip install flask reportlab
+2) Save this file as: app.py
+3) Run server locally:
+   python app.py
+
+Render/Gunicorn command (already used by Render):
+   gunicorn -w 1 -t 120 --graceful-timeout 20 --max-requests 200 --max-requests-jitter 25 -b 0.0.0.0:$PORT app:app
+
+Notes:
+- Designed to be iframe-embeddable. If your host frames this app (e.g., GHL), set ALLOWED_EMBED_DOMAIN below to your site origin (e.g., "https://app.gohighlevel.com" or your custom domain).
+- Tight calorie control: per-day calories are nudged into ±5% of target using tiny, preference‑aware "adjuster" snacks (or by trimming snacks if high).
+- Macro aware: selection nudges toward the daily 40/30/30 (P/C/F) targets by default.
 """
 from __future__ import annotations
-import os, sys, math, random, io, re, argparse, datetime, unittest, json, tempfile
+import os, random, io, argparse, datetime, json
 from dataclasses import dataclass
 from typing import List, Dict, Any, Optional, Tuple
 
-from flask import Flask, request, render_template_string, send_file, make_response
+from flask import Flask, request, render_template_string, send_file, make_response, redirect, url_for
 
 # Optional PDF deps
 try:
@@ -22,15 +37,10 @@ try:
 except Exception:
     REPORTLAB_AVAILABLE = False
 
-# Detect availability of the native multiprocessing extension so we can choose safe run settings
-try:
-    import _multiprocessing  # type: ignore
-    MULTIPROC_AVAILABLE = True
-except Exception:
-    MULTIPROC_AVAILABLE = False
-
 APP_NAME = "Home Meal Planner"
-ALLOWED_EMBED_DOMAIN = None  # e.g., "https://your-ghl-site.com" to lock down with CSP
+# Set this to the site that will embed you to allow framing via CSP, e.g.:
+# ALLOWED_EMBED_DOMAIN = "https://app.gohighlevel.com"  # or your custom URL
+ALLOWED_EMBED_DOMAIN = None
 
 app = Flask(__name__)
 
@@ -46,8 +56,10 @@ ACTIVITY_FACTORS = {
 }
 
 # -----------------------------
-# Meal database (expanded + micro "macro lever" snacks)
-# Each item: name, meal_type, K (kcal), P/C/F (g), tags, ingredients, instructions (list[str])
+# Meal database (EXPANDED, high-protein friendly)
+# Each item: name, meal_type, K kcal, P/C/F grams, tags, ingredients, instructions
+# tags can include: breakfast, lunch, dinner, snack, vegetarian, vegan, dairy_free, gluten_free,
+#                   high_protein, low_carb, quick, budget
 # -----------------------------
 MEALS: List[Dict[str, Any]] = [
     # ===== BREAKFASTS =====
@@ -87,6 +99,14 @@ MEALS: List[Dict[str, Any]] = [
      "tags":["breakfast","vegetarian","budget"],
      "ingredients":["1/3 cup oats","1/2 cup milk","1/2 cup yogurt","cinnamon"],
      "instructions":["Mix all in jar.","Refrigerate overnight.","Stir and eat cold."]},
+    {"name":"Skyr & Berries Bowl","meal_type":"breakfast","K":260,"P":26,"C":28,"F":3,
+     "tags":["breakfast","high_protein","quick"],
+     "ingredients":["1 cup plain skyr","1/2 cup mixed berries","1 tsp honey"],
+     "instructions":["Spoon skyr in bowl.","Top with berries and honey."]},
+    {"name":"Egg White & Turkey Wrap","meal_type":"breakfast","K":340,"P":36,"C":28,"F":8,
+     "tags":["breakfast","high_protein","quick"],
+     "ingredients":["5 egg whites","2 oz turkey","1 small high-protein tortilla","hot sauce"],
+     "instructions":["Scramble egg whites.","Warm tortilla, add turkey and eggs, roll."]},
 
     # ===== LUNCHES =====
     {"name":"Chicken Burrito Bowl","meal_type":"lunch","K":520,"P":45,"C":58,"F":12,
@@ -94,9 +114,9 @@ MEALS: List[Dict[str, Any]] = [
      "ingredients":["6 oz chicken","3/4 cup brown rice","1/2 cup black beans","pico","lettuce"],
      "instructions":["Warm rice and beans.","Top with sliced cooked chicken, pico and lettuce."]},
     {"name":"Turkey Avocado Sandwich","meal_type":"lunch","K":480,"P":36,"C":46,"F":16,
-      "tags":["lunch","quick"],
-      "ingredients":["2 slices whole-grain bread","5 oz turkey","1/4 avocado","lettuce","tomato","mustard"],
-      "instructions":["Toast bread.","Layer turkey, avocado, veg and mustard; slice."]},
+     "tags":["lunch","quick"],
+     "ingredients":["2 slices whole-grain bread","5 oz turkey","1/4 avocado","lettuce","tomato","mustard"],
+     "instructions":["Toast bread.","Layer turkey, avocado, veg and mustard; slice."]},
     {"name":"Chickpea Salad Bowl","meal_type":"lunch","K":450,"P":20,"C":55,"F":14,
      "tags":["lunch","vegetarian","high_protein","budget"],
      "ingredients":["1 cup chickpeas","mixed greens","cucumber","tomato","light vinaigrette"],
@@ -125,16 +145,28 @@ MEALS: List[Dict[str, Any]] = [
      "tags":["lunch","high_protein"],
      "ingredients":["3 oz dry pasta","6 oz chicken","2 tbsp pesto","spinach"],
      "instructions":["Boil pasta.","Sauté chicken.","Toss all with pesto and spinach."]},
+    {"name":"Chicken Caesar Wrap (light)","meal_type":"lunch","K":520,"P":42,"C":45,"F":16,
+     "tags":["lunch","high_protein","quick"],
+     "ingredients":["1 high-protein tortilla","5 oz grilled chicken","romaine","light caesar"],
+     "instructions":["Slice chicken.","Toss with romaine & dressing.","Wrap it."]},
+    {"name":"Quinoa Black Bean Bowl","meal_type":"lunch","K":560,"P":22,"C":82,"F":14,
+     "tags":["lunch","vegetarian","vegan"],
+     "ingredients":["3/4 cup cooked quinoa","1 cup black beans","salsa","cilantro"],
+     "instructions":["Heat quinoa & beans.","Top with salsa & cilantro."]},
+    {"name":"Tofu Teriyaki Bowl","meal_type":"lunch","K":540,"P":32,"C":68,"F":14,
+     "tags":["lunch","vegan","dairy_free","high_protein"],
+     "ingredients":["6 oz tofu","3/4 cup rice","frozen stir-fry veg","teriyaki sauce"],
+     "instructions":["Pan-fry tofu.","Stir-fry veg.","Serve over rice with sauce."]},
 
     # ===== DINNERS =====
     {"name":"Salmon, Quinoa, Broccoli","meal_type":"dinner","K":560,"P":42,"C":50,"F":18,
      "tags":["dinner","high_protein"],
      "ingredients":["6 oz salmon","3/4 cup quinoa","1.5 cups broccoli","lemon","olive oil"],
-     "instructions":["Bake salmon 10–12 min at 400°F (200°C).","Microwave or steam broccoli.","Serve with cooked quinoa and lemon."]},
+     "instructions":["Bake salmon 10–12 min at 400°F (200°C).","Steam broccoli.","Serve with quinoa and lemon."]},
     {"name":"Turkey Chili (1 bowl)","meal_type":"dinner","K":540,"P":40,"C":48,"F":18,
      "tags":["dinner","high_protein","budget"],
      "ingredients":["8 oz lean turkey","kidney beans","tomato sauce","onion","spices"],
-     "instructions":["Brown turkey with onion.","Add sauce, beans and spices; simmer 10–15 min."]},
+     "instructions":["Brown turkey with onion.","Add sauce, beans, spices; simmer 10–15 min."]},
     {"name":"Tofu Stir-Fry + Rice","meal_type":"dinner","K":520,"P":28,"C":62,"F":16,
      "tags":["dinner","vegan","dairy_free","high_protein","quick"],
      "ingredients":["6 oz tofu","mixed veg","1 tbsp soy sauce","3/4 cup rice"],
@@ -150,7 +182,7 @@ MEALS: List[Dict[str, Any]] = [
     {"name":"Steak, Potatoes & Asparagus","meal_type":"dinner","K":750,"P":50,"C":70,"F":25,
      "tags":["dinner","high_protein","gluten_free"],
      "ingredients":["7 oz sirloin","8 oz potatoes","1 cup asparagus","1 tsp olive oil"],
-     "instructions":["Roast potatoes 20–25 min at 425°F (220°C).","Sear steak 3–4 min/side; rest.","Sauté asparagus 3–4 min."]},
+     "instructions":["Roast potatoes 20–25 min at 425°F (220°C).","Sear steak 3–4 min/side.","Sauté asparagus 3–4 min."]},
     {"name":"Vegan Chickpea Curry","meal_type":"dinner","K":680,"P":24,"C":90,"F":22,
      "tags":["dinner","vegan","dairy_free","budget"],
      "ingredients":["1 cup chickpeas","1 cup light coconut milk","curry paste","1 cup rice"],
@@ -162,7 +194,19 @@ MEALS: List[Dict[str, Any]] = [
     {"name":"Stuffed Sweet Potato (HP)","meal_type":"dinner","K":620,"P":34,"C":78,"F":18,
      "tags":["dinner","high_protein","vegetarian"],
      "ingredients":["1 large sweet potato","1 cup black beans","Greek yogurt","green onions"],
-     "instructions":["Microwave potato 6–8 min until soft.","Split and top with warm beans, yogurt and onions."]},
+     "instructions":["Microwave potato 6–8 min.","Split and top with warm beans, yogurt, onions."]},
+    {"name":"Air Fryer Chicken Thighs","meal_type":"dinner","K":600,"P":46,"C":12,"F":36,
+     "tags":["dinner","high_protein","gluten_free","quick"],
+     "ingredients":["7 oz boneless chicken thighs","seasoning","1 cup green beans"],
+     "instructions":["Air fry chicken 18–20 min at 380°F (195°C).","Microwave green beans; serve."]},
+    {"name":"Baked Cod & Potatoes","meal_type":"dinner","K":520,"P":42,"C":56,"F":12,
+     "tags":["dinner","high_protein","gluten_free"],
+     "ingredients":["7 oz cod","8 oz potatoes","1 cup spinach","lemon"],
+     "instructions":["Bake cod 10–12 min at 400°F (200°C).","Roast potatoes.","Wilt spinach in pan; plate."]},
+    {"name":"Ground Turkey Taco Bowls","meal_type":"dinner","K":640,"P":46,"C":70,"F":18,
+     "tags":["dinner","high_protein"],
+     "ingredients":["6 oz 93% ground turkey","3/4 cup rice","salsa","lettuce"],
+     "instructions":["Brown turkey with taco spices.","Serve over rice with salsa & lettuce."]},
 
     # ===== SNACKS =====
     {"name":"Apple + Peanut Butter","meal_type":"snack","K":240,"P":7,"C":28,"F":12,
@@ -197,121 +241,47 @@ MEALS: List[Dict[str, Any]] = [
      "tags":["snack","vegetarian"],
      "ingredients":["1 slice whole-grain bread","1/4 avocado","lemon","salt"],
      "instructions":["Toast bread.","Mash avocado with lemon and salt; spread."]},
+    {"name":"Skyr Cup","meal_type":"snack","K":150,"P":20,"C":12,"F":2,
+     "tags":["snack","high_protein","quick"],
+     "ingredients":["1 single-serve skyr"],
+     "instructions":["Peel and eat."]},
+    {"name":"Beef Jerky (1 oz)","meal_type":"snack","K":116,"P":9,"C":3,"F":7,
+     "tags":["snack","high_protein","low_carb","quick","gluten_free"],
+     "ingredients":["1 oz beef jerky"],
+     "instructions":["Open bag and enjoy."]},
+    {"name":"Hard-Boiled Eggs (2)","meal_type":"snack","K":156,"P":12,"C":2,"F":10,
+     "tags":["snack","high_protein","quick","gluten_free"],
+     "ingredients":["2 eggs"],
+     "instructions":["Boil, peel, salt lightly."]},
+    {"name":"Edamame Cup","meal_type":"snack","K":190,"P":17,"C":15,"F":7,
+     "tags":["snack","high_protein","vegetarian","vegan","quick","gluten_free"],
+     "ingredients":["1 cup shelled edamame"],
+     "instructions":["Microwave per package; salt."]},
+]
 
-    # --- micro “macro levers” for final adjustments ---
-    {"name":"Banana","meal_type":"snack","K":105,"P":1,"C":27,"F":0,
-     "tags":["snack","quick","carb_boost"],
+# Tiny adjusters for precise calorie/macro control
+MICRO_ADJUSTERS = [
+    {"name":"Adj: Plain Rice Cup","meal_type":"snack","K":200,"P":4,"C":45,"F":0,
+     "tags":["adjustment","carb_boost","vegan","dairy_free","gluten_free"],
+     "ingredients":["1 cup cooked white rice"],"instructions":["Heat if desired."]},
+    {"name":"Adj: Banana","meal_type":"snack","K":105,"P":1,"C":27,"F":0,
+     "tags":["adjustment","carb_boost","vegan","dairy_free","gluten_free"],
      "ingredients":["1 medium banana"],"instructions":["Peel and eat."]},
-    {"name":"Plain Rice Cup","meal_type":"snack","K":200,"P":4,"C":45,"F":0,
-     "tags":["snack","quick","carb_boost","gluten_free"],
-     "ingredients":["1 cup cooked white rice"],"instructions":["Microwave-safe cup; heat if desired."]},
-    {"name":"Chicken Breast Bites","meal_type":"snack","K":120,"P":26,"C":0,"F":2,
-     "tags":["snack","high_protein","protein_boost","gluten_free","quick"],
-     "ingredients":["4 oz cooked chicken breast, cubed"],"instructions":["Keep pre-cooked in fridge; eat chilled or warm."]},
-        # --- High-Protein Power Pack (for 40% P macro support) ---
-    {"name":"Chicken Breast + Greens (LC)","meal_type":"lunch","K":380,"P":52,"C":18,"F":10,
-     "tags":["lunch","high_protein","low_carb","quick","gluten_free"],
-     "ingredients":["7 oz chicken breast","2 cups mixed greens","1/2 cup cherry tomatoes","2 tbsp light vinaigrette"],
-     "instructions":["Grill or pan-sear chicken 4–6 min/side.","Toss greens and tomatoes with vinaigrette.","Slice chicken and serve on top."]},
-    {"name":"Turkey Egg-White Scramble","meal_type":"breakfast","K":320,"P":46,"C":18,"F":6,
-     "tags":["breakfast","high_protein","low_carb","quick"],
-     "ingredients":["5 egg whites","2 oz lean turkey","1/2 cup peppers/onion","nonstick spray"],
-     "instructions":["Spray pan and sauté veg 2–3 min.","Add turkey, then egg whites; scramble until set."]},
-    {"name":"Shrimp & Veggie Stir-Fry (LC)","meal_type":"dinner","K":410,"P":48,"C":24,"F":10,
-     "tags":["dinner","high_protein","low_carb","quick","gluten_free","dairy_free"],
-     "ingredients":["7 oz shrimp","2 cups mixed veg","1 tbsp soy sauce or coco aminos","1 tsp sesame oil"],
-     "instructions":["Stir-fry veg 3–4 min.","Add shrimp 2–3 min until pink.","Finish with soy sauce and sesame oil."]},
-    {"name":"Skyr Cup + Berries","meal_type":"snack","K":170,"P":24,"C":16,"F":1,
-     "tags":["snack","high_protein","quick"],
-     "ingredients":["1 cup plain skyr (or 0% Greek yogurt)","1/3 cup berries"],
-     "instructions":["Spoon skyr into a cup.","Top with berries."]},
-    {"name":"Cottage Cheese Bowl (Lean)","meal_type":"snack","K":190,"P":28,"C":10,"F":4,
-     "tags":["snack","high_protein","quick"],
-     "ingredients":["1 cup low-fat cottage cheese","cucumber slices","pepper"],
-     "instructions":["Add cottage cheese to a bowl.","Top with cucumber and pepper."]},
-    {"name":"High-Protein Chicken Wrap","meal_type":"lunch","K":430,"P":48,"C":36,"F":10,
-     "tags":["lunch","high_protein","quick"],
-     "ingredients":["1 high-protein tortilla","5 oz cooked chicken breast","lettuce","tomato","mustard"],
-     "instructions":["Layer chicken and veg in tortilla.","Add mustard and wrap."]},
-    {"name":"Lean Beef & Veg Plate","meal_type":"dinner","K":500,"P":50,"C":34,"F":16,
-     "tags":["dinner","high_protein","gluten_free"],
-     "ingredients":["6 oz 93% lean ground beef","2 cups zucchini/peppers","salt","pepper"],
-     "instructions":["Brown beef 5–7 min.","Sauté veg 4–5 min.","Season and plate together."]}
-
+    {"name":"Adj: Whey in Water","meal_type":"snack","K":120,"P":24,"C":3,"F":1,
+     "tags":["adjustment","protein_boost"],
+     "ingredients":["1 scoop whey","water"],"instructions":["Shake and drink."]},
+    {"name":"Adj: Chicken Breast Bites","meal_type":"snack","K":120,"P":26,"C":0,"F":2,
+     "tags":["adjustment","protein_boost","gluten_free","dairy_free"],
+     "ingredients":["4 oz cooked chicken breast"],"instructions":["Eat chilled or warm."]},
+    {"name":"Adj: Olive Oil (1 tbsp)","meal_type":"snack","K":120,"P":0,"C":0,"F":14,
+     "tags":["adjustment","fat_boost","vegan","dairy_free","gluten_free"],
+     "ingredients":["1 tbsp extra-virgin olive oil"],"instructions":["Drizzle over salad/veg."]},
 ]
 
 MEAL_TYPES = ["breakfast","lunch","dinner","snack"]
 
-# ---- Macro levers (tiny "adjustment" snacks) ----
-MACRO_LEVERS = {
-    "P": {"name":"Adj: Whey in Water","meal_type":"snack","K":110,"P":24,"C":3,"F":1,
-          "tags":["adjustment","high_protein","quick"],
-          "ingredients":["1 scoop whey","water"],
-          "instructions":["Shake with water and drink."]},
-    "C": {"name":"Adj: Rice Cakes (2)","meal_type":"snack","K":140,"P":2,"C":32,"F":0,
-          "tags":["adjustment","quick","low_fat"],
-          "ingredients":["2 plain rice cakes"],
-          "instructions":["Eat as a quick carb add-on."]},
-    "F": {"name":"Adj: Olive Oil (1 tbsp)","meal_type":"snack","K":120,"P":0,"C":0,"F":14,
-          "tags":["adjustment","quick","fat_boost","gluten_free","dairy_free","vegan"],
-          "ingredients":["1 tbsp extra-virgin olive oil"],
-          "instructions":["Drizzle over salad or veggies."]},
-}
-
-
-def macro_rebalance_day(picks, kcal_target, macro_targets, max_adjustments=4):
-    """
-    Append small 'lever' items and/or drop a conflicting snack so the day
-    lands near 40/30/30 ± ~3% while staying ~ within ±3% calories.
-    """
-    p_t, c_t, f_t = macro_targets
-    lower = int(kcal_target * 0.97)
-    upper = int(kcal_target * 1.03)
-
-    picks = picks[:]  # work on a copy
-    for _ in range(max_adjustments):
-        k, p, c, f = _totals(picks)
-        dp, dc, df = p_t - p, c_t - c, f_t - f
-
-        # close enough? (grams tolerance scales with target)
-        if (abs(dp) <= max(8, p_t * 0.05) and
-            abs(dc) <= max(10, c_t * 0.06) and
-            abs(df) <= max(5, f_t * 0.06) and
-            lower <= k <= upper):
-            break
-
-        # fix the biggest miss (by kcal effect)
-        errs = [("P", abs(dp*4)), ("C", abs(dc*4)), ("F", abs(df*9))]
-        errs.sort(key=lambda x: x[1], reverse=True)
-        key = errs[0][0]
-
-        # add a lever toward the worst macro
-        lever = dict(MACRO_LEVERS[key])  # copy
-        lever["tags"] = lever.get("tags", []) + ["adjustment"]
-        picks.append(lever)
-
-        # if kcal now too high, try dropping a conflicting snack
-        k, p, c, f = _totals(picks)
-        if k > upper:
-            over_key = "C" if c > c_t else ("F" if f > f_t else "K")
-            snack_ix, best_score = None, -1
-            for i, m in enumerate(picks):
-                if m["meal_type"] != "snack" or "adjustment" in m.get("tags", []):
-                    continue
-                score = m["C"] if over_key == "C" else (m["F"]*9 if over_key == "F" else m["K"])
-                if score > best_score:
-                    best_score, snack_ix = score, i
-            if snack_ix is not None:
-                picks.pop(snack_ix)
-            else:
-                # nothing to drop? back out the lever we just added
-                picks.pop()
-
-    return picks
-
-
 # -----------------------------
-# Utility functions
+# Utility & nutrition helpers
 # -----------------------------
 
 def mifflin_st_jeor(sex: str, age: int, height_cm: float, weight_kg: float) -> float:
@@ -320,169 +290,177 @@ def mifflin_st_jeor(sex: str, age: int, height_cm: float, weight_kg: float) -> f
     else:
         return 10 * weight_kg + 6.25 * height_cm - 5 * age - 161
 
+
 def compute_tdee(bmr: float, activity: str) -> float:
     factor = ACTIVITY_FACTORS.get(activity, 1.2)
     return bmr * factor
 
+
 def grams_from_kcal(target_kcal: float, p_ratio=0.40, c_ratio=0.30, f_ratio=0.30) -> Tuple[int,int,int]:
-    """40/30/30 by default."""
     p_g = round((target_kcal * p_ratio) / 4)
     c_g = round((target_kcal * c_ratio) / 4)
     f_g = round((target_kcal * f_ratio) / 9)
     return p_g, c_g, f_g
 
+
+def _compatible(meal: Dict[str,Any], prefs: Dict[str,Any], excludes: set) -> bool:
+    tags = set(meal.get("tags",[]))
+    if prefs.get("vegan") and "vegan" not in tags: return False
+    if prefs.get("vegetarian") and not ("vegetarian" in tags or "vegan" in tags): return False
+    if prefs.get("dairy_free") and not ("dairy_free" in tags or "vegan" in tags): return False
+    if prefs.get("gluten_free") and "gluten_free" not in tags and meal.get("meal_type")!="snack":
+        # snacks are mostly GF by choice; rely on tags for meals
+        pass
+    text = (meal["name"] + " " + " ".join(meal.get("ingredients",[]))).lower()
+    if excludes and any(x in text for x in excludes): return False
+    return True
+
+
 def filter_meals(prefs: Dict[str,Any]) -> List[Dict[str,Any]]:
     selected = []
     excludes = set([x.strip().lower() for x in prefs.get("excludes","" ).split(',') if x.strip()])
     for m in MEALS:
-        t = set(m.get("tags",[]))
-        if prefs.get("vegetarian") and not ("vegetarian" in t or "vegan" in t):
-            continue
-        if prefs.get("vegan") and "vegan" not in t:
-            continue
-        if prefs.get("dairy_free") and "dairy_free" not in t and "vegan" not in t:
-            continue
-        # naive GF handling; extend tags in DB as needed
-        if excludes:
-            text = (m["name"] + " " + " ".join(m.get("ingredients",[]))).lower()
-            if any(x in text for x in excludes):
-                continue
-        selected.append(m)
+        if _compatible(m, prefs, excludes):
+            selected.append(m)
     return selected
 
+
 def _totals(picks: List[Dict[str,Any]]) -> Tuple[int,int,int,int]:
-    k = sum(m["K"] for m in picks)
-    p = sum(m["P"] for m in picks)
-    c = sum(m["C"] for m in picks)
-    f = sum(m["F"] for m in picks)
+    k = sum(m["K"] for m in picks); p = sum(m["P"] for m in picks)
+    c = sum(m["C"] for m in picks); f = sum(m["F"] for m in picks)
     return k,p,c,f
 
+
 def _score_plan(picks, kcal_target, p_target, c_target, f_target):
-    """Lower is better. Strongly favors protein hitting target; penalizes carb overages.
-       Also adds a small penalty when the average protein density (P per kcal) is low."""
-    k = sum(m["K"] for m in picks)
-    p = sum(m["P"] for m in picks)
-    c = sum(m["C"] for m in picks)
-    f = sum(m["F"] for m in picks)
-
-    # Relative errors/penalties
-    kcal_err = abs(k - kcal_target) / max(1, kcal_target)
-
-    # Protein: under-shoot is heavily punished; overshoot lightly punished (we prefer slightly high protein)
-    p_under = max(0.0, (p_target - p) / max(1.0, p_target))
-    p_over  = max(0.0, (p - p_target) / max(1.0, p_target)) * 0.25
-
-    # Carbs: we mostly care about not going too high
-    c_over  = max(0.0, (c - c_target) / max(1.0, c_target))
-    c_under = max(0.0, (c_target - c) / max(1.0, c_target)) * 0.40  # small penalty (low-carb days are OK)
-
-    # Fat: symmetric but lighter weight than protein/carbs
-    f_err   = abs(f - f_target) / max(1.0, f_target) * 0.60
-
-    # Protein density bonus: encourage meals with more P per kcal
-    avg_pd = (sum(m["P"] / max(1, m["K"]) for m in picks) / len(picks)) if picks else 0.0
-    density_bonus = max(0.0, 0.10 - avg_pd)  # if avg < 0.10 P/kcal, nudge upward
-
+    k,p,c,f = _totals(picks)
+    # Favor macro hit, then kcal
     return (
-        kcal_err * 30
-        + p_under * 120
-        + p_over  * 15
-        + c_over  * 80
-        + c_under * 25
-        + f_err
-        + density_bonus * 40
+        abs(k - kcal_target) * 1.0 +
+        abs(p - p_target) * 2.0 +
+        abs(c - c_target) * 1.4 +
+        abs(f - f_target) * 1.2
     )
 
 
 def pick_day_plan(target_kcal: int, meals_db: List[Dict[str,Any]], meals_per_day: int,
                   macro_targets: Optional[Tuple[int,int,int]] = None) -> Tuple[List[Dict[str,Any]], int]:
-    """Macro-aware selection: starts with high-protein picks per meal type, then refines with swaps.
-       Aims for kcal ±5% AND grams near the 40/30/30 daily targets."""
-    if not meals_db:
-        return [], 0
-
-    p_t, c_t, f_t = macro_targets if macro_targets else (0, 0, 0)
-
-    # Helper: protein density
-    def pd(m: Dict[str,Any]) -> float:
-        return m["P"] / max(1.0, m["K"])
-
-    # Buckets by type sorted by protein density
-    MEAL_TYPES_LOCAL = ["breakfast", "lunch", "dinner", "snack"]
-    by_type: Dict[str,List[Dict[str,Any]]] = {mt: [] for mt in MEAL_TYPES_LOCAL}
-    for m in meals_db:
-        by_type.setdefault(m["meal_type"], []).append(m)
-
-    sorted_global = sorted(meals_db, key=pd, reverse=True)
-    sorted_by_type = {mt: sorted(bucket, key=pd, reverse=True) for mt, bucket in by_type.items()}
-
-    # Build the sequence we want to fill
+    # Buckets
+    by_type: Dict[str,List[Dict[str,Any]]] = {mt: [m for m in meals_db if m["meal_type"]==mt] for mt in MEAL_TYPES}
+    # Build meal sequence
     if meals_per_day >= 3:
-        seq = ["breakfast", "lunch", "dinner"] + ["snack"] * (meals_per_day - 3)
+        seq = ["breakfast","lunch","dinner"] + ["snack"] * (meals_per_day - 3)
     elif meals_per_day == 2:
-        seq = ["lunch", "dinner"]
+        seq = ["lunch","dinner"]
     else:
         seq = ["dinner"]
 
-    # Seed with high-protein options per slot
+    # Seed with random picks, preferring high protein density
+    def pd(m: Dict[str,Any]) -> float:
+        return m["P"] / max(1.0, m["K"])
+
     picks: List[Dict[str,Any]] = []
-    total_k = 0
     for mt in seq:
-        bucket = sorted_by_type.get(mt) or sorted_global
-        cutoff = max(3, len(bucket) // 2) if len(bucket) > 3 else len(bucket)  # prefer top half by PD
-        candidate_pool = bucket[:cutoff] if cutoff else bucket
-        choice = random.choice(candidate_pool) if candidate_pool else random.choice(sorted_global)
+        bucket = by_type.get(mt) or meals_db
+        bucket = sorted(bucket, key=pd, reverse=True)
+        top = bucket[:max(4, len(bucket)//2)] if len(bucket)>6 else bucket
+        choice = random.choice(top)
         picks.append(choice)
-        total_k += choice["K"]
 
-    # Hill-climb with swaps to improve score
-    attempts = 350
-    best_score = _score_plan(picks, target_kcal, p_t, c_t, f_t)
-    lower = int(target_kcal * 0.95)
-    upper = int(target_kcal * 1.05)
+    # Hill-climb swaps
+    if macro_targets:
+        p_t, c_t, f_t = macro_targets
+        best_score = _score_plan(picks, target_kcal, p_t, c_t, f_t)
+    else:
+        best_score = abs(_totals(picks)[0] - target_kcal)
 
+    attempts = 300
     while attempts > 0:
         attempts -= 1
-        idx = random.randrange(len(picks))
-        mt = picks[idx]["meal_type"]
-        bucket = sorted_by_type.get(mt) or sorted_global
-        top_span = max(5, len(bucket) // 2) if len(bucket) > 5 else len(bucket)
-        candidate = random.choice(bucket[:top_span]) if top_span else random.choice(sorted_global)
-
+        i = random.randrange(len(picks))
+        mt = picks[i]["meal_type"]
+        bucket = by_type.get(mt) or meals_db
+        candidate = random.choice(bucket)
         trial = picks[:]
-        trial[idx] = candidate
-        new_score = _score_plan(trial, target_kcal, p_t, c_t, f_t)
-        if new_score < best_score:
-            picks = trial
-            best_score = new_score
-            total_k = sum(m["K"] for m in picks)
+        trial[i] = candidate
+        if macro_targets:
+            score = _score_plan(trial, target_kcal, p_t, c_t, f_t)
+            if score < best_score:
+                picks = trial; best_score = score
+        else:
+            k_old = _totals(picks)[0]; k_new = _totals(trial)[0]
+            if abs(k_new - target_kcal) < abs(k_old - target_kcal):
+                picks = trial
 
-            # early exit if we’re within kcal and each macro is close
-            kcal_ok = lower <= total_k <= upper
-            p_ok = abs(sum(m["P"] for m in picks) - p_t) <= max(6, 0.06 * p_t)
-            c_ok = abs(sum(m["C"] for m in picks) - c_t) <= max(8, 0.08 * c_t)
-            f_ok = abs(sum(m["F"] for m in picks) - f_t) <= max(6, 0.06 * f_t)
-            if kcal_ok and p_ok and c_ok and f_ok:
-                break
+    return picks, _totals(picks)[0]
 
-    # Last-mile: if protein still low, replace the weakest (often snack) with a much denser pick
-    current_P = sum(m["P"] for m in picks)
-    if current_P < p_t - max(8, 0.06 * p_t):
-        indices = list(range(len(picks)))
-        snack_idxs = [i for i in indices if picks[i]["meal_type"] == "snack"]
-        pool_idxs = snack_idxs if snack_idxs else indices
-        victim_idx = min(pool_idxs, key=lambda i: pd(picks[i]))
-        victim_type = picks[victim_idx]["meal_type"]
-        candidate_bucket = sorted_by_type.get(victim_type) or sorted_global
-        # grab a meaningfully denser item than the victim (or fall back to top)
-        hp_candidate = next(
-            (m for m in candidate_bucket if pd(m) >= pd(picks[victim_idx]) * 1.25),
-            candidate_bucket[0]
-        )
-        picks[victim_idx] = hp_candidate
-        total_k = sum(m["K"] for m in picks)
 
-    return picks, total_k
+def tighten_calories(
+    picks: List[Dict[str,Any]],
+    kcal_target: int,
+    macro_targets: Tuple[int,int,int],
+    meals_db: List[Dict[str,Any]],
+    prefs: Dict[str,Any],
+    tol: float = 0.05,
+    max_steps: int = 6
+) -> List[Dict[str,Any]]:
+    """Nudge a day's picks to sit within ±tol of kcal_target.
+    If low: add adjuster snacks guided by the biggest macro gap.
+    If high: remove a regular snack or swap a heavy item for a lighter one.
+    """
+    excludes = set([x.strip().lower() for x in prefs.get("excludes","").split(',') if x.strip()])
+    adjusters = [a for a in MICRO_ADJUSTERS if _compatible(a, prefs, excludes)]
+    lower = int(kcal_target * (1.0 - tol))
+    upper = int(kcal_target * (1.0 + tol))
+
+    steps = 0
+    while steps < max_steps:
+        steps += 1
+        k,p,c,f = _totals(picks)
+        if lower <= k <= upper:
+            break
+        p_t,c_t,f_t = macro_targets
+        dp, dc, df = (p_t - p), (c_t - c), (f_t - f)
+        if k < lower:  # add
+            needs = [("P", max(0.0, dp)*4.0),("C", max(0.0, dc)*4.0),("F", max(0.0, df)*9.0)]
+            needs.sort(key=lambda x: x[1], reverse=True)
+            added = False
+            for key,_ in needs:
+                if key == "P": cands = [a for a in adjusters if a["P"] >= 20]
+                elif key == "C": cands = [a for a in adjusters if a["C"] >= 20]
+                else: cands = [a for a in adjusters if a["F"] >= 10]
+                random.shuffle(cands)
+                for a in cands:
+                    if k + a["K"] <= upper + 80:
+                        picks.append(dict(a, tags=(a.get("tags",[])+["adjustment"])))
+                        added = True
+                        break
+                if added: break
+            if not added and adjusters:
+                picks.append(dict(adjusters[0], tags=(adjusters[0].get("tags",[])+["adjustment"])))
+        else:  # k > upper
+            # try removing largest non-adjustment snack first
+            ix, best_k = None, 0
+            for i,m in enumerate(picks):
+                if m.get("meal_type")=="snack" and "adjustment" not in m.get("tags",[]):
+                    if m["K"] > best_k: ix, best_k = i, m["K"]
+            if ix is not None:
+                picks.pop(ix); continue
+            # else swap the heaviest non-snack for a lighter same-type
+            j = max(range(len(picks)), key=lambda i: (picks[i]["meal_type"]!="snack", picks[i]["K"]))
+            victim = picks[j]
+            pool = [m for m in meals_db if m["meal_type"]==victim["meal_type"] and m["K"] < victim["K"]]
+            pool = [m for m in pool if _compatible(m, prefs, excludes)]
+            if pool:
+                picks[j] = min(pool, key=lambda m: m["K"])
+            else:
+                # last resort: drop an adjustment
+                adj_ix = next((i for i,m in enumerate(picks) if "adjustment" in m.get("tags",[])), None)
+                if adj_ix is not None:
+                    picks.pop(adj_ix)
+                else:
+                    break
+    return picks
+
 
 def aggregate_grocery_list(plan: List[List[Dict[str,Any]]]) -> Dict[str,int]:
     counts: Dict[str,int] = {}
@@ -493,7 +471,7 @@ def aggregate_grocery_list(plan: List[List[Dict[str,Any]]]) -> Dict[str,int]:
     return counts
 
 # -----------------------------
-# HTML
+# HTML (single template)
 # -----------------------------
 HTML = r"""
 <!doctype html>
@@ -605,9 +583,9 @@ HTML = r"""
       <h2 style="margin-top:0">What you get</h2>
       <ul>
         <li>Daily plan hitting ~75% of TDEE (±5%)</li>
-        <li><b>Macro targets: 40% protein / 30% carbs / 30% fat</b> with macro-aware selection</li>
+        <li><b>Macro targets: 40% protein / 30% carbs / 30% fat</b></li>
         <li>Quick, simple meals chosen from a growing database</li>
-        <li>Per-meal step-by-step instructions</li>
+        <li>Per‑meal step‑by‑step instructions</li>
         <li>Aggregated grocery list / buying guide</li>
         <li>One-click PDF export</li>
       </ul>
@@ -691,19 +669,17 @@ class Result:
     day_totals: List[int]
     grocery: Dict[str,int]
 
-from flask import redirect, url_for  # add to imports
+_RESULTS: Dict[str,Dict[str,Any]] = {}
 
 @app.route('/generate', methods=['GET','POST'])
 def generate():
-    # If someone hits /generate via GET (e.g., an iframe or a direct link),
-    # send them to the form page instead of returning 405.
+    # GET to /generate (e.g., iframe default) -> show index form
     if request.method == 'GET':
         return redirect(url_for('index'), code=302)
 
     form = request.form
-
     # Pull TDEE or compute from stats
-    tdee_raw = form.get('tdee', '').strip()
+    tdee_raw = (form.get('tdee') or '').strip()
     activity = form.get('activity', 'sedentary')
     if tdee_raw:
         try:
@@ -712,43 +688,19 @@ def generate():
             tdee = 0
     else:
         sex = form.get('sex','male')
-
         def _to_float(val, default=None):
-            try:
-                return float(val)
-            except Exception:
-                return default
-
+            try: return float(val)
+            except Exception: return default
         try:
             age = int(form.get('age','30'))
         except Exception:
             age = 30
-
-        # Height (imperial first)
-        ft_raw = form.get('height_ft', '').strip()
-        in_raw = form.get('height_in', '').strip()
-        lb_raw = form.get('weight_lb', '').strip()
-        height_cm = None
-        weight_kg = None
-
-        ft = _to_float(ft_raw, None)
-        inches = _to_float(in_raw, None)
-        if ft is not None or inches is not None:
-            ft = ft or 0.0
-            inches = inches or 0.0
-            height_cm = (ft * 12.0 + inches) * 2.54
-
-        # Weight (imperial)
-        lb = _to_float(lb_raw, None)
-        if lb is not None:
-            weight_kg = lb * 0.45359237
-
-        # Fallback to metric fields if still missing
-        if height_cm is None:
-            height_cm = _to_float(form.get('height_cm','175'), 175.0)
-        if weight_kg is None:
-            weight_kg = _to_float(form.get('weight_kg','80'), 80.0)
-
+        # Imperial first
+        ft = _to_float(form.get('height_ft','').strip(), None)
+        inches = _to_float(form.get('height_in','').strip(), None)
+        lb = _to_float(form.get('weight_lb','').strip(), None)
+        height_cm = ( (ft or 0)*12 + (inches or 0) ) * 2.54 if (ft is not None or inches is not None) else _to_float(form.get('height_cm','175'), 175.0)
+        weight_kg = (lb * 0.45359237) if (lb is not None) else _to_float(form.get('weight_kg','80'), 80.0)
         bmr = mifflin_st_jeor(sex, age, float(height_cm), float(weight_kg))
         tdee = int(round(compute_tdee(bmr, activity)))
 
@@ -763,26 +715,23 @@ def generate():
         "excludes": form.get('excludes','')
     }
 
-    # 25% deficit
+    # 25% deficit and macro targets 40/30/30
     target_kcal = int(round(tdee * 0.75))
-
-    # 40/30/30 macro targets (P/C/F grams)
     p_g, c_g, f_g = grams_from_kcal(target_kcal)
 
-    # Build meal pool honoring prefs
     pool = filter_meals(prefs) or MEALS[:]
 
-    # Create plan
+    # Build plan with tightening
     plan: List[List[Dict[str,Any]]] = []
     day_totals: List[int] = []
     for _ in range(days):
-        picks, total = pick_day_plan(target_kcal, pool, meals_per_day, macro_targets=(p_g, c_g, f_g))
+        picks, _ = pick_day_plan(target_kcal, pool, meals_per_day, macro_targets=(p_g, c_g, f_g))
+        picks = tighten_calories(picks, target_kcal, (p_g, c_g, f_g), pool, prefs, tol=0.05, max_steps=6)
         plan.append(picks)
-        day_totals.append(total)
+        day_totals.append(sum(m["K"] for m in picks))
 
     grocery = aggregate_grocery_list(plan)
 
-    # Store transient result
     token = str(random.randint(10**9, 10**10-1))
     _RESULTS[token] = {
         "tdee": tdee,
@@ -799,17 +748,7 @@ def generate():
     }
 
     result = Result(token, tdee, target_kcal, days, meals_per_day, p_g, c_g, f_g, plan, day_totals, grocery)
-
-    return render_template_string(
-        HTML,
-        app_name=APP_NAME,
-        activities=ACTIVITY_FACTORS,
-        result=result,
-        csp=ALLOWED_EMBED_DOMAIN,
-        year=datetime.datetime.now().year
-    )
-
-_RESULTS: Dict[str,Dict[str,Any]] = {}
+    return render_template_string(HTML, app_name=APP_NAME, activities=ACTIVITY_FACTORS, result=result, csp=ALLOWED_EMBED_DOMAIN, year=datetime.datetime.now().year)
 
 @app.get('/pdf/<token>')
 def pdf(token: str):
@@ -859,168 +798,17 @@ def pdf(token: str):
     filename = f"meal_plan_{token}.pdf"
     return send_file(buf, as_attachment=True, download_name=filename, mimetype='application/pdf')
 
+
 # -----------------------------
-# OFFLINE helpers
+# Offline generator (CLI)
 # -----------------------------
+
 def build_plan_from_params(tdee: Optional[int], days: int, meals_per_day: int, activity: str, stats: Optional[Dict[str,Any]], prefs: Dict[str,Any]) -> Dict[str,Any]:
     if not tdee:
-        if stats is None:
-            stats = {"sex":"male","age":30,"height_cm":175.0,"weight_kg":80.0}
+        stats = stats or {"sex":"male","age":30,"height_cm":175.0,"weight_kg":80.0}
+        sex = stats.get('sex','male')
+        age = int(stats.get('age',30))
         height_cm = stats.get('height_cm')
         weight_kg = stats.get('weight_kg')
         if height_cm is None and (stats.get('height_ft') is not None or stats.get('height_in') is not None):
-            ft = float(stats.get('height_ft') or 0)
-            inch = float(stats.get('height_in') or 0)
-            height_cm = (ft*12 + inch) * 2.54
-        if weight_kg is None and stats.get('weight_lb') is not None:
-            weight_kg = float(stats.get('weight_lb')) * 0.45359237
-        if height_cm is None: height_cm = 175.0
-        if weight_kg is None: weight_kg = 80.0
-        bmr = mifflin_st_jeor(stats.get('sex','male'), int(stats.get('age',30)), float(height_cm), float(weight_kg))
-        tdee = int(round(compute_tdee(bmr, activity)))
-    target_kcal = int(round(tdee * 0.75))
-    p_g, c_g, f_g = grams_from_kcal(target_kcal)
-
-    pool = filter_meals(prefs) or MEALS[:]
-
-    plan: List[List[Dict[str,Any]]] = []
-    totals: List[int] = []
-    for _ in range(days):
-        picks, total = pick_day_plan(target_kcal, pool, meals_per_day, macro_targets=(p_g, c_g, f_g))
-        plan.append(picks)
-        totals.append(total)
-
-    grocery = aggregate_grocery_list(plan)
-    return {
-        "tdee": tdee,
-        "target_kcal": target_kcal,
-        "days": days,
-        "meals_per_day": meals_per_day,
-        "p_g": p_g,
-        "c_g": c_g,
-        "f_g": f_g,
-        "plan": plan,
-        "day_totals": totals,
-        "grocery": grocery,
-    }
-
-def offline_emit(plan: Dict[str,Any], out_pdf: Optional[str], out_html: Optional[str], out_json: Optional[str]) -> None:
-    if out_json:
-        with open(out_json, 'w', encoding='utf-8') as f:
-            json.dump(plan, f, indent=2)
-        print(f"Wrote JSON: {out_json}")
-    if out_pdf and REPORTLAB_AVAILABLE:
-        buf = io.BytesIO()
-        doc = SimpleDocTemplate(buf, pagesize=letter, title=f"{APP_NAME} Plan")
-        styles = getSampleStyleSheet()
-        styles.add(ParagraphStyle(name='Small', fontSize=9, leading=11))
-        story: List[Any] = []
-        story.append(Paragraph(f"<b>{APP_NAME}</b>", styles['Title']))
-        story.append(Paragraph(f"Target: {plan['target_kcal']} kcal/day • Days: {plan['days']} • Meals/day: {plan['meals_per_day']}", styles['Normal']))
-        story.append(Paragraph(f"Macros/day: {plan['p_g']}P / {plan['c_g']}C / {plan['f_g']}F (g)", styles['Normal']))
-        story.append(Spacer(1, 0.2*inch))
-        for i, day in enumerate(plan['plan'], start=1):
-            story.append(Paragraph(f"<b>Day {i}</b> (~{plan['day_totals'][i-1]} kcal)", styles['Heading2']))
-            table_data = [["Meal","kcal","P","C","F"]]
-            for m in day:
-                table_data.append([m['name'], str(m['K']), str(m['P']), str(m['C']), str(m['F'])])
-            t = Table(table_data, hAlign='LEFT', colWidths=[3.7*inch, 0.8*inch, 0.6*inch, 0.6*inch, 0.6*inch])
-            t.setStyle(TableStyle([
-                ('GRID',(0,0),(-1,-1),0.4,colors.grey),
-                ('BACKGROUND',(0,0),(-1,0),colors.lightgrey),
-                ('FONTNAME',(0,0),(-1,0),'Helvetica-Bold'),
-            ]))
-            story.append(t)
-            for m in day:
-                steps = m.get('instructions') or []
-                if steps:
-                    story.append(Paragraph(f"<b>Steps – {m['name']}</b>", styles['Normal']))
-                    story.append(Paragraph("<br/>".join([f"{idx+1}. {s}" for idx, s in enumerate(steps)]), styles['Small']))
-            story.append(Spacer(1, 0.2*inch))
-        story.append(PageBreak())
-        story.append(Paragraph("<b>Grocery List</b>", styles['Heading2']))
-        glines = [f"• {item}  x{qty}" for item, qty in plan['grocery'].items()]
-        story.append(Paragraph("<br/>".join(glines), styles['Small']))
-        doc.build(story)
-        with open(out_pdf, 'wb') as f:
-            f.write(buf.getvalue())
-        print(f"Wrote PDF: {out_pdf}")
-    elif out_html:
-        def esc(x: str) -> str:
-            return (x.replace('&','&amp;').replace('<','&lt;').replace('>','&gt;'))
-        html = ["<html><head><meta charset='utf-8'><title>Plan</title></head><body>"]
-        html.append(f"<h1>{esc(APP_NAME)}</h1>")
-        html.append(f"<p>Target: {plan['target_kcal']} kcal/day. Days: {plan['days']}. Meals/day: {plan['meals_per_day']}.")
-        for i, day in enumerate(plan['plan'], start=1):
-            html.append(f"<h2>Day {i} (~{plan['day_totals'][i-1]} kcal)</h2>")
-            html.append("<ul>")
-            for m in day:
-                steps = m.get('instructions') or []
-                html.append(
-                    "<li>" + f"{esc(m['name'])} - {m['K']} kcal - {m['P']}P/{m['C']}C/{m['F']}F" +
-                    ("<details><summary>Steps</summary><ol>" + "".join([f"<li>{esc(s)}</li>" for s in steps]) + "</ol></details>" if steps else "") +
-                    "</li>"
-                )
-            html.append("</ul>")
-        html.append("<h2>Grocery List</h2><ul>")
-        for item, qty in plan['grocery'].items():
-            html.append(f"<li>{esc(item)} x{qty}</li>")
-        html.append("</ul></body></html>")
-        with open(out_html, 'w', encoding='utf-8') as f:
-            f.write("\n".join(html))
-        print(f"Wrote HTML: {out_html}")
-
-# -----------------------------
-# Tests (only run if RUN_TESTS=1)
-# -----------------------------
-class AppTests(unittest.TestCase):
-    def setUp(self):
-        app.testing = True
-        self.client = app.test_client()
-
-    def test_index_ok(self):
-        r = self.client.get('/')
-        self.assertEqual(r.status_code, 200)
-        # index page renders (we don't assert specific content that requires a generated plan)
-        self.assertIn(b'Generate Plan', r.data)
-
-if __name__ == '__main__':
-    if os.environ.get('RUN_TESTS') == '1':
-        unittest.main()
-    else:
-        parser = argparse.ArgumentParser(description='Home Meal Planner App')
-        parser.add_argument('--offline', action='store_true', help='Generate outputs without starting a server')
-        parser.add_argument('--tdee', type=int, default=None)
-        parser.add_argument('--days', type=int, default=3)
-        parser.add_argument('--meals', type=int, default=3)
-        parser.add_argument('--activity', type=str, default='sedentary', choices=list(ACTIVITY_FACTORS.keys()))
-        parser.add_argument('--sex', type=str, default='male', choices=['male','female'])
-        parser.add_argument('--age', type=int, default=30)
-        parser.add_argument('--height_ft', type=float, default=None)
-        parser.add_argument('--height_in', type=float, default=None)
-        parser.add_argument('--weight_lb', type=float, default=None)
-        parser.add_argument('--height_cm', type=float, default=None)
-        parser.add_argument('--weight_kg', type=float, default=None)
-        parser.add_argument('--out_pdf', type=str, default=None)
-        parser.add_argument('--out_html', type=str, default='meal_plan_demo.html')
-        parser.add_argument('--out_json', type=str, default=None)
-        args = parser.parse_args()
-
-        if args.offline:
-            stats = {
-                'sex': args.sex,
-                'age': args.age,
-                'height_ft': args.height_ft,
-                'height_in': args.height_in,
-                'weight_lb': args.weight_lb,
-                'height_cm': args.height_cm,
-                'weight_kg': args.weight_kg,
-            }
-            prefs = {'vegetarian': False, 'vegan': False, 'dairy_free': False, 'gluten_free': False, 'excludes': ''}
-            plan = build_plan_from_params(args.tdee, max(1, min(7, args.days)), max(2, min(5, args.meals)), args.activity, stats, prefs)
-            offline_emit(plan, args.out_pdf, args.out_html, args.out_json)
-            print('[info]: Offline demo generated.')
-        else:
-            port = int(os.environ.get('PORT', '5000'))
-            debug = bool(os.environ.get('DEV_DEBUG'))
-            app.run(host='0.0.0.0', port=port, debug=debug, use_reloader=False, threaded=True)
+            ft = float(stats.get('height_ft') or 0); inch = float(stats.get('height_in') or 0)
