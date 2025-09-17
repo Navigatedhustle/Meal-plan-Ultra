@@ -332,14 +332,17 @@ def _totals(picks: List[Dict[str,Any]]) -> Tuple[int,int,int,int]:
 
 
 def _score_plan(picks, kcal_target, p_target, c_target, f_target):
-    k,p,c,f = _totals(picks)
-    # Favor macro hit, then kcal
-    return (
-        abs(k - kcal_target) * 1.0 +
-        abs(p - p_target) * 2.0 +
-        abs(c - c_target) * 1.4 +
-        abs(f - f_target) * 1.2
-    )
+    """Stronger macro-first scoring.
+    We penalize macro miss more heavily than total kcal so selections align to 40/30/30.
+    """
+    k, p, c, f = _totals(picks)
+    # Relative miss (in grams) vs targets
+    p_miss = abs(p - p_target)
+    c_miss = abs(c - c_target)
+    f_miss = abs(f - f_target)
+    kcal_miss = abs(k - kcal_target)
+    # Weight macros higher than calories
+    return (p_miss * 5.0) + (c_miss * 3.5) + (f_miss * 3.0) + (kcal_miss * 0.5)
 
 
 def pick_day_plan(target_kcal: int, meals_db: List[Dict[str,Any]], meals_per_day: int,
@@ -459,6 +462,89 @@ def tighten_calories(
                     picks.pop(adj_ix)
                 else:
                     break
+    return picks
+
+
+def rebalance_macros(
+    picks: List[Dict[str,Any]],
+    kcal_target: int,
+    macro_targets: Tuple[int,int,int],
+    meals_db: List[Dict[str,Any]],
+    prefs: Dict[str,Any],
+    tol: float = 0.05,
+    max_steps: int = 8
+) -> List[Dict[str,Any]]:
+    """Iteratively nudge macros toward 40/30/30 while keeping calories in range.
+    - If a macro is UNDER its target by > tol, add an appropriate adjuster (P/C/F).
+    - If a macro is OVER by > tol, remove an adjuster or a snack that is heavy in that macro.
+    Finish by returning the modified picks. Calorie tightening can be run after this.
+    """
+    excludes = set([x.strip().lower() for x in prefs.get("excludes"," ").split(',') if x.strip()])
+    adjusters = [a for a in MICRO_ADJUSTERS if _compatible(a, prefs, excludes)]
+    lower = int(kcal_target * (1.0 - tol))
+    upper = int(kcal_target * (1.0 + tol))
+
+    def add_for(macro_key: str) -> bool:
+        cands: List[Dict[str,Any]]
+        if macro_key == "P":
+            cands = [a for a in adjusters if a["P"] >= 20]
+        elif macro_key == "C":
+            cands = [a for a in adjusters if a["C"] >= 20]
+        else:
+            cands = [a for a in adjusters if a["F"] >= 10]
+        if not cands:
+            return False
+        k, *_ = _totals(picks)
+        # pick the one that lands calories closest to target
+        a = sorted(cands, key=lambda x: abs((k + x["K"]) - kcal_target))[0]
+        # allow slight overshoot; later tighten_calories will trim
+        picks.append(dict(a, tags=(a.get("tags", []) + ["adjustment"])) )
+        return True
+
+    def remove_heavy(macro_key: str) -> bool:
+        # Prefer removing an adjustment first, else a regular snack heavy in that macro
+        def heaviness(m: Dict[str,Any]) -> float:
+            if macro_key == "P": return m["P"]
+            if macro_key == "C": return m["C"]
+            return m["F"] * 9.0  # weight fat by kcal
+        idx = None
+        best = -1.0
+        for i, m in enumerate(picks):
+            if "adjustment" in m.get("tags", []):
+                hv = heaviness(m)
+                if hv > best:
+                    best, idx = hv, i
+        if idx is None:
+            for i, m in enumerate(picks):
+                if m.get("meal_type") == "snack" and "adjustment" not in m.get("tags", []):
+                    hv = heaviness(m)
+                    if hv > best:
+                        best, idx = hv, i
+        if idx is not None:
+            picks.pop(idx)
+            return True
+        return False
+
+    steps = 0
+    while steps < max_steps:
+        steps += 1
+        k, p, c, f = _totals(picks)
+        p_t, c_t, f_t = macro_targets
+        rp = (p - p_t) / max(1.0, p_t)
+        rc = (c - c_t) / max(1.0, c_t)
+        rf = (f - f_t) / max(1.0, f_t)
+        if all(abs(x) <= tol for x in (rp, rc, rf)) and (int(k) >= int(kcal_target * (1.0 - tol))) and (int(k) <= int(kcal_target * (1.0 + tol))):
+            break
+        # Triage the worst offender by relative miss
+        errs = [("P", rp), ("C", rc), ("F", rf)]
+        errs.sort(key=lambda x: abs(x[1]), reverse=True)
+        macro, rel = errs[0]
+        if rel < -tol:  # under -> add
+            if not add_for(macro):
+                break
+        else:  # over -> remove
+            if not remove_heavy(macro):
+                break
     return picks
 
 
@@ -726,89 +812,9 @@ def generate():
     day_totals: List[int] = []
     for _ in range(days):
         picks, _ = pick_day_plan(target_kcal, pool, meals_per_day, macro_targets=(p_g, c_g, f_g))
+        # First, pull macros toward 40/30/30
+        picks = rebalance_macros(picks, target_kcal, (p_g, c_g, f_g), pool, prefs, tol=0.06, max_steps=8)
+        # Then, ensure calories within ±5%
         picks = tighten_calories(picks, target_kcal, (p_g, c_g, f_g), pool, prefs, tol=0.05, max_steps=6)
-        plan.append(picks)
-        day_totals.append(sum(m["K"] for m in picks))
-
-    grocery = aggregate_grocery_list(plan)
-
-    token = str(random.randint(10**9, 10**10-1))
-    _RESULTS[token] = {
-        "tdee": tdee,
-        "target_kcal": target_kcal,
-        "days": days,
-        "meals_per_day": meals_per_day,
-        "p_g": p_g,
-        "c_g": c_g,
-        "f_g": f_g,
-        "plan": plan,
-        "day_totals": day_totals,
-        "grocery": grocery,
-        "prefs": prefs,
-    }
-
-    result = Result(token, tdee, target_kcal, days, meals_per_day, p_g, c_g, f_g, plan, day_totals, grocery)
-    return render_template_string(HTML, app_name=APP_NAME, activities=ACTIVITY_FACTORS, result=result, csp=ALLOWED_EMBED_DOMAIN, year=datetime.datetime.now().year)
-
-@app.get('/pdf/<token>')
-def pdf(token: str):
-    data = _RESULTS.get(token)
-    if not data:
-        return make_response("Session expired. Please regenerate.", 410)
-    if not REPORTLAB_AVAILABLE:
-        return make_response("PDF engine not installed. Run: pip install reportlab", 501)
-
-    buf = io.BytesIO()
-    doc = SimpleDocTemplate(buf, pagesize=letter, title=f"{APP_NAME} Plan")
-    styles = getSampleStyleSheet()
-    styles.add(ParagraphStyle(name='Small', fontSize=9, leading=11))
-    story: List[Any] = []
-
-    story.append(Paragraph(f"<b>{APP_NAME}</b>", styles['Title']))
-    story.append(Paragraph(f"Target: {data['target_kcal']} kcal/day • Days: {data['days']} • Meals/day: {data['meals_per_day']}", styles['Normal']))
-    story.append(Paragraph(f"Macros/day: {data['p_g']}P / {data['c_g']}C / {data['f_g']}F (g)", styles['Normal']))
-    story.append(Spacer(1, 0.2*inch))
-
-    for i, day in enumerate(data['plan'], start=1):
-        story.append(Paragraph(f"<b>Day {i}</b> (~{data['day_totals'][i-1]} kcal)", styles['Heading2']))
-        table_data = [["Meal","kcal","P","C","F"]]
-        for m in day:
-            table_data.append([m['name'], str(m['K']), str(m['P']), str(m['C']), str(m['F'])])
-        t = Table(table_data, hAlign='LEFT', colWidths=[3.7*inch, 0.8*inch, 0.6*inch, 0.6*inch, 0.6*inch])
-        t.setStyle(TableStyle([
-            ('GRID',(0,0),(-1,-1),0.4,colors.grey),
-            ('BACKGROUND',(0,0),(-1,0),colors.lightgrey),
-            ('FONTNAME',(0,0),(-1,0),'Helvetica-Bold'),
-        ]))
-        story.append(t)
-        for m in day:
-            steps = m.get('instructions')
-            if steps:
-                story.append(Paragraph(f"<b>Steps – {m['name']}</b>", styles['Normal']))
-                story.append(Paragraph("<br/>".join([f"{idx+1}. {s}" for idx, s in enumerate(steps)]), styles['Small']))
-        story.append(Spacer(1, 0.2*inch))
-
-    story.append(PageBreak())
-    story.append(Paragraph("<b>Grocery List</b>", styles['Heading2']))
-    glines = [f"• {item}  x{qty}" for item, qty in data['grocery'].items()]
-    story.append(Paragraph("<br/>".join(glines), styles['Small']))
-
-    doc.build(story)
-    buf.seek(0)
-    filename = f"meal_plan_{token}.pdf"
-    return send_file(buf, as_attachment=True, download_name=filename, mimetype='application/pdf')
-
-
-# -----------------------------
-# Offline generator (CLI)
-# -----------------------------
-
-def build_plan_from_params(tdee: Optional[int], days: int, meals_per_day: int, activity: str, stats: Optional[Dict[str,Any]], prefs: Dict[str,Any]) -> Dict[str,Any]:
-    if not tdee:
-        stats = stats or {"sex":"male","age":30,"height_cm":175.0,"weight_kg":80.0}
-        sex = stats.get('sex','male')
-        age = int(stats.get('age',30))
-        height_cm = stats.get('height_cm')
-        weight_kg = stats.get('weight_kg')
-        if height_cm is None and (stats.get('height_ft') is not None or stats.get('height_in') is not None):
-            ft = float(stats.get('height_ft') or 0); inch = float(stats.get('height_in') or 0)
+        # Small final macro touch-up if needed
+       
