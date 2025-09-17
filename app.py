@@ -807,14 +807,144 @@ def generate():
 
     pool = filter_meals(prefs) or MEALS[:]
 
-    # Build plan with tightening
+        # Build plan with tightening
     plan: List[List[Dict[str,Any]]] = []
     day_totals: List[int] = []
+
     for _ in range(days):
         picks, _ = pick_day_plan(target_kcal, pool, meals_per_day, macro_targets=(p_g, c_g, f_g))
-        # First, pull macros toward 40/30/30
-        picks = rebalance_macros(picks, target_kcal, (p_g, c_g, f_g), pool, prefs, tol=0.06, max_steps=8)
-        # Then, ensure calories within ±5%
-        picks = tighten_calories(picks, target_kcal, (p_g, c_g, f_g), pool, prefs, tol=0.05, max_steps=6)
-        # Small final macro touch-up if needed
-       
+
+        # 1) Pull macros toward 40/30/30
+        picks = rebalance_macros(
+            picks, target_kcal, (p_g, c_g, f_g), pool, prefs,
+            tol=0.06,   # allow ~6% macro wiggle during shaping
+            max_steps=8
+        )
+
+        # 2) Ensure calories within ±5%
+        picks = tighten_calories(
+            picks, target_kcal, (p_g, c_g, f_g), pool, prefs,
+            tol=0.05,   # ±5% kcal window
+            max_steps=6
+        )
+
+        # 3) Small final macro touch-up, then a quick kcal recheck
+        picks = rebalance_macros(
+            picks, target_kcal, (p_g, c_g, f_g), pool, prefs,
+            tol=0.05,   # tighten macro tolerance
+            max_steps=4
+        )
+        picks = tighten_calories(
+            picks, target_kcal, (p_g, c_g, f_g), pool, prefs,
+            tol=0.05,   # keep within ±5% kcal
+            max_steps=3
+        )
+
+        plan.append(picks)
+        day_totals.append(sum(m["K"] for m in picks))
+
+    grocery = aggregate_grocery_list(plan)
+
+    # Stash session results for PDF
+    token = str(random.randint(10**9, 10**10 - 1))
+    _RESULTS[token] = {
+        "tdee": tdee,
+        "target_kcal": target_kcal,
+        "days": days,
+        "meals_per_day": meals_per_day,
+        "p_g": p_g,
+        "c_g": c_g,
+        "f_g": f_g,
+        "plan": plan,
+        "day_totals": day_totals,
+        "grocery": grocery,
+        "prefs": prefs,
+    }
+
+    result = Result(
+        token=token,
+        tdee=tdee,
+        target_kcal=target_kcal,
+        days=days,
+        meals_per_day=meals_per_day,
+        p_g=p_g, c_g=c_g, f_g=f_g,
+        plan=plan,
+        day_totals=day_totals,
+        grocery=grocery
+    )
+    return render_template_string(
+        HTML,
+        app_name=APP_NAME,
+        activities=ACTIVITY_FACTORS,
+        result=result,
+        csp=ALLOWED_EMBED_DOMAIN,
+        year=datetime.datetime.now().year
+    )
+
+# -----------------------------
+# PDF route
+# -----------------------------
+@app.get('/pdf/<token>')
+def pdf(token: str):
+    data = _RESULTS.get(token)
+    if not data:
+        return make_response("Session expired. Please regenerate.", 410)
+    if not REPORTLAB_AVAILABLE:
+        return make_response("PDF engine not installed. Run: pip install reportlab", 501)
+
+    buf = io.BytesIO()
+    doc = SimpleDocTemplate(buf, pagesize=letter, title=f"{APP_NAME} Plan")
+    styles = getSampleStyleSheet()
+    styles.add(ParagraphStyle(name='Small', fontSize=9, leading=11))
+    story: List[Any] = []
+
+    story.append(Paragraph(f"<b>{APP_NAME}</b>", styles['Title']))
+    story.append(Paragraph(
+        f"Target: {data['target_kcal']} kcal/day • Days: {data['days']} • Meals/day: {data['meals_per_day']}",
+        styles['Normal']
+    ))
+    story.append(Paragraph(
+        f"Macros/day: {data['p_g']}P / {data['c_g']}C / {data['f_g']}F (g)",
+        styles['Normal']
+    ))
+    story.append(Spacer(1, 0.2*inch))
+
+    for i, day in enumerate(data['plan'], start=1):
+        story.append(Paragraph(f"<b>Day {i}</b> (~{data['day_totals'][i-1]} kcal)", styles['Heading2']))
+        table_data = [["Meal","kcal","P","C","F"]]
+        for m in day:
+            table_data.append([m['name'], str(m['K']), str(m['P']), str(m['C']), str(m['F'])])
+        t = Table(table_data, hAlign='LEFT', colWidths=[3.7*inch, 0.8*inch, 0.6*inch, 0.6*inch, 0.6*inch])
+        t.setStyle(TableStyle([
+            ('GRID',(0,0),(-1,-1),0.4,colors.grey),
+            ('BACKGROUND',(0,0),(-1,0),colors.lightgrey),
+            ('FONTNAME',(0,0),(-1,0),'Helvetica-Bold'),
+        ]))
+        story.append(t)
+
+        # Steps
+        for m in day:
+            steps = m.get('instructions') or []
+            if steps:
+                story.append(Paragraph(f"<b>Steps – {m['name']}</b>", styles['Normal']))
+                story.append(Paragraph("<br/>".join([f"{idx+1}. {s}" for idx, s in enumerate(steps)]), styles['Small']))
+        story.append(Spacer(1, 0.2*inch))
+
+    story.append(PageBreak())
+    story.append(Paragraph("<b>Grocery List</b>", styles['Heading2']))
+    glines = [f"• {item}  x{qty}" for item, qty in data['grocery'].items()]
+    story.append(Paragraph("<br/>".join(glines), styles['Small']))
+
+    doc.build(story)
+    buf.seek(0)
+    filename = f"meal_plan_{token}.pdf"
+    return send_file(buf, as_attachment=True, download_name=filename, mimetype='application/pdf')
+
+# -----------------------------
+# Local run helper
+# -----------------------------
+if __name__ == '__main__':
+    port = int(os.environ.get('PORT', '5000'))
+    debug = bool(os.environ.get('DEV_DEBUG'))
+    app.run(host='0.0.0.0', port=port, debug=debug, use_reloader=False, threaded=True)
+
