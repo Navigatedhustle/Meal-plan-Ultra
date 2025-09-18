@@ -107,6 +107,56 @@ MEALS: List[Dict[str, Any]] = [
      "tags":["breakfast","high_protein","quick"],
      "ingredients":["5 egg whites","2 oz turkey","1 small high-protein tortilla","hot sauce"],
      "instructions":["Scramble egg whites.","Warm tortilla, add turkey and eggs, roll."]},
+       {"name":"Egg Whites + Turkey Bacon & Spinach (LC)","meal_type":"breakfast","K":276,"P":36,"C":6,"F":12,
+     "tags":["breakfast","high_protein","low_carb","quick","gluten_free","dairy_free"],
+     "ingredients":["8 egg whites","2 slices turkey bacon","1 cup spinach","salt","pepper","nonstick spray"],
+     "instructions":["Crisp turkey bacon; chop.","Wilt spinach in sprayed pan.","Add egg whites; scramble and season; top with bacon."]},
+
+    {"name":"Cottage Cheese Protein Pancakes (almond flour)","meal_type":"breakfast","K":284,"P":32,"C":12,"F":12,
+     "tags":["breakfast","high_protein","low_carb","gluten_free"],
+     "ingredients":["1/2 cup low-fat cottage cheese","2 egg whites","2 tbsp almond flour","1/2 scoop whey","cinnamon","nonstick spray"],
+     "instructions":["Blend batter smooth.","Cook small pancakes on sprayed pan 1–2 min/side.","Dust with cinnamon."]},
+
+    {"name":"Skyr Almond Crunch (LC)","meal_type":"breakfast","K":268,"P":30,"C":10,"F":12,
+     "tags":["breakfast","high_protein","low_carb","quick"],
+     "ingredients":["1 cup plain skyr (0%)","1 tbsp sliced almonds","cinnamon","vanilla extract (optional)"],
+     "instructions":["Stir cinnamon/vanilla into skyr.","Top with almonds."]},
+
+    {"name":"Greek Yogurt + PB Powder (LC)","meal_type":"breakfast","K":238,"P":34,"C":12,"F":6,
+     "tags":["breakfast","high_protein","low_carb","quick"],
+     "ingredients":["1 cup 0% Greek yogurt","2 tbsp peanut powder","sweetener (optional)"],
+     "instructions":["Whisk peanut powder into yogurt until smooth; sweeten to taste."]},
+
+    {"name":"Smoked Salmon Egg Bowl (LC)","meal_type":"breakfast","K":314,"P":34,"C":4,"F":18,
+     "tags":["breakfast","high_protein","low_carb","quick","gluten_free","dairy_free"],
+     "ingredients":["2 eggs","3 egg whites","2 oz smoked salmon","chives","pepper"],
+     "instructions":["Soft scramble eggs/whites.","Top with salmon and chives; pepper to taste."]},
+
+    {"name":"Turkey & Egg Mug Omelet (microwave)","meal_type":"breakfast","K":258,"P":36,"C":6,"F":10,
+     "tags":["breakfast","high_protein","low_carb","quick","gluten_free"],
+     "ingredients":["3 egg whites","1 whole egg","2 oz sliced turkey (chopped)","2 tbsp light cheese (optional)","salt","pepper"],
+     "instructions":["Whisk eggs in a large mug; add turkey (and cheese).","Microwave 60–90 sec, stir, then 30–60 sec until set."]},
+
+    {"name":"Tofu Scramble Plate (LC, vegan)","meal_type":"breakfast","K":296,"P":28,"C":10,"F":16,
+     "tags":["breakfast","high_protein","low_carb","quick","vegan","dairy_free","gluten_free"],
+     "ingredients":["6 oz firm tofu (crumbled)","1 cup peppers/onion","1 tsp olive oil","turmeric","salt","pepper"],
+     "instructions":["Sauté veg in oil 2–3 min.","Add tofu + turmeric; cook 4–5 min; season."]},
+
+    {"name":"Chicken Sausage & Egg Whites (LC)","meal_type":"breakfast","K":284,"P":40,"C":4,"F":12,
+     "tags":["breakfast","high_protein","low_carb","quick","gluten_free","dairy_free"],
+     "ingredients":["2 links chicken breakfast sausage (sliced)","6 egg whites","nonstick spray","salt","pepper"],
+     "instructions":["Brown sausage slices.","Add egg whites; scramble and season."]},
+
+    {"name":"Protein Chia Cup (LC)","meal_type":"breakfast","K":249,"P":30,"C":12,"F":9,
+     "tags":["breakfast","high_protein","low_carb","quick","gluten_free"],
+     "ingredients":["1/2 cup unsweetened almond milk","1 scoop whey","2 tbsp chia seeds","vanilla","sweetener (optional)"],
+     "instructions":["Whisk whey into milk.","Stir in chia; let sit 10–15 min (or overnight) until thick."]},
+
+    {"name":"Egg-White Frittata Slice (LC)","meal_type":"breakfast","K":250,"P":32,"C":8,"F":10,
+     "tags":["breakfast","high_protein","low_carb","gluten_free"],
+     "ingredients":["8 egg whites","1 cup mushrooms/spinach","1/4 cup light feta (crumbled)","salt","pepper","nonstick spray"],
+     "instructions":["Spray small skillet; sauté veg 2–3 min.","Add whites; sprinkle feta; bake 10–12 min at 375°F (190°C) until set."]},
+
 
     # ===== LUNCHES =====
     {"name":"Chicken Burrito Bowl","meal_type":"lunch","K":520,"P":45,"C":58,"F":12,
@@ -207,6 +257,56 @@ MEALS: List[Dict[str, Any]] = [
      "tags":["dinner","high_protein"],
      "ingredients":["6 oz 93% ground turkey","3/4 cup rice","salsa","lettuce"],
      "instructions":["Brown turkey with taco spices.","Serve over rice with salsa & lettuce."]},
+       {"name":"Egg White & Cottage Cheese Scramble (LC)","meal_type":"breakfast","K":240,"P":32,"C":6,"F":8,
+     "tags":["breakfast","high_protein","low_carb","quick","gluten_free"],
+     "ingredients":["6 egg whites","1/4 cup low-fat cottage cheese","1 cup spinach","nonstick spray","salt","pepper"],
+     "instructions":["Spray pan; wilt spinach 1–2 min.","Add egg whites and scramble until almost set.","Fold in cottage cheese; season."]},
+
+    {"name":"Smoked Salmon & Eggs (LC)","meal_type":"breakfast","K":310,"P":32,"C":4,"F":18,
+     "tags":["breakfast","high_protein","low_carb","quick","gluten_free","dairy_free"],
+     "ingredients":["2 eggs","2 egg whites","2 oz smoked salmon"],
+     "instructions":["Scramble eggs to your liking.","Top with smoked salmon and serve immediately."]},
+
+    {"name":"Turkey Sausage Egg Muffin (no bun)","meal_type":"breakfast","K":280,"P":28,"C":6,"F":14,
+     "tags":["breakfast","high_protein","low_carb","quick","gluten_free"],
+     "ingredients":["2 eggs","2 oz turkey sausage (cooked crumbles)","1/4 cup shredded light cheese","nonstick spray"],
+     "instructions":["Spray muffin tin or small pan.","Divide sausage, pour beaten eggs, sprinkle cheese.","Bake/air-fry 10–12 min at 375°F (190°C)."]},
+
+    {"name":"Chicken Lettuce Wraps (LC)","meal_type":"lunch","K":360,"P":38,"C":12,"F":14,
+     "tags":["lunch","high_protein","low_carb","quick","gluten_free","dairy_free"],
+     "ingredients":["6 oz cooked chicken breast (diced)","romaine leaves","1/4 cup diced cucumber","2 tbsp salsa or light sauce"],
+     "instructions":["Mix chicken with cucumber and sauce.","Spoon into lettuce leaves and fold."]},
+
+    {"name":"Tuna Avocado Salad (LC)","meal_type":"lunch","K":420,"P":40,"C":8,"F":24,
+     "tags":["lunch","high_protein","low_carb","quick","gluten_free"],
+     "ingredients":["1 can tuna (drained)","1/4 avocado (diced)","2 tbsp 0% Greek yogurt","celery (diced)","lemon","salt","pepper"],
+     "instructions":["Stir tuna with yogurt, lemon, celery.","Fold in avocado and season; serve over greens."]},
+
+    {"name":"Shrimp Caesar Salad (light)","meal_type":"lunch","K":410,"P":36,"C":10,"F":20,
+     "tags":["lunch","high_protein","low_carb","quick"],
+     "ingredients":["6 oz cooked shrimp","romaine","2 tbsp light caesar","1 tbsp grated parmesan"],
+     "instructions":["Toss romaine with dressing.","Top with shrimp and parmesan."]},
+
+    {"name":"Air-Fryer Turkey Meatballs & Zoodles","meal_type":"dinner","K":480,"P":48,"C":16,"F":20,
+     "tags":["dinner","high_protein","low_carb","quick","gluten_free"],
+     "ingredients":["8 oz 93% ground turkey","zucchini noodles","salt","pepper","garlic powder","1/2 cup marinara (light)"],
+     "instructions":["Form small meatballs; air-fry 10–12 min at 380°F (195°C).","Sauté zoodles 2–3 min; warm marinara and combine."]},
+
+    {"name":"Grilled Chicken + Cauli Rice (LC)","meal_type":"dinner","K":430,"P":48,"C":12,"F":16,
+     "tags":["dinner","high_protein","low_carb","quick","gluten_free","dairy_free"],
+     "ingredients":["7 oz chicken breast","1.5 cups cauliflower rice","1 tsp olive oil","salt","pepper"],
+     "instructions":["Grill or pan-sear chicken 4–6 min/side.","Sauté cauliflower rice in oil 3–4 min; season and plate."]},
+
+    {"name":"Garlic Shrimp & Asparagus (LC)","meal_type":"dinner","K":420,"P":38,"C":10,"F":18,
+     "tags":["dinner","high_protein","low_carb","quick","gluten_free","dairy_free"],
+     "ingredients":["7 oz shrimp","2 cups asparagus","1 tsp olive oil","garlic","lemon"],
+     "instructions":["Sauté asparagus 2–3 min in oil with garlic.","Add shrimp 2–3 min until pink; finish with lemon."]},
+
+    {"name":"Beef & Broccoli (light sauce)","meal_type":"dinner","K":520,"P":46,"C":18,"F":24,
+     "tags":["dinner","high_protein","low_carb","quick","gluten_free","dairy_free"],
+     "ingredients":["6 oz lean beef strips","2 cups broccoli florets","1 tbsp light soy sauce or coco aminos","1 tsp cornstarch (optional)","1 tsp oil"],
+     "instructions":["Stir-fry beef 2–3 min; remove.","Stir-fry broccoli; add sauce (and slurry if using).","Return beef; toss and serve."]},
+
 
     # ===== SNACKS =====
     {"name":"Apple + Peanut Butter","meal_type":"snack","K":240,"P":7,"C":28,"F":12,
